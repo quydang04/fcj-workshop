@@ -6,12 +6,10 @@ chapter: false
 pre: "<b>1. </b>"
 ---
 
-# Worklog
-
-1. [Week 1: Getting familiar with AWS and basic AWS services](1.1-Week1/)
-2. [Week 2: Doing task A…](1.2-Week2/)
-3. [Week 3: Doing task B…](1.3-Week3/)
-4. [Week 4: Doing task C…](1.4-Week4/)
+1. [Tuần 1: Thiết lập tài khoản AWS, IAM & VPC cơ bản](1.1-Week1/)
+2. [Tuần 2: IAM Roles cho EC2 & Giới thiệu Amazon EC2](1.2-Week2/)
+3. [Tuần 3: Vận hành EC2 nâng cao, RDS, S3 & CloudWatch](1.3-Week3/)
+4. [Tuần 4: Auto Scaling, Route 53, DynamoDB, CloudFront & Kiến trúc HA](1.4-Week4/)
 5. [Week 5: Doing task D…](1.5-Week5/)
 6. [Week 6: Doing task E…](1.6-Week6/)
 7. [Week 7: Doing task G…](1.7-Week7/)

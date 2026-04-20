@@ -6,12 +6,10 @@ chapter: false
 pre: "<b>1. </b>"
 ---
 
-# Worklog
-
-1. [Week 1: Getting familiar with AWS and basic AWS services](1.1-Week1/)
-2. [Week 2: Doing task A…](1.2-Week2/)
-3. [Week 3: Doing task B…](1.3-Week3/)
-4. [Week 4: Doing task C…](1.4-Week4/)
+1. [Week 1: AWS Account Setup, IAM & VPC Fundamentals](1.1-Week1/)
+2. [Week 2: IAM Roles for EC2 & Introduction to Amazon EC2](1.2-Week2/)
+3. [Week 3: EC2 Advanced Operations, RDS, S3 & CloudWatch](1.3-Week3/)
+4. [Week 4: Auto Scaling, Route 53, DynamoDB, CloudFront & HA Architecture](1.4-Week4/)
 5. [Week 5: Doing task D…](1.5-Week5/)
 6. [Week 6: Doing task E…](1.6-Week6/)
 7. [Week 7: Doing task G…](1.7-Week7/)
