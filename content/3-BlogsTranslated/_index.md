@@ -8,3 +8,5 @@ pre: "<b>3. </b>"
 
 ## Translated Blogs
 
+Will be updated later.
+
