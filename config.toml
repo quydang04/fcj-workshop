@@ -1,4 +1,4 @@
-baseURL = "https:/fcaj.quydang.name.vn/"
+baseURL = "https://fcaj.quydang.name.vn/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
