@@ -6,6 +6,4 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Workshop
-
-Sẽ cập nhật sau.
+Sẽ cập nhật sau
