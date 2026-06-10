@@ -1,2 +1,6 @@
 public/*
 aws_schedule_Quy_v4.xlsx
+node_modules/
+.codex/
+.local/
+.hugo-dev*

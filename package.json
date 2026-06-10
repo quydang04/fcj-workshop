@@ -1,0 +1,26 @@
+{
+  "name": "fcj-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo --minify"
+  },
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quydang04/fcj-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quydang04/fcj-workshop/issues"
+  },
+  "homepage": "https://github.com/quydang04/fcj-workshop#readme",
+  "devDependencies": {
+    "hugo-bin": "^0.149.2"
+  }
+}
