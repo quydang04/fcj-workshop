@@ -6,56 +6,39 @@ chapter: false
 pre: "<b>7. </b>"
 ---
 
-Phần này mình xin phép được chia sẻ những cảm nhận chân thật nhất của bản thân sau khi hoàn thành khóa thực tập tại First Cloud Journey. Hy vọng những dòng "tâm thư" này sẽ giúp team FCJ hiểu hơn về trải nghiệm của tụi mình và ngày càng nâng cấp chương trình xịn xò hơn cho các lứa sau nhé!
+Tính đến ngày 10/06/2026, đây là phần chia sẻ của mình sau quãng thời gian đã tham gia chương trình First Cloud Journey đến hiện tại. Vì internship vẫn đang diễn ra, nội dung dưới đây là góc nhìn ở thời điểm giữa kỳ hơn là một bản tổng kết cuối cùng.
 
-### Cảm nhận chung của mình
+### Những điểm mình thấy chương trình làm tốt
 
-1. **Vibe và Môi trường làm việc**
+- **Lộ trình rõ ràng:** Mỗi tuần đều có chủ đề, tài liệu và hướng đi tương đối cụ thể nên người học không bị mơ hồ về việc nên bắt đầu từ đâu.
+- **Bài lab có tính thực hành:** Điểm mình thấy có giá trị nhất là chương trình không dừng ở mức giới thiệu khái niệm. Hầu hết nội dung đều gắn với thao tác thực tế trên AWS nên người học buộc phải tự làm, tự sai và tự sửa.
+- **Mentor hỗ trợ theo hướng gợi mở:** Khi gặp vướng mắc, mình thường nhận được hướng kiểm tra hoặc tài liệu cần đọc thêm thay vì câu trả lời có sẵn. Cách này mất thời gian hơn lúc đầu nhưng về lâu dài giúp mình nhớ kỹ hơn.
+- **Phần hỗ trợ tài khoản và quyền truy cập khá ổn:** Các việc như account, credits hoặc quyền cơ bản nhìn chung được xử lý kịp thời, nên không làm gián đoạn việc học quá nhiều.
+- **Có thêm đầu ra ngoài lab:** Việc viết worklog và dịch blog khiến chương trình không chỉ dừng ở phần kỹ thuật, mà còn giúp mình rèn cách ghi chép và diễn đạt lại kiến thức.
 
-   Phải nói là cái "vibe" ở First Cloud Journey cực kỳ gần gũi và nhiệt tình luôn. Thực tập remote nhiều lúc dễ bị tủi thân vì không được gặp ai, nhưng mấy anh chị em trong FCJ đã đập tan cái cảm giác đó. Mọi người hỗ trợ nhau cực kỳ nhiệt tình, có hôm mình bị kẹt cái lab đến tận khuya mà nhắn lên group vẫn có người nhảy vào giúp. Kho lưu trữ tài liệu, thông báo thì được sắp xếp rất gọn gàng dễ tìm. Tuy nhiên, nếu lâu lâu tụi mình có thêm vài buổi "trà đá online" hoặc offline gặp mặt ăn uống (nếu ở chung thành phố) thì chắc chắn độ thân thiết và teamwork sẽ còn tăng lên gấp bội!
+### Những điểm mình nghĩ có thể cải thiện
 
-2. **Chất lượng Mentor và Support từ Admin**
+- **Khối lượng một số tuần khá dày:** Có tuần nội dung mới nhiều, trong khi người học vẫn phải hoàn thành lab và tự đọc thêm tài liệu. Nếu có đánh dấu rõ phần nào là bắt buộc, phần nào là mở rộng thì sẽ dễ ưu tiên hơn.
+- **Nên có một mốc review giữa kỳ:** Một buổi review ngắn giữa mentor và intern sẽ hữu ích để biết mình đang ở mức nào, đang thiếu gì và có đi chệch hướng học tập hay không.
+- **Có thể thêm bài làm theo nhóm nhỏ:** Sau khi đã học các phần nền tảng, nếu có một mini-project cho 2-3 người cùng làm thì sẽ sát hơn với cách phối hợp trong môi trường thực tế.
+- **Nên tổng hợp thêm lỗi thường gặp:** Khi làm lab, nhiều bạn dễ vướng ở các lỗi lặp lại như quyền IAM, route sai, policy chưa đủ hoặc quên dọn tài nguyên. Nếu có một trang FAQ hoặc checklist ngắn thì sẽ tiết kiệm khá nhiều thời gian.
 
-   Nói thật là mentor ở đây quá "đỉnh". Các anh không chỉ xịn về tech mà còn siêu kiên nhẫn. Cái mình thích nhất là khi mình hỏi, các anh không bao giờ ném thẳng cái đáp án cho mình copy. Các anh thường gợi ý kiểu "em thử check cái log chỗ này xem", hoặc "đọc lại cái doc này phần X đi". Lúc đầu cũng hơi bực mình vì mất thời gian mò, nhưng sau này mới thấy nhờ vậy mà não mình "nảy số" tốt hơn hẳn, tự lực cánh sinh quen luôn.
-   
-   Team admin thì phải gọi là siêu tốc độ. Từ việc tạo account IAM, nạp credits cho đến mở quyền truy cập, mọi thứ đều mượt mà. Nhờ các anh chị lo hết mấy cái hậu cần đó mà tụi mình chỉ việc cắm đầu vào học thôi, không phải lo nghĩ gì nhiều.
+### Điều mình nhận được từ chương trình
 
-3. **Thực tập có sát với cái mình học ở trường không?**
+Điều rõ nhất mình nhận được là cảm giác khoảng cách giữa lý thuyết và thực hành đã ngắn lại đáng kể. Trước đây mình biết tên dịch vụ và hiểu sơ khái niệm, nhưng khó hình dung khi ghép vào một hệ thống thật. Sau một thời gian làm lab, mình bắt đầu nhìn rõ hơn vai trò của từng thành phần và cách chúng liên kết với nhau.
 
-   Siêu sát luôn! Những kiến thức mình học mòn gót trên giảng đường về mạng máy tính (như mô hình OSI, chia IP) hay hệ điều hành, cuối cùng cũng được lôi ra áp dụng thực tế trên AWS. Từ việc tạo VPC, thiết lập mạng con (Subnet) cho đến chia Security Group, mình mới ồ lên "À, hóa ra kiến thức ở trường nó xài vào việc này!". FCJ vừa giúp mình ôn lại kiến thức gốc, vừa nhồi thêm một rổ công nghệ mới toanh mà ở trường chẳng bao giờ dạy. Điểm 10 cho sự kết hợp này!
+Ngoài kỹ thuật, mình cũng học được cách đọc tài liệu chính thức kiên nhẫn hơn, cách ghi lại tiến độ làm việc, và cách chú ý đến chi phí khi triển khai trên cloud. Những phần này không quá nổi bật khi mới bắt đầu, nhưng về lâu dài lại rất quan trọng.
 
-4. **Mình đã học được những gì?**
+### Mức độ phù hợp của chương trình
 
-   Nhiều lắm! Ngoài việc biết "bấm nút" trên AWS sao cho chuẩn, mình thấy mình lên tay nhất là kỹ năng tự học qua thực hành (learn by doing). Cứ làm lab, lỗi thì sửa, sửa xong lại hiểu sâu hơn. 
-   
-   Bên cạnh đó, kỹ năng viết lách của mình cũng mượt hơn hẳn nhờ việc gõ worklog đều đặn bằng Markdown và Hugo. Khả năng đọc tài liệu tiếng Anh cũng tăng vọt nhờ vụ dịch blog AWS. Và quan trọng nhất là "mindset" về tiền bạc: giờ mỗi lần bấm tạo cái gì trên cloud là trong đầu tự nhảy số "cái này tốn bao nhiêu tiền, bao giờ phải tắt", điều mà chắc chắn mình không thể có được nếu chỉ ngồi nghe giảng lý thuyết.
+Theo mình, First Cloud Journey phù hợp với người sẵn sàng tự học và chịu khó làm lab thật. Nếu chỉ muốn xem lý thuyết hoặc học theo kiểu có sẵn đáp án thì sẽ khá đuối. Ngược lại, nếu chấp nhận việc phải tự tìm hiểu, tự sửa lỗi và theo nhịp học tương đối đều thì chương trình mang lại giá trị khá rõ.
 
-5. **Văn hóa cộng đồng**
+### Mình có giới thiệu chương trình cho người khác không?
 
-   Mình rất ưng cái văn hóa "không giấu dốt, không đổ lỗi" ở đây. Trong FCJ, làm sai thì làm lại, không ai chê cười cả. Các bạn thực tập sinh khác cũng siêu dễ thương, biết gì là share nấy. Mặc dù chỉ là thực tập sinh "chân ướt chân ráo", mình luôn cảm thấy tiếng nói của mình được lắng nghe và tôn trọng. Cảm giác được thuộc về một cộng đồng yêu công nghệ và chịu chia sẻ như vầy làm mình có động lực ghê gớm.
+Có, nhưng mình sẽ giới thiệu theo cách thực tế. Đây là chương trình tốt cho người muốn đi theo hướng cloud và cần môi trường để thực hành nghiêm túc. Tuy vậy, nó không phải kiểu học nhẹ nhàng hay chỉ vào xem là đủ. Người tham gia vẫn cần chủ động khá nhiều thì mới tận dụng được hết giá trị của chương trình.
 
-6. **Lộ trình và Hỗ trợ**
+### Kết luận
 
-   Chương trình đẻ ra cái lộ trình 12 tuần quá là hợp lý. Mỗi tuần biết chính xác mình phải làm gì, không bị hoang mang kiểu "nay học gì ta?". Cái sướng nhất là được cấp AWS credits để quẩy, nên mình cứ thoải mái test mấy cái kiến trúc phức tạp mà không sợ cuối tháng mẹ mắng vì cái bill AWS trên trời rơi xuống. Thời gian làm lab cũng linh hoạt nên mình vẫn sống sót qua kỳ thi trên trường.
+Nhìn chung, trải nghiệm của mình với FCJ đến thời điểm hiện tại là tích cực. Điểm mạnh lớn nhất của chương trình nằm ở lộ trình tương đối rõ, nội dung có thực hành và cách hỗ trợ không làm thay người học. Điểm mình mong được cải thiện thêm là phần review giữa kỳ, phân loại mức ưu tiên của nội dung, và cơ hội làm việc nhóm nhiều hơn.
 
-### Một vài câu hỏi nhỏ
-
-- **Khoảnh khắc bạn thấy "đã" nhất trong kỳ thực tập?**
-  Chắc chắn là cái tuần thứ 4, lúc mình tự tay dựng lên được cái mô hình web 3 tầng High Availability xịn xò. Thấy load balancer chia tải mượt mà qua các vùng (AZ) khác nhau, thấy Auto Scaling tự đẻ ra EC2 lúc hệ thống nặng, rồi database RDS chạy ngon ơ đằng sau... cảm giác lúc đó kiểu "wow, mình làm được này!". Nó ghép tất cả những kiến thức vụn vặt của mấy tuần trước lại thành một bức tranh hoàn hảo. Tự hào lắm!
-
-- **Bạn nghĩ FCJ nên cải thiện gì cho lứa sau?**
-  Hiện tại tụi mình toàn tự làm lab một mình. Mình nghĩ sẽ hay hơn rất nhiều nếu lâu lâu có một cái mini-project bắt 2-3 bạn làm chung. Như vậy tụi mình sẽ học được cách dùng Git chung, review code cho nhau, và tập cãi nhau (nhầm, tranh luận) để tìm ra kiến trúc tốt nhất. Đi làm thật thì cũng phải teamwork mà!
-
-- **Có rủ bạn bè vào đây thực tập không?**
-  1000% là có nhé. Mình đi PR cho FCJ khắp cái lớp đại học rồi. Lộ trình xịn, mentor có tâm, lại còn được thực chiến 100% trên AWS thật. Tội gì mà không tham gia! Đảm bảo học ở đây 3 tháng bằng tự mò cả năm.
-
-### Đề xuất nhỏ của bản thân
-
-Để chương trình mười phân vẹn mười, mình xin thả nhẹ vài ý kiến nhỏ:
-
-- **Có thêm buổi Review 1-1 giữa kỳ:** Mình nghĩ nếu ở tuần thứ 6 có một buổi call nhẹ 1-1 giữa mentor và thực tập sinh để "chỉnh đốn" lại phương pháp học, chỉ ra cái mình còn yếu thì sẽ tuyệt vời hơn nữa.
-- **Mời khách mời chém gió (Guest Speakers):** Lâu lâu tổ chức một buổi talkshow mời mấy anh chị Cloud Architect hoặc DevOps lão làng về kể chuyện đời, chuyện nghề, mấy vụ sập server thực tế... chắc chắn tụi mình sẽ hóng lắm.
-- **Làm một cái "Đồ án tốt nghiệp" (Capstone Project):** 2 tuần cuối thay vì làm lab có sẵn hướng dẫn, các anh thử quăng cho tụi mình một bài toán nghiệp vụ thật khó, bắt tụi mình tự vẽ kiến trúc, tự viết code IaC (CloudFormation/Terraform) rồi lên thuyết trình bảo vệ trước các mentor xem sao. Đảm bảo cực kỳ kích thích!
-- **Đá thêm tí luyện thi chứng chỉ:** Khá nhiều bạn học xong muốn đi thi lấy cái bằng AWS Solutions Architect. Nếu cuối khóa các anh có thêm 1-2 buổi chia sẻ mẹo làm bài, tài liệu ôn thi chuẩn thì tụi em biết ơn lắm luôn!
-
-> ### 🚀 **(Sẽ có cập nhật thêm sau)**
+Mình sẽ cập nhật lại phần này khi đi đến giai đoạn cuối chương trình để phản ánh đầy đủ hơn kết quả sau cùng.

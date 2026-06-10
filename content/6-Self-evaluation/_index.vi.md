@@ -6,28 +6,28 @@ chapter: false
 pre: "<b>6. </b>"
 ---
 
-Nhìn lại quãng thời gian thực tập tại First Cloud Journey từ tháng 4 đến tháng 7 năm 2026, mình thực sự cảm thấy đây là một hành trình "lột xác" đáng nhớ. Hồi mới vào chương trình, kiến thức của mình về cloud computing mỏng lét, chủ yếu toàn lý thuyết suông học trên trường. Nhưng nhờ môi trường thực chiến và lộ trình cực kỳ rõ ràng của FCJ, mình đã có thể biến những mớ lý thuyết đó thành kỹ năng thực tế.
+Tính đến ngày 10/06/2026, mình đã đi qua phần nền tảng của chương trình First Cloud Journey và đang bắt đầu chuyển sang giai đoạn làm rõ kiến trúc cho phần dự án. Đây chưa phải là phần tổng kết cuối kỳ, nhưng là lúc phù hợp để nhìn lại xem mình đã tiến bộ ở đâu và còn thiếu gì.
 
-Công việc chính của mình xoay quanh việc tự tay build, bảo mật và deploy hạ tầng AWS từ con số không. Hàng tuần, mình phải hoàn thành một đống bài lab siêu chi tiết, tự ngồi mò mẫm fix lỗi (troubleshoot), tìm cách tối ưu chi phí (kẻo lố bill), và còn góp chút sức cho cộng đồng FCJ qua việc dịch blog hay viết docs nữa. Nói thật là nhờ vậy mà mình không chỉ cứng cáp hơn về mặt technical, mà còn rèn được cái "mindset" làm việc chuyên nghiệp của một kỹ sư cloud thực thụ.
+Trong giai đoạn vừa rồi, phần lớn công việc của mình xoay quanh việc làm lab trên AWS, đọc tài liệu chính thức, ghi worklog hàng tuần và dịch một số nội dung kỹ thuật. So với lúc mới bắt đầu, mình đã bớt phụ thuộc vào hướng dẫn từng bước. Tuy nhiên, mình cũng thấy khá rõ là hiện tại mình mới vững hơn ở phần nền tảng, còn nhiều mảng vẫn cần học thêm nếu muốn làm việc độc lập hơn sau này.
 
-Để nhìn lại bản thân một cách công tâm nhất, xem mình đã làm được gì và còn yếu chỗ nào, mình xin tự "chấm điểm" bản thân qua những tiêu chí dưới đây nhé:
+### Những gì mình làm được
 
-### Điểm sáng & Những gì mình làm được
+- **Nắm được nhóm dịch vụ AWS nền tảng ở mức thực hành:** Mình đã có cơ hội làm và hiểu rõ hơn các phần như IAM, VPC, EC2, RDS, S3, CloudWatch, Auto Scaling, Route 53, CloudFront, DynamoDB, Lambda, API Gateway và CloudFormation. Mức của mình hiện tại là có thể làm lại các bài lab, hiểu mục đích của từng thành phần và tự chỉnh một số cấu hình cơ bản khi cần.
+- **Khá hơn ở việc tự kiểm tra lỗi:** Trước đây khi gặp lỗi mình thường làm lại từ đầu hoặc chờ người khác chỉ. Bây giờ mình đã quen hơn với việc kiểm tra Security Group, Route Table, IAM Policy, log trên CloudWatch, hoặc đối chiếu với tài liệu AWS trước khi hỏi. Mình chưa thể nói là troubleshoot tốt trong mọi tình huống, nhưng ít nhất đã có quy trình suy nghĩ rõ ràng hơn.
+- **Có kỷ luật hơn trong việc tự học:** Lộ trình theo tuần buộc mình phải theo sát tiến độ. Nhờ vậy mình giữ được thói quen đọc trước, làm lab, ghi lại phần đã hiểu và phần còn vướng. Điều mình thấy có ích nhất là không chỉ làm cho xong, mà bắt đầu biết dừng lại để hiểu vì sao một cấu hình lại cần như vậy.
+- **Có ý thức hơn về chi phí và dọn tài nguyên:** Sau một thời gian làm lab, mình hiểu rõ hơn việc tạo tài nguyên trên cloud không chỉ là chuyện kỹ thuật mà còn liên quan trực tiếp đến chi phí. Mình đã hình thành thói quen xóa tài nguyên sau khi dùng, kiểm tra các dịch vụ còn chạy và để ý hơn đến phần billing.
+- **Viết và diễn đạt kỹ thuật tốt hơn trước:** Việc viết worklog bằng Markdown/Hugo và dịch blog giúp mình cải thiện cách ghi chép và trình bày vấn đề. Mình chưa viết thật gọn và sắc, nhưng đã đỡ lan man hơn và diễn đạt rõ hơn so với lúc đầu.
 
-- **Lên tay hẳn với các dịch vụ lõi của AWS:** Phải nói là mình đã có cơ hội "vọc vạch" kha khá các dịch vụ của AWS. Từ mấy cái cơ bản như tạo User/Group trong IAM, setup VPC, cho đến những thứ "khoai" hơn như cấu hình Multi-AZ, Application Load Balancers (ALB), Auto Scaling, hay nối Route 53 với CloudFront. Giờ thì mình đã khá tự tin múa phím trên cả AWS Console lẫn gõ lệnh CLI rồi.
-- **Kỹ năng tự bắt bệnh và fix bug:** Hồi đầu làm lab, mình cứ bám rịt lấy cái hướng dẫn, sai một ly là hoảng. Nhưng dần dần, mình học được cách tự bơi. Ví dụ lúc EC2 không ping được vào RDS, hay set nhầm luật trong Security Group, mình đã biết lôi Reachability Analyzer, soi VPC Flow Logs hay check CloudWatch để tìm tận gốc vấn đề trước khi đi cầu cứu mấy anh mentor. Cảm giác tự fix được lỗi nó "đã" gì đâu!
-- **Tính tự giác và tự học:** Lộ trình 12 tuần ép mình vào một cái guồng khá căng. Mình luôn cố gắng giữ kỷ luật để nộp lab đúng hạn. Thay vì chỉ cắm đầu làm theo kiểu "học vẹt", mình bắt đầu có thói quen mò lên đọc doc chính chủ của AWS để hiểu bản chất câu chuyện. 
-- **Quản lý "hầu bao" (Chi phí AWS):** Bài học xương máu là làm cloud thì tiền đi nhanh lắm. Nên mình đã luyện được thói quen làm xong lab nào là xóa sạch sẽ tài nguyên lab đó. Mình cũng tự set AWS Budgets và Billing Alarms đàng hoàng. Tự hào là suốt kỳ thực tập, mình chưa làm cháy túi AWS credits lần nào!
-- **Chia sẻ kiến thức:** Chăm chỉ dịch blog AWS và viết worklog hàng tuần bằng Markdown/Hugo giúp kỹ năng viết lách của mình lên tay hẳn. Cảm giác diễn đạt một cái gì đó phức tạp thành thứ dễ hiểu cho mọi người cùng đọc mang lại cho mình rất nhiều động lực.
+### Những điểm mình còn yếu
 
-### Những chỗ mình thấy bản thân còn "non" và cần cố gắng thêm
+- **Chưa tự tin khi phải tự thiết kế từ yêu cầu mở:** Nếu đã có lab, sơ đồ hoặc hướng dẫn tương đối rõ thì mình làm ổn. Nhưng nếu bắt đầu từ một yêu cầu nghiệp vụ và phải tự đề xuất kiến trúc phù hợp, mình vẫn còn thiếu tự tin.
+- **IaC và automation vẫn còn là khoảng trống lớn:** Dù đã chạm vào CloudFormation, phần lớn thao tác của mình vẫn đang thiên về Console và CLI. Mình cần dành thêm thời gian cho hạ tầng dạng mã để sau này làm việc bài bản hơn.
+- **Kiến thức networking và security nâng cao còn mỏng:** Các phần VPC cơ bản mình theo được, nhưng những chủ đề khó hơn như hybrid networking, mô hình mạng nhiều lớp, hoặc các tình huống bảo mật phức tạp thì mình vẫn cần học thêm rất nhiều.
+- **Kinh nghiệm làm một hệ thống hoàn chỉnh còn ít:** Đến thời điểm hiện tại, phần mình làm chủ yếu vẫn là từng lab hoặc từng nhóm chủ đề. Mình chưa có nhiều trải nghiệm ghép tất cả lại thành một hệ thống hoàn chỉnh có yêu cầu rõ về vận hành, kiểm thử và triển khai.
+- **Quản lý thời gian chưa thật ổn ở những tuần nặng:** Có những thời điểm bài trên trường và lab dồn vào cùng lúc, mình xử lý vẫn còn bị động. Đây là điểm mình cần cải thiện nếu muốn theo được các giai đoạn dự án căng hơn ở phần sau.
 
-Dù tự thấy bản thân tiến bộ nhiều, nhưng mình biết mình vẫn còn phải cày bừa nhiều lắm ở những mảng sau:
+### Đánh giá chung
 
-- **Chưa tự tin thiết kế từ đầu:** Hiện tại đưa sơ đồ là mình build được ngay, nhưng bảo mình tự thiết kế một hệ thống scalable, an toàn mà lại rẻ từ một yêu cầu nghiệp vụ trống trơn thì mình vẫn hơi "khớp". Đây là mục tiêu lớn mình cần cải thiện.
-- **Cần "nâng cấp" lên Automation (IaC):** Trong kỳ thực tập đa số mình toàn click tay trên Console hoặc gõ CLI. Để theo kịp xu hướng DevOps bây giờ, mình xác định mục tiêu sắp tới là phải nhai bằng được CloudFormation hoặc Terraform để tự động hóa mọi thứ.
-- **Mảng Networking nâng cao còn yếu:** Mình hiểu VPC cơ bản, nhưng động đến mấy thứ tầm cỡ doanh nghiệp như Transit Gateway, Direct Connect hay VPN phức tạp là mình vẫn lơ mơ lắm. Chắc chắn phải học thêm phần này.
-- **Quản lý thời gian lúc chạy deadline:** Có những tuần bài tập trên trường ngập đầu cộng thêm bài lab FCJ khó nhằn làm mình bị rối, hay thức khuya. Mình cần học cách phân bổ thời gian thông minh hơn thay vì cứ dùng sức "cày" ngày đêm.
-- **Cần năng nổ hơn khi làm việc nhóm:** Tính mình hay có kiểu gặp lỗi là tự chui vào góc ngồi mò mẫm cả buổi trời. Mình nhận ra đi làm thực tế thì cần phải biết cách đặt câu hỏi nhanh, gọn, lẹ và chia sẻ nhiều hơn trên group chung để học hỏi chéo từ mọi người. Mình sẽ cố gắng cởi mở hơn!
+Nếu tự đánh giá ở thời điểm hiện tại, mình nghĩ mình đã đi từ mức "biết khái niệm" sang mức "có thể tự làm, tự kiểm tra và tự học tiếp". Đó là bước tiến rõ nhất của mình trong thời gian vừa rồi.
 
-> ### 🚀 **(Sẽ có cập nhật thêm sau)**
+Tuy nhiên, mình chưa xem bản thân là người đã sẵn sàng cho những bài toán kiến trúc hoặc triển khai phức tạp. Mình vẫn đang ở giai đoạn xây nền, mở rộng trải nghiệm thực hành và lấp các khoảng trống về thiết kế hệ thống, IaC, CI/CD và tư duy triển khai end-to-end. Nếu giữ được nhịp học như hiện tại, mình nghĩ phần còn lại của chương trình sẽ là lúc quan trọng để biến kiến thức rời rạc thành năng lực làm việc thực tế hơn.

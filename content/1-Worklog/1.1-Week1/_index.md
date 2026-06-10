@@ -1,55 +1,38 @@
 ---
-title: "Week 1 Worklog"
+title: "Week 1 Worklog - AWS Account Setup, IAM & VPC Fundamentals"
 date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-### Week 1 Objectives:
+## Week 1 - AWS Account Setup, IAM & VPC Fundamentals
+
+### Weekly Focus
+AWS account setup + IAM basics + Amazon VPC fundamentals
+
+### Objectives
 - Get acquainted with the First Cloud Journey internship program and team members.
 - Set up the AWS environment and understand foundational AWS services (IAM & VPC).
 
-### Tasks to be carried out this week:
+### Work Schedule
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-|-----|------|------------|-----------------|-------------------|
-| 2 | - Read the full 3-month learning roadmap | 20/04/2026 | 20/04/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-|  | - Install AWS CLI & configure environment |  |  |  |
-|  | - Create AWS account (if not yet available) |  |  |  |
-|  | - Enable MFA for root account |  |  |  |
-|  | - Practice: Lab 000001 – Creating Your First AWS Account |  |  |  |
-| 3 | - Learn IAM: User, Group, Policy | 21/04/2026 | 21/04/2026 | [https://000002.awsstudygroup.com](https://000002.awsstudygroup.com) |
-|  | - Create Admin Group & Admin User |  |  |  |
-|  | - Understand the Least Privilege principle |  |  |  |
-|  | - Practice: Lab 000002 – Access Management with AWS IAM (Section 1.1–2.3) |  |  |  |
-| 4 | - Learn IAM Role vs User | 22/04/2026 | 22/04/2026 | [https://000002.awsstudygroup.com](https://000002.awsstudygroup.com) |
-|  | - Create Admin Role, OperatorUser |  |  |  |
-|  | - Practice Switch Role on the console |  |  |  |
-|  | - Practice: Lab 000002 (Section 3.1–5: Role, Switch Role, Clean up) |  |  |  |
-| 5 | - Learn Amazon VPC: Public/Private Subnets, Route Table, IGW, NAT GW | 23/04/2026 | 23/04/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-|  | - Learn Security Group vs Network ACL |  |  |  |
-|  | - Practice: Lab 000003 – Amazon VPC (Section 1.1–3.6: Create VPC from scratch) |  |  |  |
-| 6 | - Deploy EC2 into VPC, test connection | 24/04/2026 | 24/04/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-|  | - Configure NAT Gateway, Reachability Analyzer |  |  |  |
-|  | - Use Session Manager (SSH-less access) |  |  |  |
-|  | - Set up CloudWatch Monitoring on EC2 |  |  |  |
-|  | - Practice: Lab 000003 (Section 4.1–4.7) |  |  |  |
-|  | - Clean up resources |  |  |  |
+| Date | Day | Work Items | Lab / Project |
+|------|-----|------------|---------------|
+| 20/04/2026 | Monday | Read the full 3-month learning roadmap.<br>Install AWS CLI and configure the local environment.<br>Create an AWS account if not already available and enable MFA for the root account.<br>Practice Lab 000001. | [Lab 000001 - Creating Your First AWS Account](https://000001.awsstudygroup.com) |
+| 21/04/2026 | Tuesday | Learn IAM core concepts including users, groups, and policies.<br>Create the Admin Group and Admin User.<br>Understand the Least Privilege principle and apply it in practice.<br>Practice Lab 000002 (Sections 1.1-2.3). | [Lab 000002 - Access Management with AWS IAM](https://000002.awsstudygroup.com) |
+| 22/04/2026 | Wednesday | Review IAM Role versus IAM User use cases.<br>Create the Admin Role and OperatorUser.<br>Practice the Switch Role workflow on the AWS console.<br>Continue Lab 000002 (Sections 3.1-5). | [Lab 000002 - Access Management with AWS IAM](https://000002.awsstudygroup.com) |
+| 23/04/2026 | Thursday | Learn Amazon VPC fundamentals including public/private subnets, route tables, Internet Gateway, and NAT Gateway.<br>Compare Security Groups and Network ACLs.<br>Practice Lab 000003 to build a VPC from scratch. | [Lab 000003 - Networking Essentials with Amazon Virtual Private Cloud (VPC)](https://000003.awsstudygroup.com) |
+| 24/04/2026 | Friday | Deploy EC2 instances into the VPC and verify connectivity.<br>Configure NAT Gateway and Reachability Analyzer.<br>Use Session Manager for SSH-less access and set up CloudWatch monitoring on EC2.<br>Continue Lab 000003 and clean up resources. | [Lab 000003 - Networking Essentials with Amazon Virtual Private Cloud (VPC)](https://000003.awsstudygroup.com) |
 
-### Week 1 Achievements:
-- Successfully created and secured an AWS account with MFA enabled on the root account.
-- Understood the AWS Free Tier strategy and cost governance practices to avoid unexpected charges.
-- Mastered IAM core concepts including:
-  + Users, Groups, and Policy attachments
-  + The Least Privilege principle
-  + IAM Roles and the Switch Role workflow
-  + Admin Group / Admin User / OperatorUser setup
-- Built a complete Amazon VPC from scratch including:
-  + Public and private subnets across availability zones
-  + Internet Gateway and NAT Gateway
-  + Route Tables configuration
-  + Security Groups and Network ACLs
-- Successfully deployed EC2 instances into the VPC and tested connectivity using Session Manager (no SSH key required).
-- Configured CloudWatch basic monitoring on EC2 instances.
-- Practiced resource cleanup to maintain cost control.
+### Expected Outcomes
+- Set up and secure an AWS account with MFA enabled for the root account.
+- Understand AWS Free Tier usage and basic cost governance practices.
+- Build a solid IAM foundation covering users, groups, policies, roles, and the Switch Role workflow.
+- Create a complete Amazon VPC with public/private subnets, Internet access, routing, and security controls.
+- Deploy EC2 instances inside the VPC, monitor them with CloudWatch, and practice proper resource cleanup.
+
+### Week 1 References
+- [Lab 000001 - Creating Your First AWS Account](https://000001.awsstudygroup.com)
+- [Lab 000002 - Access Management with AWS Identity and Access Management (IAM)](https://000002.awsstudygroup.com)
+- [Lab 000003 - Networking Essentials with Amazon Virtual Private Cloud (VPC)](https://000003.awsstudygroup.com)

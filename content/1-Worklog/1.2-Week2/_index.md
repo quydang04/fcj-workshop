@@ -1,5 +1,5 @@
 ---
-title: "Week 2 Worklog"
+title: "Week 2 Worklog - IAM Roles for EC2 & Introduction to Amazon EC2"
 date: 2026-04-20
 weight: 2
 chapter: false
@@ -8,36 +8,33 @@ pre: " <b> 1.2. </b> "
 
 > **Note:** 30/04 (Liberation Day) and 01/05 (Labour Day) are public holidays — only 3 working days this week.
 
-### Week 2 Objectives:
+## Week 2 - IAM Roles for EC2 & Introduction to Amazon EC2
+
+### Weekly Focus
+IAM review + EC2 IAM roles + Amazon EC2 core operations
+
+### Objectives
 - Review and reinforce IAM & VPC knowledge from Week 1.
 - Deep dive into IAM Roles for EC2 and Amazon EC2 core operations.
 
-### Tasks to be carried out this week:
+### Work Schedule
 
-| Day | Task | Start Date | Completion Date | Reference Material |
-|-----|------|------------|-----------------|-------------------|
-| 2 | - Review IAM: User, Group, Role, Policy | 27/04/2026 | 27/04/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-|  | - Review VPC: Subnet, Route Table, IGW, Security Group |  |  |  |
-|  | - Set up Billing Alarm ($5) and credit strategy |  |  |  |
-|  | - Practice: Lab 000001 + 000002 + 000003 – Review |  |  |  |
-| 3 | - Learn IAM Roles for EC2 (Instance Profile) | 28/04/2026 | 28/04/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/) |
-|  | - Access S3/DynamoDB from EC2 without access keys |  |  |  |
-|  | - IAM Cost Governance: restrict region & instance type |  |  |  |
-|  | - IAM Permission Boundaries overview |  |  |  |
-|  | - Practice: Lab 000048 – IAM Roles for EC2 |  |  |  |
-| 4 | - Create VPC + Security Groups for Linux & Windows EC2 | 29/04/2026 | 29/04/2026 | [https://000004.awsstudygroup.com](https://000004.awsstudygroup.com) |
-|  | - Launch Amazon Linux 2023 & Windows Server 2025 |  |  |  |
-|  | - Connect via SSH (Linux) and RDP (Windows) |  |  |  |
-|  | - Learn Key Pair, Instance Types, AMI |  |  |  |
-|  | - Practice: Lab 000004 – Introduction to Amazon EC2 |  |  |  |
+| Date | Day | Work Items | Lab / Project |
+|------|-----|------------|---------------|
+| 27/04/2026 | Monday | Review IAM concepts including users, groups, roles, and policies.<br>Review VPC components such as subnets, route tables, Internet Gateway, and security groups.<br>Set up a $5 Billing Alarm and revisit the AWS credit strategy.<br>Practice the Week 1 labs as a full review. | [Lab 000001 - Creating Your First AWS Account](https://000001.awsstudygroup.com)<br>[Lab 000002 - Access Management with AWS Identity and Access Management (IAM)](https://000002.awsstudygroup.com)<br>[Lab 000003 - Networking Essentials with Amazon Virtual Private Cloud (VPC)](https://000003.awsstudygroup.com) |
+| 28/04/2026 | Tuesday | Learn IAM Roles for EC2 and the Instance Profile model.<br>Access S3 and DynamoDB from EC2 without static access keys.<br>Review IAM cost governance, including region and instance type restrictions.<br>Practice Lab 000048. | [Lab 000048 - Instance Profiling with IAM Roles for EC2](https://000048.awsstudygroup.com) |
+| 29/04/2026 | Wednesday | Create a VPC and security groups for both Linux and Windows EC2 instances.<br>Launch Amazon Linux 2023 and Windows Server 2025 instances.<br>Connect through SSH and RDP, then review Key Pair, AMI, and instance type concepts.<br>Practice Lab 000004. | [Lab 000004 - Introduction to Amazon EC2](https://000004.awsstudygroup.com) |
 
-### Week 2 Achievements:
-- Reinforced understanding of IAM and VPC architecture through hands-on review.
-- Configured Billing Alarm and understood the $200 credit strategy for cost management.
-- Mastered IAM Roles for EC2 via Instance Profiles:
-  + Attached roles to EC2 to access S3 and DynamoDB without static access keys
-  + Configured IAM policies to restrict by region and instance type
-- Successfully launched both Linux (Amazon Linux 2023) and Windows (Server 2025) EC2 instances:
-  + Connected to Linux via SSH using Key Pair
-  + Connected to Windows via RDP
-- Understood the relationship between AMI, Instance Type, Key Pair, and Security Groups.
+### Expected Outcomes
+- Reinforce IAM and VPC understanding through hands-on review work.
+- Configure basic cost controls such as Billing Alarm and credit usage awareness.
+- Understand how IAM Roles for EC2 replace static credentials when accessing AWS services.
+- Launch and access both Linux and Windows EC2 instances with the correct networking and security setup.
+- Understand the relationship between AMI, instance type, key pairs, and security groups in EC2 deployment.
+
+### Week 2 References
+- [Lab 000001 - Creating Your First AWS Account](https://000001.awsstudygroup.com)
+- [Lab 000002 - Access Management with AWS Identity and Access Management (IAM)](https://000002.awsstudygroup.com)
+- [Lab 000003 - Networking Essentials with Amazon Virtual Private Cloud (VPC)](https://000003.awsstudygroup.com)
+- [Lab 000048 - Instance Profiling with IAM Roles for EC2](https://000048.awsstudygroup.com)
+- [Lab 000004 - Compute Essentials with Amazon Elastic Compute Cloud (EC2)](https://000004.awsstudygroup.com)
