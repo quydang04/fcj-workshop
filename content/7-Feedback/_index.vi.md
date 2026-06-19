@@ -6,7 +6,7 @@ chapter: false
 pre: "<b>7. </b>"
 ---
 
-Tính đến ngày 10/06/2026, đây là phần chia sẻ của mình sau quãng thời gian đã tham gia chương trình First Cloud AI Journey đến hiện tại. Vì internship vẫn đang diễn ra, nội dung dưới đây là góc nhìn ở thời điểm giữa kỳ hơn là một bản tổng kết cuối cùng.
+Đây là phần chia sẻ của mình sau quãng thời gian đã tham gia chương trình First Cloud AI Journey đến hiện tại. Vì internship vẫn đang diễn ra, nội dung dưới đây là góc nhìn ở thời điểm giữa kỳ hơn là một bản tổng kết cuối cùng.
 
 ### Những điểm mình thấy chương trình làm tốt
 
