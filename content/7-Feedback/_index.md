@@ -6,7 +6,7 @@ chapter: false
 pre: "<b>7. </b>"
 ---
 
-Below are my comprehensive, personal reflections on the experience of participating in the First Cloud Journey internship program. I hope this detailed feedback serves as a valuable resource for the FCJ team to continue improving, scaling, and refining the program for future cohorts of aspiring cloud engineers.
+Below are my comprehensive, personal reflections on the experience of participating in the First Cloud Journey internship program. I hope this detailed feedback serves as a valuable resource for the FCAJ team to continue improving, scaling, and refining the program for future cohorts of aspiring cloud engineers.
 
 ### Overall Evaluation
 
@@ -22,7 +22,7 @@ Below are my comprehensive, personal reflections on the experience of participat
 
 3. **Alignment Between Tasks and Academic Background**
 
-   The tasks assigned each week aligned perfectly with, and heavily expanded upon, my university studies in Information Technology and Network Systems. While my academic courses provided the theoretical grounding (like OSI layers, IP subnetting, and basic database concepts), the FCJ program thrust me into applying these concepts in a modern, cloud-native environment. Discovering how traditional physical infrastructure maps to AWS constructs like VPCs, Internet Gateways, and managed RDS instances was a series of "aha" moments. The program struck an ideal balance: reinforcing my academic foundation while introducing cutting-edge industry practices that are simply not taught in a traditional classroom setting.
+   The tasks assigned each week aligned perfectly with, and heavily expanded upon, my university studies in Information Technology and Network Systems. While my academic courses provided the theoretical grounding (like OSI layers, IP subnetting, and basic database concepts), the FCAJ program thrust me into applying these concepts in a modern, cloud-native environment. Discovering how traditional physical infrastructure maps to AWS constructs like VPCs, Internet Gateways, and managed RDS instances was a series of "aha" moments. The program struck an ideal balance: reinforcing my academic foundation while introducing cutting-edge industry practices that are simply not taught in a traditional classroom setting.
 
 4. **Skill Development Opportunities (Technical and Soft Skills)**
 
@@ -32,7 +32,7 @@ Below are my comprehensive, personal reflections on the experience of participat
 
 5. **Culture, Open Knowledge, and Team Spirit**
 
-   The FCJ community cultivates a genuinely positive, collaborative, and blameless culture. It’s an environment where curiosity is rewarded, and making mistakes (in a safe, sandboxed environment) is seen as a vital part of the learning process. Team members and fellow interns freely share their knowledge, insights, and solutions without regard for hierarchy or seniority. Even as an intern, my input was valued, and I felt like a recognized contributor to the community. This shared passion for cloud technology and the commitment to open-source knowledge sharing made the experience deeply motivating.
+   The FCAJ community cultivates a genuinely positive, collaborative, and blameless culture. It’s an environment where curiosity is rewarded, and making mistakes (in a safe, sandboxed environment) is seen as a vital part of the learning process. Team members and fellow interns freely share their knowledge, insights, and solutions without regard for hierarchy or seniority. Even as an intern, my input was valued, and I felt like a recognized contributor to the community. This shared passion for cloud technology and the commitment to open-source knowledge sharing made the experience deeply motivating.
 
 6. **Intern Support Policies and Program Structure**
 
@@ -47,7 +47,7 @@ Below are my comprehensive, personal reflections on the experience of participat
   While the individual labs are fantastic for building foundational skills, I think the program could benefit greatly from incorporating collaborative, team-based projects. Having interns pair up or work in small groups to design and deploy an architecture would simulate real-world Agile environments, encouraging peer-to-peer learning, code reviews, and collaborative problem-solving.
 
 - **Would you recommend this internship to your peers? Why?**
-  Without a second thought, yes. I have already spoken highly of the program to my classmates. The combination of a highly structured curriculum, exceptionally supportive mentorship, and the emphasis on practical, real-world AWS deployment makes FCJ one of the most effective and valuable launchpads for a career in cloud computing. It accelerates learning far beyond what self-study alone can achieve.
+  Without a second thought, yes. I have already spoken highly of the program to my classmates. The combination of a highly structured curriculum, exceptionally supportive mentorship, and the emphasis on practical, real-world AWS deployment makes FCAJ one of the most effective and valuable launchpads for a career in cloud computing. It accelerates learning far beyond what self-study alone can achieve.
 
 ### Suggestions & Expectations
 

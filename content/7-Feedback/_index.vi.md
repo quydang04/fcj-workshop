@@ -39,6 +39,6 @@ Có, nhưng mình sẽ giới thiệu theo cách thực tế. Đây là chương
 
 ### Kết luận
 
-Nhìn chung, trải nghiệm của mình với FCJ đến thời điểm hiện tại là tích cực. Điểm mạnh lớn nhất của chương trình nằm ở lộ trình tương đối rõ, nội dung có thực hành và cách hỗ trợ không làm thay người học. Điểm mình mong được cải thiện thêm là phần review giữa kỳ, phân loại mức ưu tiên của nội dung, và cơ hội làm việc nhóm nhiều hơn.
+Nhìn chung, trải nghiệm của mình với FCAJ đến thời điểm hiện tại là tích cực. Điểm mạnh lớn nhất của chương trình nằm ở lộ trình tương đối rõ, nội dung có thực hành và cách hỗ trợ không làm thay người học. Điểm mình mong được cải thiện thêm là phần review giữa kỳ, phân loại mức ưu tiên của nội dung, và cơ hội làm việc nhóm nhiều hơn.
 
 Mình sẽ cập nhật lại phần này khi đi đến giai đoạn cuối chương trình để phản ánh đầy đủ hơn kết quả sau cùng.
