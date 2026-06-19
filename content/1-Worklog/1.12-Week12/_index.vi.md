@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 12 - Tổng kết dự án cuối kỳ & Nộp bài"
+title: "Nhật ký tuần 12 - Tổng kết dự án cuối kỳ & Nộp bài"
 date: 2026-04-20
 weight: 12
 chapter: false

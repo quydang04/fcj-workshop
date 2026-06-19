@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 2 - IAM Roles cho EC2 & Giới thiệu Amazon EC2"
+title: "Nhật ký tuần 2 - IAM Roles cho EC2 & Giới thiệu Amazon EC2"
 date: 2026-04-20
 weight: 2
 chapter: false

@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 1 - Thiết lập tài khoản AWS, IAM & VPC cơ bản"
+title: "Nhật ký tuần 1 - Thiết lập tài khoản AWS, IAM & VPC cơ bản"
 date: 2026-04-20
 weight: 1
 chapter: false

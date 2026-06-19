@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 6 - CloudFormation tiếp tục & DynamoDB"
+title: "Nhật ký tuần 6 - CloudFormation tiếp tục & DynamoDB"
 date: 2026-04-20
 weight: 6
 chapter: false

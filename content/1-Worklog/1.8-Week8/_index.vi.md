@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 8 - AWS Well-Architected, AWS SAM & Thiết kế kiến trúc"
+title: "Nhật ký tuần 8 - AWS Well-Architected, AWS SAM & Thiết kế kiến trúc"
 date: 2026-04-20
 weight: 8
 chapter: false

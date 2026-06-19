@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 9 - Phát triển dự án cuối kỳ & Triển khai AWS"
+title: "Nhật ký tuần 9 - Phát triển dự án cuối kỳ & Triển khai AWS"
 date: 2026-04-20
 weight: 9
 chapter: false

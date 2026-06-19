@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 10 - Bảo mật, CI/CD & Kiểm thử cho dự án cuối kỳ"
+title: "Nhật ký tuần 10 - Bảo mật, CI/CD & Kiểm thử cho dự án cuối kỳ"
 date: 2026-04-20
 weight: 10
 chapter: false

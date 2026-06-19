@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 4 - Auto Scaling, Route 53, DynamoDB, CloudFront & Kiến trúc HA"
+title: "Nhật ký tuần 4 - Auto Scaling, Route 53, DynamoDB, CloudFront & Kiến trúc HA"
 date: 2026-04-20
 weight: 4
 chapter: false

@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 7 - Khởi động dự án cuối kỳ & Phân tích"
+title: "Nhật ký tuần 7 - Khởi động dự án cuối kỳ & Phân tích"
 date: 2026-04-20
 weight: 7
 chapter: false

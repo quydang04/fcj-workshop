@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 5 - Tối ưu chi phí Lambda, API Gateway & CloudFormation"
+title: "Nhật ký tuần 5 - Tối ưu chi phí Lambda, API Gateway & CloudFormation"
 date: 2026-04-20
 weight: 5
 chapter: false

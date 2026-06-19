@@ -1,12 +1,12 @@
 ---
-title: "Event 1 - Prompt Engineering, Sơ đồ tư duy AI & Phương pháp BMAD"
+title: "Sự kiện 1 - Prompt Engineering, Sơ đồ tư duy AI & Phương pháp BMAD"
 date: 2026-04-20
 weight: 1
 chapter: false
 pre: "<b>4.1. </b>"
 ---
 
-## Event 1 - Prompt Engineering, Sơ đồ tư duy AI & Phương pháp BMAD
+## Sự kiện 1 - Prompt Engineering, Sơ đồ tư duy AI & Phương pháp BMAD
 
 Trang này tổng hợp nội dung từ sự kiện gồm ba chủ đề chính:
 Automated Prompt Engineering, sơ đồ tư duy về tương tác AI hiệu quả, và phương pháp phát triển BMAD.

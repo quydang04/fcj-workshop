@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 11 - Hoàn thiện dự án cuối kỳ & Chuẩn bị nộp"
+title: "Nhật ký tuần 11 - Hoàn thiện dự án cuối kỳ & Chuẩn bị nộp"
 date: 2026-04-20
 weight: 11
 chapter: false

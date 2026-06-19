@@ -1,12 +1,12 @@
 ---
-title: "Event 2 - AWS Vietnam Community Day 2026"
+title: "Sự kiện 2 - AWS Vietnam Community Day 2026"
 date: 2026-04-20
 weight: 2
 chapter: false
 pre: "<b>4.2. </b>"
 ---
 
-## Event 2 - AWS Vietnam Community Day 2026
+## Sự kiện 2 - AWS Vietnam Community Day 2026
 
 Trang này tổng hợp nội dung các bài chia sẻ tại **AWS Vietnam Community Day 2026**, bao gồm
 thiết kế context AI, hạ tầng edge, kinh nghiệm hackathon, độ tin cậy của LLM,

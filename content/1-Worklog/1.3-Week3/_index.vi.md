@@ -1,5 +1,5 @@
 ---
-title: "Worklog Tuần 3 - Vận hành EC2 nâng cao, RDS, S3 & CloudWatch"
+title: "Nhật ký tuần 3 - Vận hành EC2 nâng cao, RDS, S3 & CloudWatch"
 date: 2026-04-20
 weight: 3
 chapter: false
