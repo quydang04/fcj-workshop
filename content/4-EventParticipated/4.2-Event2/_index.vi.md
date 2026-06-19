@@ -55,7 +55,7 @@ vì người dùng hoặc không cung cấp đủ bối cảnh, hoặc đưa và
 
 **Nguyên tắc cốt lõi:**
 
-> Context quality quan trọng hơn context quantity.
+> Chất lượng context quan trọng hơn số lượng context.
 
 **Khái niệm Second AI Brain:**
 
@@ -63,50 +63,50 @@ vì người dùng hoặc không cung cấp đủ bối cảnh, hoặc đưa và
 trước khi đặt câu hỏi cho AI.
 
 **Bài học rút ra:** Người dùng AI giỏi là người biết chuyển một yêu cầu mơ hồ thành
-một task có mục tiêu, dữ liệu và output rõ ràng.
+một tác vụ có mục tiêu, dữ liệu và đầu ra rõ ràng.
 
 ---
 
 #### 2.2 Phạm Nguyễn Hải Anh - Friendly AI Assistant with Amazon Quick Suite
 
-Bài trình bày đề cập đến các khó khăn phổ biến của business users và PM: quản lý quá nhiều tài liệu,
+Bài trình bày đề cập đến các khó khăn phổ biến của người dùng doanh nghiệp và quản lý dự án: quản lý quá nhiều tài liệu,
 cuộc họp, email, dữ liệu và các tác vụ lặp lại. **Amazon Quick Suite** được giới thiệu như một
-AI assistant xây dựng trên Bedrock, web search và dữ liệu nội bộ để tối ưu những workflow này.
+trợ lý AI xây dựng trên Bedrock, tìm kiếm web và dữ liệu nội bộ để tối ưu các quy trình làm việc này.
 
 **Amazon Quick Suite hỗ trợ:**
 
 - Chat và Q&A thông minh
-- Research và intelligent search
+- Nghiên cứu và tìm kiếm thông minh
 - Dashboard BI
-- Workflow automation
-- Nhúng API vào workflow doanh nghiệp
-- Nền tảng: Amazon Bedrock + Web Search + Dữ liệu nội bộ
+- Tự động hóa quy trình
+- Nhúng API vào quy trình doanh nghiệp
+- Nền tảng: Amazon Bedrock + Tìm kiếm web + Dữ liệu nội bộ
 
-**Use case minh họa:**
+**Tình huống minh họa:**
 
-Một AI PM assistant có thể tự động tạo Meeting Minutes (MoM),
-gửi email cho stakeholders và lên lịch cho cuộc họp tiếp theo.
+Một trợ lý AI cho quản lý dự án có thể tự động tạo biên bản họp,
+gửi email cho các bên liên quan và lên lịch cho cuộc họp tiếp theo.
 
 **Giá trị chính:**
 
 - Giảm thời gian dành cho các tác vụ lặp lại và việc thu thập thông tin
 - Giúp người dùng tập trung hơn vào quyết định và phối hợp nhóm
 
-**Bài học rút ra:** AI tạo ra giá trị lớn nhất khi được đặt đúng vào workflow,
+**Bài học rút ra:** AI tạo ra giá trị lớn nhất khi được đặt đúng vào quy trình làm việc,
 hiểu dữ liệu nội bộ và hỗ trợ hành động tiếp theo.
 
 ---
 
-#### 2.3 Nguyễn Tuấn Thịnh - From Edge To Origin: CloudFront as Your Foundation
+#### 2.3 Nguyễn Tuấn Thịnh - Từ Edge đến Origin: CloudFront là nền tảng của bạn
 
 Bài chia sẻ tập trung vào **Amazon CloudFront** như một lớp nền tảng hoàn chỉnh từ edge đến origin,
-bao quát chi phí, bảo mật, hiệu năng và reliability ở quy mô lớn.
+bao quát chi phí, bảo mật, hiệu năng và độ tin cậy ở quy mô lớn.
 
 **Mô hình chi phí:**
 
 - Gói giá cố định bao gồm CDN, WAF, DDoS, DNS và logging
-- Mức giá dễ dự đoán, phù hợp với small website owners, business users và scaling businesses
-- Xử lý được traffic spike mà không gây bùng nổ chi phí bất ngờ
+- Mức giá dễ dự đoán, phù hợp với chủ website nhỏ, người dùng doanh nghiệp và các doanh nghiệp đang mở rộng
+- Xử lý được lưu lượng tăng đột biến mà không gây bùng nổ chi phí bất ngờ
 
 **Các tính năng bảo mật:**
 
@@ -115,25 +115,25 @@ bao quát chi phí, bảo mật, hiệu năng và reliability ở quy mô lớn.
 | DDoS Protection | Bảo vệ trước các cuộc tấn công lưu lượng lớn |
 | WAF | Web Application Firewall |
 | DNS | Tích hợp với Route 53 |
-| TLS / mTLS | TLS miễn phí cùng mutual TLS cho kết nối mã hóa |
-| Signed URL | Phân phối nội dung có xác thực |
-| Origin Cloaking | Ẩn origin server khỏi truy cập công khai |
+| TLS / mTLS | TLS miễn phí cùng mutual TLS cho kết nối được mã hóa |
+| Signed URL | Phân phối nội dung có kiểm tra xác thực |
+| Origin Cloaking | Ẩn máy chủ gốc khỏi truy cập công khai |
 
 **Tối ưu hiệu năng:**
 
-- Multi-layer caching tại edge để giảm tải origin và tối ưu băng thông
+- Bộ nhớ đệm nhiều lớp tại edge để giảm tải origin và tối ưu băng thông
 - Hỗ trợ HTTP/3
-- Compression
-- Persistent connections để giảm tải origin
+- Nén dữ liệu
+- Kết nối liên tục để giảm tải origin
 - Edge functions cho các logic yêu cầu độ trễ thấp
 
-**Các yếu tố reliability:**
+**Các yếu tố đảm bảo độ tin cậy:**
 
-- Phục vụ stale content khi origin gặp sự cố
-- Origin failover
-- Intelligent routing
+- Phục vụ nội dung cũ khi origin gặp sự cố
+- Chuyển đổi dự phòng origin
+- Định tuyến thông minh
 
-**Bài học rút ra:** CloudFront không chỉ là một CDN. Đây là lớp foundation cho tối ưu chi phí,
+**Bài học rút ra:** CloudFront không chỉ là một CDN. Đây là lớp nền tảng cho tối ưu chi phí,
 bảo mật, hiệu năng và khả năng chịu lỗi.
 
 ---
@@ -156,26 +156,26 @@ CloudFront -> API Gateway -> Lambda -> Bedrock -> S3 / DynamoDB
 **Pipeline AI agent:**
 
 1. **Vision Analyst** - Phân tích bản phác thảo đầu vào
-2. **UI Designer** - Chuyển thành design specification
+2. **UI Designer** - Chuyển thành bản đặc tả thiết kế
 3. **Coder** - Sinh ra mã nguồn thực tế
 
 **Những thách thức chính:**
 
 - Giới hạn token từ context window của LLM
-- AI overgeneration tạo ra output nhiễu
-- Áp lực thời gian pitch
-- Scope creep do có quá nhiều ý tưởng
+- AI sinh quá nhiều nội dung dẫn đến đầu ra bị nhiễu
+- Áp lực thời gian thuyết trình
+- Phạm vi dự án bị phình ra do có quá nhiều ý tưởng
 
-**Bài học rút ra:** Real frustration tạo ra real ideas. Hackathon đòi hỏi teamwork tốt,
+**Bài học rút ra:** Những khó chịu thực tế mới tạo ra ý tưởng thực tế. Hackathon đòi hỏi phối hợp nhóm tốt,
 kiểm soát phạm vi chặt và tập trung vào một trải nghiệm cốt lõi thực sự hữu ích.
 
 ---
 
-#### 2.5 Đào Đức - Non-Determinism of "Deterministic" LLM Settings
+#### 2.5 Đào Đức - Tính không tất định của các thiết lập LLM "tất định"
 
 Bài trình bày này trả lời một câu hỏi kỹ thuật quan trọng: **Vì sao LLM vẫn có thể cho ra kết quả khác nhau
 ngay cả khi đặt `temperature=0`?** Đây là vấn đề rất đáng lưu ý với các hệ thống có mức độ rủi ro cao
-như legal, financial hoặc medical information retrieval.
+như pháp lý, tài chính hoặc truy xuất thông tin y tế.
 
 **Cách LLM sinh token:**
 
@@ -191,33 +191,33 @@ như legal, financial hoặc medical information retrieval.
 
 | Nguyên nhân | Giải thích |
 |-------------|------------|
-| Floating-point arithmetic | Các phép tính trên GPU không hoàn toàn deterministic |
-| Parallel execution order | Thứ tự scheduling của GPU thread có thể thay đổi |
-| Batching inference | Việc batching phía provider làm thay đổi thứ tự xử lý |
+| Phép tính dấu phẩy động | Các phép tính trên GPU không hoàn toàn tất định |
+| Thứ tự thực thi song song | Thứ tự lập lịch của luồng GPU có thể thay đổi |
+| Gom lô suy luận | Việc gom lô phía nhà cung cấp làm thay đổi thứ tự xử lý |
 
 **Chiến lược giảm thiểu:**
 
-- Chạy nhiều lần và dùng **majority voting**
-- Dùng **structured output** như JSON, regex hoặc grammar-based constraints
-- Implement **regression testing** để kiểm tra độ ổn định của output
-- **Self-host** model khi cần kiểm soát hoàn toàn quá trình inference
+- Chạy nhiều lần và dùng phương pháp **bỏ phiếu đa số**
+- Dùng **đầu ra có cấu trúc** như JSON, regex hoặc ràng buộc theo ngữ pháp
+- Áp dụng **kiểm thử hồi quy** để kiểm tra độ ổn định của đầu ra
+- **Tự triển khai** model khi cần kiểm soát hoàn toàn quá trình suy luận
 - Thiết kế hệ thống **chịu được dao động** ngay từ đầu
 
 **Điểm cân bằng:** `temperature ~= 0.1` cho sự cân bằng tốt hơn giữa độ ổn định và chất lượng output
 so với việc cố định tuyệt đối ở `temperature=0`.
 
-**Bài học rút ra:** `temperature=0` không phải là reliability guarantee.
-Hệ thống cần được thiết kế để xử lý variance ngay từ đầu.
+**Bài học rút ra:** `temperature=0` không phải là đảm bảo cho độ tin cậy.
+Hệ thống cần được thiết kế để xử lý sự dao động ngay từ đầu.
 
 ---
 
-#### 2.6 Vy Lam - Enterprise-Grade Multi-Agent System: Startup Credit Scoring
+#### 2.6 Vy Lam - Hệ thống multi-agent cấp doanh nghiệp: Chấm điểm tín dụng cho startup
 
 Bài chia sẻ trình bày một **hệ thống chấm điểm tín dụng multi-agent** cho startup, một lĩnh vực
 mà mô hình đánh giá tín dụng truyền thống thường thất bại vì dữ liệu của startup khác biệt căn bản
 so với doanh nghiệp đã vận hành lâu năm.
 
-**Vì sao traditional credit scoring không phù hợp với startup:**
+**Vì sao chấm điểm tín dụng truyền thống không phù hợp với startup:**
 
 - Cần lịch sử tài chính dài, tài sản thế chấp và mô hình doanh thu ổn định
 - Startup thường chỉ có traction, chất lượng đội ngũ, IP và dữ liệu phi cấu trúc
@@ -226,47 +226,47 @@ so với doanh nghiệp đã vận hành lâu năm.
 
 | Chiều | Ví dụ |
 |-------|-------|
-| Financial | Revenue, burn rate, runway |
-| Market | TAM, competitive landscape |
-| Team | Kinh nghiệm, background, diversity |
-| Traction | Tăng trưởng người dùng, retention, partnerships |
+| Tài chính | Doanh thu, tốc độ đốt vốn, thời gian sống |
+| Thị trường | Quy mô thị trường, bối cảnh cạnh tranh |
+| Đội ngũ | Kinh nghiệm, nền tảng, sự đa dạng |
+| Sức kéo | Tăng trưởng người dùng, tỷ lệ giữ chân, quan hệ đối tác |
 
-**Thiết kế hệ thống - Virtual Credit Committee:**
+**Thiết kế hệ thống - Hội đồng tín dụng ảo:**
 
 | Agent | Trách nhiệm |
 |-------|-------------|
-| Manager | Điều phối toàn bộ quá trình đánh giá |
-| Financial Analyst | Đánh giá các chỉ số tài chính |
-| Market Analyst | Đánh giá cơ hội thị trường |
-| Team Evaluator | Rà soát đội ngũ sáng lập |
-| Risk Assessor | Xác định các yếu tố rủi ro |
-| Compliance Agent | Đảm bảo tuân thủ quy định |
+| Quản lý | Điều phối toàn bộ quá trình đánh giá |
+| Phân tích tài chính | Đánh giá các chỉ số tài chính |
+| Phân tích thị trường | Đánh giá cơ hội thị trường |
+| Đánh giá đội ngũ | Rà soát đội ngũ sáng lập |
+| Đánh giá rủi ro | Xác định các yếu tố rủi ro |
+| Kiểm tra tuân thủ | Đảm bảo tuân thủ quy định |
 
-**Yêu cầu output:**
+**Yêu cầu đầu ra:**
 
-- Credit score
-- Risk rating
-- Confidence level
-- Audit trail với khả năng giải thích quyết định
+- Điểm tín dụng
+- Mức xếp hạng rủi ro
+- Mức độ tin cậy
+- Nhật ký kiểm toán với khả năng giải thích quyết định
 
-**Các cân nhắc ở cấp enterprise - 6 trụ cột:**
+**Các cân nhắc ở cấp doanh nghiệp - 6 trụ cột:**
 
 | Trụ cột | Phạm vi |
 |---------|---------|
-| Security | Authentication, authorization, encryption |
-| Data Governance | Data lineage, access control, retention |
-| Networking | VPC isolation, private endpoints |
-| Operations | Monitoring, alerting, incident response |
-| Human Factors | Explainability, reviewer workflows |
-| Compliance | Regulatory alignment, audit readiness |
+| Bảo mật | Xác thực, phân quyền, mã hóa |
+| Quản trị dữ liệu | Truy vết dữ liệu, kiểm soát truy cập, lưu trữ |
+| Mạng | Cô lập VPC, private endpoints |
+| Vận hành | Giám sát, cảnh báo, xử lý sự cố |
+| Yếu tố con người | Khả năng giải thích, quy trình phê duyệt |
+| Tuân thủ | Phù hợp quy định, sẵn sàng kiểm toán |
 
-**Guardrails - Ba tầng (Input -> Processing -> Output):**
+**Rào chắn an toàn - Ba tầng (Đầu vào -> Xử lý -> Đầu ra):**
 
 | Tầng | Kiểm soát |
 |------|-----------|
-| Input | Content filtering, PII detection, injection prevention |
-| Processing | Model selection controls, inference constraints |
-| Output | Response validation, compliance verification |
+| Đầu vào | Lọc nội dung, phát hiện thông tin cá nhân, chống tấn công injection |
+| Xử lý | Kiểm soát lựa chọn model, ràng buộc suy luận |
+| Đầu ra | Xác thực phản hồi, kiểm tra tuân thủ |
 
 **Lộ trình triển khai:**
 
@@ -278,7 +278,7 @@ Local App / CrewAI -> AgentCore -> Docker -> ECR -> Bedrock -> API Gateway
 **ROI kỳ vọng:**
 
 - Thời gian xử lý: từ vài tuần xuống vài giờ
-- Giảm analyst hours
+- Giảm số giờ làm việc của chuyên viên phân tích
 - Tăng độ chính xác phê duyệt nhờ đánh giá đa chiều
 
 ---
@@ -307,15 +307,15 @@ Dưới đây là một số hình ảnh ghi lại khi tham gia sự kiện:
 ### 4. Kết luận
 
 AWS Vietnam Community Day 2026 cho thấy giá trị của AI không nằm ở riêng model,
-mà còn nằm ở cách cung cấp context, thiết kế architecture, triển khai security và guardrails,
+mà còn nằm ở cách cung cấp bối cảnh, thiết kế kiến trúc, triển khai bảo mật và rào chắn an toàn,
 cũng như vận hành hệ thống ở quy mô thực tế.
 
 | Đối tượng | Bài học chính |
 |-----------|---------------|
-| Cá nhân | Học cách cung cấp context chất lượng và xây dựng Second Brain để làm việc hiệu quả hơn với AI |
-| Đội nhóm sản phẩm | Ưu tiên bài toán thực, giới hạn scope và đưa AI vào workflow cụ thể |
-| Hạ tầng | Tận dụng CloudFront và các dịch vụ AWS cho performance, security và reliability |
-| Enterprise | Multi-agent systems cần guardrails, audit trails, compliance và ROI rõ ràng trước khi đưa vào production |
+| Cá nhân | Học cách cung cấp bối cảnh chất lượng và xây dựng kho tri thức cá nhân để làm việc hiệu quả hơn với AI |
+| Đội nhóm sản phẩm | Ưu tiên bài toán thực, giới hạn phạm vi và đưa AI vào quy trình cụ thể |
+| Hạ tầng | Tận dụng CloudFront và các dịch vụ AWS cho hiệu năng, bảo mật và độ tin cậy |
+| Doanh nghiệp | Hệ thống multi-agent cần rào chắn an toàn, nhật ký kiểm toán, tuân thủ quy định và ROI rõ ràng trước khi đưa vào vận hành thực tế |
 
 > **Thông điệp chung:** AI chỉ thực sự tạo ra giá trị khi được kết hợp với tư duy sản phẩm,
 > kiến trúc hệ thống phù hợp và quy trình vận hành đáng tin cậy.
