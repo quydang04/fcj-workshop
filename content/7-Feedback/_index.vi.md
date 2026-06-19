@@ -6,7 +6,7 @@ chapter: false
 pre: "<b>7. </b>"
 ---
 
-Tính đến ngày 10/06/2026, đây là phần chia sẻ của mình sau quãng thời gian đã tham gia chương trình First Cloud Journey đến hiện tại. Vì internship vẫn đang diễn ra, nội dung dưới đây là góc nhìn ở thời điểm giữa kỳ hơn là một bản tổng kết cuối cùng.
+Tính đến ngày 10/06/2026, đây là phần chia sẻ của mình sau quãng thời gian đã tham gia chương trình First Cloud AI Journey đến hiện tại. Vì internship vẫn đang diễn ra, nội dung dưới đây là góc nhìn ở thời điểm giữa kỳ hơn là một bản tổng kết cuối cùng.
 
 ### Những điểm mình thấy chương trình làm tốt
 
@@ -31,7 +31,7 @@ Ngoài kỹ thuật, mình cũng học được cách đọc tài liệu chính 
 
 ### Mức độ phù hợp của chương trình
 
-Theo mình, First Cloud Journey phù hợp với người sẵn sàng tự học và chịu khó làm lab thật. Nếu chỉ muốn xem lý thuyết hoặc học theo kiểu có sẵn đáp án thì sẽ khá đuối. Ngược lại, nếu chấp nhận việc phải tự tìm hiểu, tự sửa lỗi và theo nhịp học tương đối đều thì chương trình mang lại giá trị khá rõ.
+Theo mình, First Cloud AI Journey phù hợp với người sẵn sàng tự học và chịu khó làm lab thật. Nếu chỉ muốn xem lý thuyết hoặc học theo kiểu có sẵn đáp án thì sẽ khá đuối. Ngược lại, nếu chấp nhận việc phải tự tìm hiểu, tự sửa lỗi và theo nhịp học tương đối đều thì chương trình mang lại giá trị khá rõ.
 
 ### Mình có giới thiệu chương trình cho người khác không?
 

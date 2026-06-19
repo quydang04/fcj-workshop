@@ -6,13 +6,13 @@ chapter: false
 pre: "<b>7. </b>"
 ---
 
-Below are my comprehensive, personal reflections on the experience of participating in the First Cloud Journey internship program. I hope this detailed feedback serves as a valuable resource for the FCAJ team to continue improving, scaling, and refining the program for future cohorts of aspiring cloud engineers.
+Below are my comprehensive, personal reflections on the experience of participating in the First Cloud AI Journey internship program. I hope this detailed feedback serves as a valuable resource for the FCAJ team to continue improving, scaling, and refining the program for future cohorts of aspiring cloud engineers.
 
 ### Overall Evaluation
 
 1. **Working Environment and Atmosphere**
 
-   The atmosphere at First Cloud Journey was incredibly welcoming, inclusive, and highly supportive right from day one. Navigating a remote internship can sometimes feel isolating, but the team effectively bridged that gap. Everyone was approachable, and I never hesitated to reach out when I was stuck on a complex lab. Even outside of standard working hours, mentors and peers were active on communication channels, ready to offer guidance. The virtual workspace was organized efficiently, making it easy to find documentation, announcements, and technical discussions. However, to further enhance the intern experience, I believe introducing occasional virtual team-building events, "coffee chats," or even periodic in-person meetups (if geographically possible) could significantly strengthen interpersonal connections and team cohesion.
+   The atmosphere at First Cloud AI Journey was incredibly welcoming, inclusive, and highly supportive right from day one. Navigating a remote internship can sometimes feel isolating, but the team effectively bridged that gap. Everyone was approachable, and I never hesitated to reach out when I was stuck on a complex lab. Even outside of standard working hours, mentors and peers were active on communication channels, ready to offer guidance. The virtual workspace was organized efficiently, making it easy to find documentation, announcements, and technical discussions. However, to further enhance the intern experience, I believe introducing occasional virtual team-building events, "coffee chats," or even periodic in-person meetups (if geographically possible) could significantly strengthen interpersonal connections and team cohesion.
 
 2. **Mentorship, Guidance, and Administrative Support**
 

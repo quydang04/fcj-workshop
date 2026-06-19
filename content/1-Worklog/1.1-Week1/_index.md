@@ -12,7 +12,7 @@ pre: " <b> 1.1. </b> "
 AWS account setup + IAM basics + Amazon VPC fundamentals
 
 ### Objectives
-- Get acquainted with the First Cloud Journey internship program and team members.
+- Get acquainted with the First Cloud AI Journey internship program and team members.
 - Set up the AWS environment and understand foundational AWS services (IAM & VPC).
 
 ### Work Schedule

@@ -12,7 +12,7 @@ pre: " <b> 1.1. </b> "
 Thiết lập tài khoản AWS + kiến thức IAM nền tảng + Amazon VPC cơ bản
 
 ### Mục tiêu tuần
-- Làm quen với chương trình thực tập First Cloud Journey và các thành viên trong nhóm.
+- Làm quen với chương trình thực tập First Cloud AI Journey và các thành viên trong nhóm.
 - Thiết lập môi trường AWS và nắm vững các dịch vụ AWS nền tảng (IAM & VPC).
 
 ### Lịch công việc
