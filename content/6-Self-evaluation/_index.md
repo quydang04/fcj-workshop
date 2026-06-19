@@ -6,7 +6,7 @@ chapter: false
 pre: "<b>6. </b>"
 ---
 
-Throughout my internship at First Cloud AI Journey from April 2026 to July 2026, I embarked on an intensive and deeply rewarding learning journey. Coming into this program, my understanding of cloud computing was largely theoretical, based on academic coursework. However, the structured, hands-on, and project-driven environment at FCAJ quickly bridged the gap between concept and reality. 
+After spending time in the First Cloud AI Journey program, I have completed the foundational phase and begun moving into hands-on project work. This is a good point to step back, reflect on what I have accomplished, and honestly assess the areas where I still need to grow.
 
 I was primarily involved in building, securing, and deploying AWS cloud infrastructure from the ground up. My weekly responsibilities included completing comprehensive hands-on labs, troubleshooting deployment issues, optimizing resource costs, and contributing to the FCAJ community through technical blog translations and workshop documentation. This experience not only solidified my technical foundation but also cultivated the professional mindset required of a cloud engineer.
 

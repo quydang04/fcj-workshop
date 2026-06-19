@@ -6,7 +6,7 @@ chapter: false
 pre: "<b>6. </b>"
 ---
 
-Mình đã đi qua phần nền tảng của chương trình First Cloud AI Journey và đang bắt đầu chuyển sang giai đoạn làm rõ kiến trúc cho phần dự án. Đây chưa phải là phần tổng kết cuối kỳ, nhưng là lúc phù hợp để nhìn lại xem mình đã tiến bộ ở đâu và còn thiếu gì.
+Sau một quãng thời gian tham gia chương trình First Cloud AI Journey, mình đã hoàn thành phần nền tảng và bắt đầu bước vào giai đoạn triển khai dự án thực tế. Đây là lúc phù hợp để dừng lại, nhìn nhận lại những gì mình đã làm được, và thẳng thắn đánh giá những điểm còn cần cải thiện.
 
 Trong giai đoạn vừa rồi, phần lớn công việc của mình xoay quanh việc làm lab trên AWS, đọc tài liệu chính thức, ghi worklog hàng tuần và dịch một số nội dung kỹ thuật. So với lúc mới bắt đầu, mình đã bớt phụ thuộc vào hướng dẫn từng bước. Tuy nhiên, mình cũng thấy khá rõ là hiện tại mình mới vững hơn ở phần nền tảng, còn nhiều mảng vẫn cần học thêm nếu muốn làm việc độc lập hơn sau này.
 
