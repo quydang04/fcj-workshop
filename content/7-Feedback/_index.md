@@ -57,5 +57,3 @@ To further elevate the already excellent program, I would like to offer the foll
 - **Interactive Technical Workshops or Guest Speakers:** Organizing occasional live webinars or AMA (Ask Me Anything) sessions with senior Cloud Architects or DevOps Engineers from the industry. Hearing about real-world use cases, production outages, and career journeys would be incredibly inspiring.
 - **Capstone Project Phase:** Introduce an optional "Capstone Project" during the final two weeks. Instead of following a step-by-step lab, interns would be given a set of business requirements and constraints. They would then need to independently design the architecture diagram, deploy the infrastructure (preferably using IaC like CloudFormation), and present their solution to the mentors.
 - **Certification Prep Guidance:** Since many interns aim to take the AWS Certified Solutions Architect - Associate exam after the program, providing a brief module or session on exam strategies, practice questions, and recommended study paths would be a highly valued addition.
-
-> ### 🚀 **(Will be updated later)**

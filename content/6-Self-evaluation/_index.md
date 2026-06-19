@@ -29,5 +29,3 @@ While I am proud of the progress I have made, I recognize several areas where I 
 - **Advanced Networking Concepts:** While I have a solid grasp of foundational VPC components, I need to deepen my understanding of enterprise-level networking solutions such as AWS Transit Gateway, AWS Direct Connect, and advanced VPN configurations, which are critical for hybrid cloud environments.
 - **Time Management under Pressure:** Balancing the rigorous demands of the FCAJ internship with my university coursework occasionally proved challenging. I need to continue refining my time-management and prioritization skills, especially when tackling complex, multi-day labs alongside academic deadlines.
 - **Active Participation in Technical Discussions:** I intend to build better habits for communicating within technical teams. Often, I spent too long trying to solve a problem in isolation. I need to practice formulating technical questions more concisely and sharing my findings more actively during group discussions to foster a more collaborative learning environment.
-
-> ### 🚀 **(Will be updated later)**
