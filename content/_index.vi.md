@@ -33,10 +33,10 @@ chapter: false
 
 ### Nội dung báo cáo
 
-1. [Worklog](1-Worklog/)
-2. [Proposal](2-Proposal/)
-3. [Translated Blogs](3-BlogsTranslated/)
-4. [Events Participated](4-EventParticipated/)
-5. [Workshop](5-Workshop/)
-6. [Self-evaluation](6-Self-evaluation/)
-7. [Sharing and Feedback](7-Feedback/)
+1. [Nhật ký thực tập](1-Worklog/)
+2. [Đề xuất dự án](2-Proposal/)
+3. [Blog đã dịch](3-BlogsTranslated/)
+4. [Sự kiện đã tham gia](4-EventParticipated/)
+5. [Bài thực hành](5-Workshop/)
+6. [Tự đánh giá](6-Self-evaluation/)
+7. [Chia sẻ và đóng góp ý kiến](7-Feedback/)
