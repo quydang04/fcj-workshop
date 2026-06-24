@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>3. </b>"
 ---
 
-## Translated Blogs
-
 Below are the blogs I have translated and published on [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
 
 ### [Blog 1 - Building Memory-Intensive Apps with AWS Lambda Managed Instances](3.1-Blog1/)

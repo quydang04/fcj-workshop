@@ -6,50 +6,48 @@ chapter: false
 pre: "<b>7. </b>"
 ---
 
-## Chia sẻ, đóng góp ý kiến
-
-Đây là phần chia sẻ của em sau quãng thời gian tham gia chương trình First Cloud AI Journey. Vì internship vẫn đang diễn ra, nội dung dưới đây là góc nhìn ở thời điểm giữa kỳ hơn là một bản tổng kết cuối cùng.
+Phần này em chia sẻ những gì em cảm nhận được sau khi tham gia chương trình First Cloud AI Journey. Chương trình vẫn đang diễn ra nên đây chưa phải tổng kết cuối cùng, mà là góc nhìn ở thời điểm giữa kỳ thôi.
 
 ### Đánh giá chung
 
 **1. Môi trường làm việc**
 
-Môi trường làm việc ở FCAJ khá thân thiện và cởi mở. Khi gặp vướng mắc, em luôn có thể hỏi mà không ngại bị đánh giá. Các kênh liên lạc được tổ chức rõ ràng, dễ tìm tài liệu và thông báo. Tuy nhiên, vì chủ yếu làm việc remote nên đôi khi cảm giác hơi thiếu kết nối cá nhân – nếu có thêm những buổi coffee chat hoặc gặp mặt thỉnh thoảng thì sẽ gắn kết hơn.
+Nói chung là khá thoải mái. Em hỏi gì cũng được, không ai làm khó hay tạo áp lực kiểu "sao cái này cũng không biết". Tài liệu và thông báo thì được tổ chức gọn gàng, tìm cũng dễ. Cái em thấy hơi thiếu là do làm remote nên ít có dịp giao lưu trực tiếp. Nếu thỉnh thoảng có buổi gặp mặt hay coffee chat gì đó thì chắc mọi người sẽ thân hơn.
 
 **2. Sự hỗ trợ của mentor / team admin**
 
-Đây là điểm em thấy ấn tượng nhất. Khi gặp vướng, mentor không đưa câu trả lời ngay mà hướng dẫn em cách kiểm tra hoặc gợi ý tài liệu cần đọc thêm. Cách này mất thời gian hơn lúc đầu nhưng về lâu dài giúp em nhớ kỹ hơn và tự tin hơn khi troubleshoot. Phần admin cũng khá ổn – các việc như account, credits hoặc quyền truy cập đều được xử lý kịp thời, không làm gián đoạn việc học.
+Phần này em thấy rất ổn, có lẽ là điều em ấn tượng nhất. Mentor không bao giờ đưa đáp án luôn mà hay hỏi ngược lại kiểu "em đã check cái này chưa?" hoặc gợi ý đọc thêm phần nào. Lúc đầu em thấy hơi lâu vì phải tự mò, nhưng sau này nhìn lại thì cách đó giúp em nhớ lâu hơn rất nhiều. Về phần admin thì cũng nhanh, mấy việc như tạo account, cấp credits hay xử lý quyền truy cập đều được lo sớm, không bị gián đoạn việc học.
 
 **3. Sự phù hợp giữa công việc và chuyên ngành học**
 
-Các task hàng tuần phù hợp và mở rộng thêm kiến thức em đã học ở trường. Điểm hay là chương trình không dừng ở lý thuyết mà gắn với thao tác thực tế trên AWS, giúp em thấy rõ cách kiến thức mạng và hệ thống áp dụng vào môi trường cloud thực tế.
+Khá phù hợp. Những gì em học trên trường về mạng, hệ thống thì khi vào làm lab trên AWS em thấy liên kết được ngay. Điểm hay là chương trình không chỉ giảng lý thuyết suông mà bắt tay vào làm thật luôn, nên em thấy rõ hơn cách mấy kiến thức ở trường áp dụng vào thực tế.
 
 **4. Cơ hội học hỏi & phát triển kỹ năng**
 
-Em học được khá nhiều, không chỉ kỹ năng kỹ thuật mà còn cách viết tài liệu, ghi chép worklog bằng Markdown/Hugo, dịch blog và quản lý chi phí trên cloud. Phương pháp "learn by doing" qua lab thực hành giúp em nắm vững hơn nhiều so với chỉ đọc lý thuyết.
+Em thấy em học được kha khá, không chỉ phần kỹ thuật mà còn nhiều thứ khác nữa. Ví dụ như viết tài liệu bằng Markdown, dùng Hugo, dịch blog tiếng Anh, hay thậm chí là để ý chuyện billing trên cloud. Mấy cái này hồi trước em không nghĩ là quan trọng, nhưng làm rồi mới thấy cần. Cách học kiểu "làm trước hiểu sau" qua lab thực hành em thấy hiệu quả hơn nhiều so với ngồi đọc lý thuyết.
 
 **5. Văn hóa & tinh thần đồng đội**
 
-Văn hóa ở FCAJ khá tích cực – mọi người tôn trọng lẫn nhau, thoải mái chia sẻ kiến thức mà không phân biệt thâm niên. Ngay cả khi là intern, ý kiến của em vẫn được lắng nghe. Tinh thần cùng nhau học hỏi và đam mê cloud technology là điều em thấy rất motivating.
+Cái này em thích. Mọi người chia sẻ kiến thức với nhau rất thoải mái, không có kiểu phân biệt ai mới ai cũ. Là intern nhưng em vẫn cảm thấy ý kiến của em được nghe. Không khí chung là ai cũng muốn học hỏi thêm, nên em cũng bị cuốn theo.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**
+**6. Chính sách cho thực tập sinh**
 
-Chương trình có lộ trình 12 tuần rõ ràng, cung cấp AWS credits để làm lab không lo chi phí, và cho phép linh hoạt thời gian để cân bằng với lịch học trên trường. Tài liệu lab được chuẩn bị kỹ, vừa đủ chi tiết vừa đủ thách thức để người học phải chủ động tìm hiểu.
+Chương trình có lộ trình 12 tuần khá rõ ràng, có AWS credits để làm lab nên không lo chuyện tốn tiền. Thời gian thì được linh hoạt, em cân bằng được với lịch học trên trường. Tài liệu lab thì chuẩn bị kỹ, không phải dạng cầm tay chỉ việc nhưng cũng không quá mơ hồ, em thấy ở mức vừa đủ để phải tự tìm hiểu thêm.
 
 ### Một số câu hỏi khác
 
 - **Điều em _hài lòng nhất_ trong thời gian thực tập?**
-  Cảm giác khoảng cách giữa lý thuyết và thực hành đã ngắn lại đáng kể. Trước đây em biết tên dịch vụ và hiểu sơ khái niệm, nhưng sau khi làm lab, em bắt đầu nhìn rõ vai trò của từng thành phần và cách chúng liên kết với nhau trong một hệ thống thực tế.
+  Chắc là cảm giác "à ra là vậy" khi em làm lab xong và nhìn lại. Hồi trước em chỉ biết tên mấy dịch vụ AWS, đọc mô tả thì hiểu mang máng. Nhưng sau khi tự tay cấu hình xong rồi thấy nó chạy được thì em mới thật sự hiểu từng phần nó làm gì và tại sao nó cần nằm ở đó.
 
 - **Điều em nghĩ chương trình _cần cải thiện_ cho các thực tập sinh sau?**
-  Nên có thêm bài làm theo nhóm nhỏ (2-3 người) sau phần nền tảng, để mô phỏng cách phối hợp trong môi trường thực tế. Ngoài ra, cần tổng hợp thêm các lỗi thường gặp khi làm lab (quyền IAM, route sai, policy chưa đủ) dưới dạng FAQ hoặc checklist.
+  Em nghĩ nên có thêm một bài tập nhóm nhỏ (2-3 người) sau khi học xong phần cơ bản. Vì thực tế đi làm đâu ai làm một mình, nên nếu được tập phối hợp sớm thì tốt. Ngoài ra, em thấy có nhiều lỗi mà bạn nào cũng gặp khi làm lab, kiểu như thiếu quyền IAM, route sai, policy chưa đủ. Nếu có một trang FAQ tổng hợp mấy lỗi này thì sẽ tiết kiệm được kha khá thời gian cho các bạn sau.
 
 - **Nếu giới thiệu cho bạn bè, em có _khuyên họ thực tập ở đây không_? Vì sao?**
-  Có, nhưng em sẽ giới thiệu theo cách thực tế. Đây là chương trình tốt cho người muốn đi theo hướng cloud và cần môi trường thực hành nghiêm túc. Tuy vậy, nó không phải kiểu học nhẹ nhàng – người tham gia cần chủ động khá nhiều mới tận dụng được hết giá trị.
+  Có, nhưng em sẽ nói thật luôn là nó không nhẹ nhàng đâu. Bạn nào muốn đi cloud và sẵn sàng bỏ thời gian ra học thật thì rất đáng. Còn nếu chỉ muốn thực tập cho có thì chắc sẽ thấy nặng. Chương trình đòi hỏi phải chủ động khá nhiều.
 
 ### Đề xuất & mong muốn
 
-- **Review giữa kỳ:** Nên có một buổi review ngắn giữa mentor và intern để biết em đang ở mức nào và có đang đi đúng hướng không.
-- **Phân loại nội dung theo mức ưu tiên:** Có tuần khối lượng khá dày, nếu đánh dấu rõ phần nào bắt buộc, phần nào mở rộng thì sẽ dễ ưu tiên hơn.
-- **Mini-project theo nhóm:** Sau phần nền tảng, một bài tập nhỏ cho 2-3 người cùng thiết kế và triển khai kiến trúc sẽ sát thực tế hơn.
-- **Hỗ trợ lấy chứng chỉ:** Vì nhiều bạn hướng tới AWS Certified Solutions Architect – Associate sau chương trình, một buổi chia sẻ về chiến lược thi và tài liệu ôn tập sẽ rất hữu ích.
+- Nên có một buổi review giữa kỳ giữa mentor và intern. Không cần dài, chỉ cần biết em đang ở đâu, có lệch hướng gì không là được.
+- Có tuần nội dung khá nhiều, nếu đánh dấu được phần nào bắt buộc phần nào là đọc thêm thì em dễ sắp xếp hơn.
+- Sau phần nền tảng nên có một mini-project cho 2-3 người cùng làm, kiểu tự thiết kế và triển khai một kiến trúc đơn giản. Sẽ sát thực tế hơn là làm lab một mình.
+- Nhiều bạn sau chương trình muốn thi AWS Certified Solutions Architect – Associate. Nếu có một buổi chia sẻ kinh nghiệm thi và gợi ý tài liệu ôn thì sẽ giúp ích nhiều lắm.

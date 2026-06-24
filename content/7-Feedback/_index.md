@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>7. </b>"
 ---
 
-## Sharing and Feedback
-
 Below are my personal reflections on the experience of participating in the First Cloud AI Journey internship program. As the internship is still ongoing, this content represents a mid-term perspective rather than a final summary.
 
 ### Overall Evaluation

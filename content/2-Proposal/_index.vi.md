@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>2. </b>"
 ---
 
-## Bản đề xuất
-
 ### Money Manager – Hệ thống Quản lý Tài chính Cá nhân trên nền tảng AWS
 
 ## Giải pháp toàn diện cho quản lý tài chính cá nhân với AWS Cloud

@@ -6,7 +6,5 @@ chapter: false
 pre: "<b>4. </b>"
 ---
 
-## Sự kiện đã tham gia
-
 Sẽ cập nhật sau.
 

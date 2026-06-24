@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>6. </b>"
 ---
 
-## Self-Assessment
-
 After spending time in the First Cloud AI Journey program, I have completed the foundational phase and begun moving into hands-on project work. This is a good point to step back, reflect on what I have accomplished, and honestly assess the areas where I still need to grow.
 
 During this period, most of my work revolved around completing AWS labs, reading official documentation, writing weekly worklogs, and translating technical content. Compared to when I first started, I have become less dependent on step-by-step instructions. However, I also recognize clearly that my strength currently lies in the fundamentals, and there are still many areas that require further learning if I want to work more independently in the future.

@@ -6,7 +6,5 @@ chapter: false
 pre: "<b>4. </b>"
 ---
 
-## Events Participated
-
 Will be updated later.
 

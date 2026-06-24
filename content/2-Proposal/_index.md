@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>2. </b>"
 ---
 
-## Proposal
-
 ### Money Manager – Personal Finance Management System on AWS
 
 ## A Full-Stack Solution for Personal Finance on AWS Cloud

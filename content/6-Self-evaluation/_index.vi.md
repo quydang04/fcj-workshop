@@ -6,30 +6,28 @@ chapter: false
 pre: "<b>6. </b>"
 ---
 
-## Tự đánh giá
+Tới thời điểm này thì em đã qua phần nền tảng và bắt đầu vào giai đoạn làm dự án thực tế rồi. Nhân dịp này em muốn tự nhìn lại xem mấy tháng vừa rồi em tiến được tới đâu, cái gì ổn rồi và cái gì vẫn còn yếu.
 
-Sau một quãng thời gian tham gia chương trình First Cloud AI Journey, em đã hoàn thành phần nền tảng và bắt đầu bước vào giai đoạn triển khai dự án thực tế. Đây là lúc phù hợp để dừng lại, nhìn nhận lại những gì em đã làm được, và thẳng thắn đánh giá những điểm còn cần cải thiện.
+Nói thật thì hồi mới vào em khá bỡ ngỡ. Công việc hàng tuần chủ yếu là làm lab trên AWS, đọc tài liệu, viết worklog rồi dịch blog. Nghe thì đơn giản nhưng tuần nào cũng có cái mới nên cũng phải cố gắng theo kịp. Được cái là càng làm thì em càng bớt phải nhìn hướng dẫn từng bước, tự xử lý được nhiều hơn. Nhưng em cũng tự biết là hiện tại em chỉ mới vững phần cơ bản thôi, còn nhiều thứ phải học nữa.
 
-Trong giai đoạn vừa rồi, phần lớn công việc của em xoay quanh việc làm lab trên AWS, đọc tài liệu chính thức, ghi worklog hàng tuần và dịch một số nội dung kỹ thuật. So với lúc mới bắt đầu, em đã bớt phụ thuộc vào hướng dẫn từng bước. Tuy nhiên, em cũng thấy khá rõ là hiện tại em mới vững hơn ở phần nền tảng, còn nhiều mảng vẫn cần học thêm nếu muốn làm việc độc lập hơn sau này.
+### Những gì em thấy em tiến bộ
 
-### Những gì em làm được
+- **Quen tay hơn với các dịch vụ AWS:** Hồi đầu em chỉ biết tên, giờ thì đã thực sự động vào IAM, VPC, EC2, RDS, S3, CloudWatch, Auto Scaling, Route 53, CloudFront, DynamoDB, Lambda, API Gateway, CloudFormation. Không phải là giỏi gì, nhưng ít nhất em có thể tự làm lại lab, hiểu tại sao phải cấu hình như vậy và tự sửa được một số lỗi cơ bản.
+- **Bớt hoảng khi gặp lỗi:** Trước đây cứ lỗi là em làm lại từ đầu hoặc hỏi ngay. Giờ thì em biết nên check Security Group, Route Table, IAM Policy hay xem log CloudWatch trước. Chưa phải lúc nào cũng tìm ra nguyên nhân, nhưng ít nhất có hướng đi chứ không còn loay hoay như trước.
+- **Biết cách tự học hơn:** Cái lộ trình theo tuần nó ép em phải đi đúng tiến độ, nên dần dần em quen với việc đọc trước, làm lab, rồi ghi lại cái nào hiểu cái nào chưa. Trước thì cứ làm cho xong, giờ em hay dừng lại hỏi "tại sao phải config vậy" nhiều hơn.
+- **Biết lo chuyện chi phí trên cloud:** Cái này hồi đầu em không để ý lắm. Nhưng sau vài lần thấy bill chạy lên vì quên tắt dịch vụ là em sợ luôn. Giờ em xong lab là xóa tài nguyên liền, rồi hay vào kiểm tra billing xem có gì còn chạy không.
+- **Viết lách đỡ hơn trước:** Nhờ viết worklog và dịch blog hàng tuần nên cách diễn đạt của em cải thiện được kha khá. Vẫn chưa gọn lắm nhưng so với mấy tuần đầu thì đỡ lan man hơn nhiều rồi.
 
-- **Nắm được nhóm dịch vụ AWS nền tảng ở mức thực hành:** Em đã có cơ hội làm và hiểu rõ hơn các phần như IAM, VPC, EC2, RDS, S3, CloudWatch, Auto Scaling, Route 53, CloudFront, DynamoDB, Lambda, API Gateway và CloudFormation. Mức của em hiện tại là có thể làm lại các bài lab, hiểu mục đích của từng thành phần và tự chỉnh một số cấu hình cơ bản khi cần.
-- **Khá hơn ở việc tự kiểm tra lỗi:** Trước đây khi gặp lỗi em thường làm lại từ đầu hoặc chờ người khác chỉ. Bây giờ em đã quen hơn với việc kiểm tra Security Group, Route Table, IAM Policy, log trên CloudWatch, hoặc đối chiếu với tài liệu AWS trước khi hỏi. Em chưa thể nói là troubleshoot tốt trong mọi tình huống, nhưng ít nhất đã có quy trình suy nghĩ rõ ràng hơn.
-- **Có kỷ luật hơn trong việc tự học:** Lộ trình theo tuần buộc em phải theo sát tiến độ. Nhờ vậy em giữ được thói quen đọc trước, làm lab, ghi lại phần đã hiểu và phần còn vướng. Điều em thấy có ích nhất là không chỉ làm cho xong, mà bắt đầu biết dừng lại để hiểu vì sao một cấu hình lại cần như vậy.
-- **Có ý thức hơn về chi phí và dọn tài nguyên:** Sau một thời gian làm lab, em hiểu rõ hơn việc tạo tài nguyên trên cloud không chỉ là chuyện kỹ thuật mà còn liên quan trực tiếp đến chi phí. Em đã hình thành thói quen xóa tài nguyên sau khi dùng, kiểm tra các dịch vụ còn chạy và để ý hơn đến phần billing.
-- **Viết và diễn đạt kỹ thuật tốt hơn trước:** Việc viết worklog bằng Markdown/Hugo và dịch blog giúp em cải thiện cách ghi chép và trình bày vấn đề. Em chưa viết thật gọn và sắc, nhưng đã đỡ lan man hơn và diễn đạt rõ hơn so với lúc đầu.
+### Những gì em cần cải thiện
 
-### Cần cải thiện
+- **Chưa biết tự thiết kế kiến trúc:** Nếu có sẵn sơ đồ hoặc lab hướng dẫn thì em làm được. Nhưng nếu ai đó đưa cho em một yêu cầu kiểu "làm hệ thống A cho khách hàng B" rồi bảo em tự đề xuất kiến trúc thì em vẫn chưa biết bắt đầu từ đâu.
+- **IaC còn yếu:** Em biết CloudFormation là gì, đã chạy thử vài template, nhưng phần lớn vẫn đang click tay trên Console. Em biết kiểu làm này không bài bản, nên cần phải tập dùng infrastructure as code nhiều hơn.
+- **Networking nâng cao thì vẫn mù mờ:** VPC cơ bản thì ok, nhưng mấy cái như hybrid networking, Transit Gateway, hay thiết kế mạng phức tạp nhiều tầng thì em đọc vẫn thấy khó hiểu. Mảng này em cần đầu tư thêm nhiều.
+- **Chưa có kinh nghiệm ghép hệ thống hoàn chỉnh:** Em toàn làm từng lab rời rạc, chưa bao giờ tự ghép từ đầu tới cuối thành một hệ thống có đầy đủ monitoring, testing, deployment. Cái này chắc phải tới phần dự án mới được trải nghiệm.
+- **Hay bị động khi nhiều việc cùng lúc:** Mấy tuần bài trường nhiều mà lab cũng dày thì em hay bị cuống, không biết ưu tiên cái nào trước. Kỹ năng quản lý thời gian em vẫn cần cải thiện thêm.
 
-- **Chưa tự tin khi phải tự thiết kế từ yêu cầu mở:** Nếu đã có lab, sơ đồ hoặc hướng dẫn tương đối rõ thì em làm ổn. Nhưng nếu bắt đầu từ một yêu cầu nghiệp vụ và phải tự đề xuất kiến trúc phù hợp, em vẫn còn thiếu tự tin.
-- **IaC và automation vẫn còn là khoảng trống lớn:** Dù đã chạm vào CloudFormation, phần lớn thao tác của em vẫn đang thiên về Console và CLI. Em cần dành thêm thời gian cho infrastructure as code để sau này làm việc bài bản hơn.
-- **Kiến thức networking và security nâng cao còn mỏng:** Các phần VPC cơ bản em theo được, nhưng những chủ đề khó hơn như hybrid networking, mô hình mạng nhiều lớp, hoặc các tình huống bảo mật phức tạp thì em vẫn cần học thêm rất nhiều.
-- **Kinh nghiệm làm một hệ thống hoàn chỉnh còn ít:** Đến thời điểm hiện tại, phần em làm chủ yếu vẫn là từng lab hoặc từng nhóm chủ đề. Em chưa có nhiều trải nghiệm ghép tất cả lại thành một hệ thống hoàn chỉnh có yêu cầu rõ về vận hành, kiểm thử và triển khai.
-- **Quản lý thời gian chưa thật ổn ở những tuần nặng:** Có những thời điểm bài trên trường và lab dồn vào cùng lúc, em xử lý vẫn còn bị động. Đây là điểm em cần cải thiện nếu muốn theo được các giai đoạn dự án căng hơn ở phần sau.
+### Nhìn chung
 
-### Đánh giá chung
+Nếu tự chấm thì em nghĩ em đã đi từ mức "biết tên dịch vụ" lên mức "tự làm được, tự kiểm tra được và biết cách học tiếp". Chưa phải giỏi, nhưng so với lúc mới vào thì khác nhiều.
 
-Nếu tự đánh giá ở thời điểm hiện tại, em nghĩ em đã đi từ mức "biết khái niệm" sang mức "có thể tự làm, tự kiểm tra và tự học tiếp". Đó là bước tiến rõ nhất của em trong thời gian vừa rồi.
-
-Tuy nhiên, em chưa xem bản thân là người đã sẵn sàng cho những bài toán kiến trúc hoặc triển khai phức tạp. Em vẫn đang ở giai đoạn xây nền, mở rộng trải nghiệm thực hành và lấp các khoảng trống về thiết kế hệ thống, IaC, CI/CD và tư duy triển khai end-to-end. Nếu giữ được nhịp học như hiện tại, em nghĩ phần còn lại của chương trình sẽ là lúc quan trọng để biến kiến thức rời rạc thành năng lực làm việc thực tế hơn.
+Em biết em chưa sẵn sàng cho mấy bài toán kiến trúc hay triển khai phức tạp. Hiện tại em đang ở giai đoạn xây nền, cố lấp mấy khoảng trống về IaC, CI/CD, thiết kế hệ thống. Em hy vọng phần còn lại của chương trình sẽ giúp em biến mấy kiến thức rời rạc thành cái gì đó thực tế hơn.

@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>3. </b>"
 ---
 
-## Blog đã dịch
-
 Dưới đây là các bài blog mà em đã dịch và đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
 
 ### [Blog 1 - Xây Dựng Ứng Dụng Yêu Cầu Nhiều Bộ Nhớ Với AWS Lambda Managed Instances](3.1-Blog1/)
