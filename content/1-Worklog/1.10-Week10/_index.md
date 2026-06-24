@@ -1,35 +1,36 @@
 ---
-title: "Week 10 Worklog - Final Project Security, CI/CD & Testing"
+title: "Week 10 Worklog - Security, Testing & AWS Service Integration"
 date: 2026-04-20
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-## Week 10 - Final Project Security, CI/CD & Testing
+## Week 10 - Security, Testing & AWS Service Integration
 
 ### Weekly Focus
-Security, CI/CD, and Testing for the Final Project
+Locking down security, integrating remaining AWS services and running tests for Money Manager
 
 ### Objectives
-- Strengthen security and access control for the project.
-- Build an automated CI/CD pipeline and expand the test coverage.
+- Set up end-to-end security for the system (IAM, Cloudflare, JWT/OAuth2).
+- Integrate the async services (SQS, Lambda) and run comprehensive tests.
 
 ### Work Schedule
 
 | Date | Day | Work Items | Lab / Project |
 |------|-----|------------|---------------|
-| 22/06/2026 | Monday | Review the application's security and authorization requirements.<br>Configure IAM roles and policies for the project environment.<br>Monitor logs and system performance to detect risks. | [Final Project](https://github.com/vinhpham2808/J2EE) |
-| 23/06/2026 | Tuesday | Set up a GitHub Actions CI/CD pipeline for build and deployment.<br>Write CloudFormation or Terraform configuration for infrastructure management.<br>Test the automated pipeline flow. | [Final Project](https://github.com/vinhpham2808/J2EE) |
-| 24/06/2026 | Wednesday | Write unit and integration tests for important features.<br>Run load tests and review performance bottlenecks.<br>Fix bugs and improve operational efficiency. | [Final Project](https://github.com/vinhpham2808/J2EE) |
-| 25/06/2026 | Thursday | Prepare architecture documents, process notes, and key use cases.<br>Build the project presentation slides.<br>Complete the core implementation flow of the solution. | [Final Project](https://github.com/vinhpham2808/J2EE) |
-| 26/06/2026 | Friday | Gather feedback and improve the project accordingly.<br>Review AWS costs and adjust service choices if needed.<br>Summarize progress and define the next tasks. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 22/06/2026 | Monday | Configure IAM Roles & Policies for EC2 Web-API, Lambda and S3 in the Money Manager project.<br>Review and finalize app-level security: JWT authentication, Google OAuth2 on Spring Boot.<br>Set up Cloudflare WAF, Rate Limit and Turnstile bot protection for the domain. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 23/06/2026 | Tuesday | Build the async flow: set up SQS + Dead-Letter Queue for background jobs.<br>Configure EC2 Worker to consume messages from SQS, trigger Lambda for Excel report generation and PDF invoice rendering.<br>Set up S3 buckets for storing output files (reports, invoices). | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 24/06/2026 | Wednesday | Write unit tests and integration tests for the core business APIs (income/expense, budgets, savings jars).<br>Test the async flow end-to-end: SQS → EC2 Worker → Lambda → S3.<br>Run load tests and optimize performance: connection pool, cache hit rate, query tuning. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 25/06/2026 | Thursday | Prepare the Money Manager system architecture documentation.<br>Document all processing flows in detail: main business, AI chat (DynamoDB), async (SQS/Lambda), notifications (SNS).<br>Start building the presentation slides. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 26/06/2026 | Friday | Test the PayOS integration (QR payment) and Brevo SMTP (email OTP, reports) through NAT Gateway.<br>Review AWS costs: Aurora MySQL, ElastiCache, EC2 ASG, Lambda usage.<br>Wrap up the week and plan for the final stretch. | [Final Project](https://github.com/vinhpham2808/J2EE) |
 
 ### Expected Outcomes
-- Raise the security level of the final project.
-- Establish a working CI/CD and testing process.
-- Prepare the technical and presentation assets needed for the final completion phase.
+- System security fully configured: IAM, Cloudflare WAF, JWT/OAuth2.
+- Async flow working: SQS → EC2 Worker → Lambda → S3.
+- Solid test coverage for the main APIs and critical processing flows.
 
 ### Week 10 References
-- [Final Project](https://github.com/vinhpham2808/J2EE)
-- Core skills: IAM Security, GitHub Actions CI/CD, CloudFormation/Terraform IaC, Testing
+- [Final Project](https://github.com/vinhpham2808/J2EE) — Money Manager (Spring Boot + React 19 + React Native Expo)
+- AWS services: IAM, SQS + DLQ, Lambda, S3, SNS, CloudWatch
+- External services: Cloudflare WAF, PayOS, Brevo SMTP

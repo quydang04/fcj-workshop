@@ -139,7 +139,7 @@ npx bmad-method install
 
 Below is a photo captured while attending the event:
 
-![Photo from Event 1](/4-eventparticipated/4.1-event1/img/Screenshot%202026-06-10%20114703.png?width=40pc&classes=shadow)
+![Photo from Event 1](/images/4-Event/4.1-event1/Screenshot%202026-06-10%20114703.png?width=40pc&classes=shadow)
 
 ---
 

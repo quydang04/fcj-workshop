@@ -1,35 +1,35 @@
 ---
-title: "Nhật ký tuần 8 - AWS Well-Architected, AWS SAM & Thiết kế kiến trúc"
+title: "Nhật ký tuần 8 - AWS Well-Architected & Thiết kế kiến trúc Money Manager"
 date: 2026-04-20
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-## Tuần 8 - AWS Well-Architected, AWS SAM & Thiết kế kiến trúc
+## Tuần 8 - AWS Well-Architected & Thiết kế kiến trúc Money Manager
 
 ### Chủ đề tuần
-AWS Well-Architected Framework + AWS SAM + Thiết kế kiến trúc
+Tìm hiểu AWS Well-Architected Framework, AWS SAM và áp dụng vào thiết kế kiến trúc cho Money Manager
 
 ### Mục tiêu tuần
-- Tìm hiểu AWS Well-Architected Framework và 5 trụ cột của mô hình này.
-- Làm quen với AWS SAM và định hình kiến trúc cho dự án môn học.
+- Nắm được 5 trụ cột của AWS Well-Architected Framework.
+- Thiết kế kiến trúc AWS cho dự án Money Manager dựa trên các best practices.
 
 ### Lịch công việc
 
 | Ngày | Thứ | Nội dung công việc | Lab / Dự án |
 |------|-----|--------------------|-------------|
-| 08/06/2026 | Thứ 2 | Tìm hiểu AWS Well-Architected Framework và 5 trụ cột chính.<br>Làm quen với AWS SAM và triển khai một ứng dụng serverless đơn giản.<br>Lên ý tưởng ban đầu cho kiến trúc dự án môn học. | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
-| 09/06/2026 | Thứ 3 | Tiếp tục nghiên cứu các nguyên tắc Well-Architected và các đánh đổi thực tế.<br>Lặp lại thực hành AWS SAM với một luồng triển khai đơn giản.<br>Tinh chỉnh ý tưởng kiến trúc ban đầu của dự án. | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
-| 10/06/2026 | Thứ 4 | Xem lại các quyết định thiết kế kiến trúc dưới góc nhìn 5 trụ cột.<br>Tiếp tục tìm hiểu AWS SAM và các bước triển khai serverless cơ bản.<br>Phác thảo kiến trúc kỹ thuật rõ ràng hơn cho dự án. | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
-| 11/06/2026 | Thứ 5 | Rà soát các yếu tố reliability, security và cost optimization trong thiết kế kiến trúc.<br>Thực hành đóng gói và triển khai serverless bằng AWS SAM.<br>Cải thiện kiến trúc dự án theo các ràng buộc kỹ thuật. | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
-| 12/06/2026 | Thứ 6 | Tổng hợp lại 5 trụ cột và ảnh hưởng của chúng tới thiết kế giải pháp.<br>Hoàn thành một bài thực hành triển khai đơn giản với AWS SAM.<br>Chốt hướng kiến trúc đề xuất cho dự án môn học. | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
+| 08/06/2026 | Thứ 2 | Tìm hiểu AWS Well-Architected Framework và 5 trụ cột chính.<br>Thực hành AWS SAM — deploy thử một ứng dụng serverless đơn giản.<br>Bắt đầu phác thảo kiến trúc AWS cho Money Manager (VPC, EC2, Aurora, ElastiCache). | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
+| 09/06/2026 | Thứ 3 | Đi sâu vào các nguyên tắc Well-Architected và trade-offs thực tế.<br>Tiếp tục thực hành AWS SAM với luồng deploy serverless.<br>Thiết kế VPC layout: Public Subnet (ALB, NAT Gateway), Private Subnet (EC2, Aurora, ElastiCache). | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
+| 10/06/2026 | Thứ 4 | Review lại các quyết định thiết kế theo góc nhìn 5 trụ cột.<br>Tìm hiểu thêm AWS SAM và các pattern triển khai serverless.<br>Thiết kế luồng async: SQS → EC2 Worker → Lambda → S3 cho xuất báo cáo và render hóa đơn. | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
+| 11/06/2026 | Thứ 5 | Rà soát Reliability, Security và Cost Optimization trong kiến trúc Money Manager.<br>Thực hành đóng gói và deploy serverless bằng AWS SAM.<br>Thiết kế luồng AI chat: DynamoDB lưu conversation history cho Nova Money. | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
+| 12/06/2026 | Thứ 6 | Tổng hợp 5 trụ cột và impact đến kiến trúc Money Manager.<br>Hoàn thành thực hành AWS SAM cơ bản.<br>Chốt kiến trúc đề xuất: multi-AZ, ALB + EC2 ASG, Aurora + RDS Proxy, ElastiCache HA, SQS + Lambda. | [Well-Architected Labs](https://www.wellarchitectedlabs.com) |
 
 ### Kết quả kỳ vọng
-- Hiểu 5 trụ cột của AWS Well-Architected Framework.
-- Có trải nghiệm thực hành cơ bản với AWS SAM và quy trình triển khai serverless.
-- Xây dựng được định hướng kiến trúc ban đầu cho dự án môn học.
+- Hiểu 5 trụ cột của AWS Well-Architected Framework và cách áp dụng.
+- Có kinh nghiệm thực hành với AWS SAM.
+- Chốt được kiến trúc AWS cho Money Manager: VPC multi-AZ, ALB, EC2 ASG, Aurora MySQL, ElastiCache, DynamoDB, SQS, Lambda, S3, SNS, CloudWatch.
 
 ### Tham chiếu tuần 8
 - [Well-Architected Labs](https://www.wellarchitectedlabs.com)
-- 5 trụ cột Well-Architected: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization
+- 5 trụ cột: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization

@@ -1,35 +1,35 @@
 ---
-title: "Nhật ký tuần 11 - Hoàn thiện dự án cuối kỳ & Chuẩn bị nộp"
+title: "Nhật ký tuần 11 - Hoàn thiện Money Manager & Chuẩn bị nộp"
 date: 2026-04-20
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-## Tuần 11 - Hoàn thiện dự án cuối kỳ & Chuẩn bị nộp
+## Tuần 11 - Hoàn thiện Money Manager & Chuẩn bị nộp
 
 ### Chủ đề tuần
-Hoàn thiện dự án cuối kỳ và chuẩn bị nộp bài
+Hoàn thiện sản phẩm Money Manager, tối ưu UI/UX, setup monitoring và chuẩn bị nộp bài
 
 ### Mục tiêu tuần
-- Hoàn thiện sản phẩm, tài liệu và kịch bản demo cho dự án cuối kỳ.
-- Chuẩn bị repository và tài liệu triển khai để sẵn sàng nộp bài.
+- Polish UI/UX cho cả Web và Mobile, chạy E2E test.
+- Setup monitoring, chuẩn bị tài liệu và demo cho việc nộp bài.
 
 ### Lịch công việc
 
 | Ngày | Thứ | Nội dung công việc | Lab / Dự án |
 |------|-----|--------------------|-------------|
-| 29/06/2026 | Thứ 2 | Rà soát và tối ưu UI/UX nếu dự án có frontend.<br>Tùy chỉnh các module theo yêu cầu của dự án.<br>Chạy các kịch bản kiểm thử end-to-end. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 30/06/2026 | Thứ 3 | Hoàn thiện tài liệu triển khai và hướng dẫn cài đặt.<br>Tối ưu logging và monitoring với CloudWatch hoặc công cụ tương tự.<br>Chuẩn bị script hoặc hướng dẫn rollback. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 01/07/2026 | Thứ 4 | Chuẩn bị phần trình bày và kịch bản demo.<br>Thực hành demo và điều chỉnh kịch bản khi cần.<br>Hoàn thiện README hoặc tài liệu chính của dự án. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 02/07/2026 | Thứ 5 | Kiểm tra tính năng lần cuối và code review tổng thể.<br>Viết báo cáo chi tiết và phân tích kết quả dự án.<br>Tạo hoặc cập nhật trạng thái cuối của repository. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 03/07/2026 | Thứ 6 | Chuẩn bị môi trường và hạ tầng cho việc nộp bài.<br>Sao lưu dữ liệu và tạo snapshot môi trường nếu cần.<br>Gửi link repository và tài liệu cho giảng viên. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 29/06/2026 | Thứ 2 | Rà soát và tối ưu UI/UX trên React 19 + Vite (Web) và React Native Expo (Mobile).<br>Kiểm thử cross-platform và responsive cho cả giao diện Web lẫn Mobile.<br>Chạy E2E test các tính năng chính: đăng ký/đăng nhập, quản lý thu chi, chat Nova Money AI. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 30/06/2026 | Thứ 3 | Hoàn thiện tài liệu deploy và hướng dẫn cài đặt hệ thống Money Manager.<br>Cấu hình Amazon CloudWatch: Logs, Metrics, Alarms cho ALB, EC2, Aurora, Lambda, SQS.<br>Chuẩn bị rollback script và kiểm tra High Availability trên 2 Availability Zone. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 01/07/2026 | Thứ 4 | Chuẩn bị presentation và kịch bản demo Money Manager.<br>Thực hành demo các tính năng: quản lý thu chi, dự báo tài chính, trợ lý Nova Money, OCR hóa đơn.<br>Hoàn thành README và tài liệu dự án. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 02/07/2026 | Thứ 5 | Kiểm tra tính năng lần cuối, code review tổng thể cho cả backend Spring Boot và frontend React.<br>Viết báo cáo chi tiết: kiến trúc VPC multi-AZ, luồng ALB → EC2 → Aurora/ElastiCache/DynamoDB.<br>Tạo repository final và cập nhật code. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 03/07/2026 | Thứ 6 | Kiểm tra luồng async: SQS → EC2 Worker → Lambda (Report/Invoice) → S3.<br>Kiểm tra notification flow: Amazon SNS gửi email alert khi ngân sách vượt mức, subscription hết hạn.<br>Backup dữ liệu Aurora MySQL, snapshot môi trường và gửi link repository cho giảng viên. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
 
 ### Kết quả kỳ vọng
-- Có một dự án được hoàn thiện hơn với tài liệu và demo rõ ràng.
-- Giảm rủi ro vận hành nhờ logging, hướng dẫn rollback và backup tốt hơn.
-- Sẵn sàng bước vào giai đoạn nộp bài chính thức.
+- UI/UX đã được polish, E2E test pass cho các tính năng chính.
+- CloudWatch monitoring hoạt động, rollback script sẵn sàng.
+- Tài liệu, slide thuyết trình và demo đã chuẩn bị xong.
 
 ### Tham chiếu tuần 11
-- [Project cuối kỳ](https://github.com/vinhpham2808/J2EE)
-- Dịch vụ AWS liên quan: CloudWatch, backup/snapshot, rollback planning
+- [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) — Money Manager (Spring Boot + React 19 + React Native Expo)
+- Dịch vụ AWS: CloudWatch, SNS, SQS, Lambda, S3, Aurora MySQL backup/snapshot

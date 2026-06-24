@@ -6,26 +6,30 @@ chapter: false
 pre: "<b>6. </b>"
 ---
 
+## Self-Assessment
+
 After spending time in the First Cloud AI Journey program, I have completed the foundational phase and begun moving into hands-on project work. This is a good point to step back, reflect on what I have accomplished, and honestly assess the areas where I still need to grow.
 
-I was primarily involved in building, securing, and deploying AWS cloud infrastructure from the ground up. My weekly responsibilities included completing comprehensive hands-on labs, troubleshooting deployment issues, optimizing resource costs, and contributing to the FCAJ community through technical blog translations and workshop documentation. This experience not only solidified my technical foundation but also cultivated the professional mindset required of a cloud engineer.
+During this period, most of my work revolved around completing AWS labs, reading official documentation, writing weekly worklogs, and translating technical content. Compared to when I first started, I have become less dependent on step-by-step instructions. However, I also recognize clearly that my strength currently lies in the fundamentals, and there are still many areas that require further learning if I want to work more independently in the future.
 
-To provide a transparent, objective reflection on my personal and professional growth, as well as to identify areas requiring further focus, I have evaluated myself based on the criteria below:
+### What I Have Achieved
 
-### Areas of Strength and Achievements
+- **Practical understanding of core AWS services:** I had the opportunity to work with and develop a deeper understanding of IAM, VPC, EC2, RDS, S3, CloudWatch, Auto Scaling, Route 53, CloudFront, DynamoDB, Lambda, API Gateway, and CloudFormation. At my current level, I can redo the labs, understand the purpose of each component, and adjust basic configurations when needed.
+- **Better at self-diagnosing issues:** Previously, when encountering errors, I would either start over or wait for someone to point out the problem. Now I am more accustomed to checking Security Groups, Route Tables, IAM Policies, CloudWatch logs, or cross-referencing with AWS documentation before asking for help. I cannot say I troubleshoot well in every situation, but at least I have a clearer thinking process.
+- **More disciplined in self-learning:** The weekly roadmap forced me to keep up with the schedule. This helped me maintain the habit of reading ahead, completing labs, and noting what I understood versus what I was still stuck on. The most valuable shift was learning to pause and understand *why* a configuration is needed, rather than just completing it.
+- **More conscious about cost and resource cleanup:** After working on labs for a while, I better understand that creating cloud resources is not just a technical matter but directly relates to cost. I have developed the habit of deleting resources after use, checking for running services, and paying closer attention to billing.
+- **Improved technical writing:** Writing worklogs in Markdown/Hugo and translating blogs helped me improve how I document and present issues. My writing is not yet concise and sharp, but it is less rambling and clearer than when I started.
 
-- **Technical Proficiency with AWS Core Services:** I gained robust, practical experience architecting and managing a wide array of AWS services. I progressed from basic IAM user/group management and VPC creation to more complex configurations like setting up Multi-AZ deployments, Application Load Balancers (ALB), Auto Scaling Groups, and integrating Route 53 with CloudFront. I am now comfortable navigating the AWS Management Console and utilizing the AWS CLI for routine operations.
-- **Problem-Solving and Troubleshooting:** Initially, I relied heavily on the step-by-step lab instructions. Over time, I developed the confidence to troubleshoot issues independently. For instance, when encountering connectivity issues between EC2 and RDS, or debugging VPC routing and Security Group rules, I learned to effectively use tools like Reachability Analyzer, VPC Flow Logs, and CloudWatch metrics to diagnose and resolve the root causes before seeking mentor assistance.
-- **Self-Directed Learning and Discipline:** The intensive 12-week roadmap required a high degree of self-motivation. I consistently met weekly milestones, completed all assigned labs on schedule, and proactively sought out official AWS documentation and whitepapers to understand the *why* behind the configurations, rather than just the *how*.
-- **Cost Awareness and Resource Governance:** Recognizing the importance of cost optimization in the cloud, I developed strict habits regarding resource lifecycle management. I reliably cleaned up all non-essential resources post-lab, configured AWS Budgets, and implemented Billing Alarms. This hands-on practice with FinOps principles ensured I never exceeded my allocated AWS credits.
-- **Technical Communication and Contribution:** Through the process of translating technical AWS blogs and documenting my weekly progress using Markdown and Hugo, I significantly improved my ability to articulate complex technical concepts clearly. This not only reinforced my own learning but also allowed me to contribute valuable resources back to the FCAJ community.
+### Areas for Improvement
 
-### Areas for Improvement and Future Focus
+- **Not yet confident designing from open requirements:** When given labs, diagrams, or relatively clear instructions, I perform well. But starting from business requirements and proposing a suitable architecture on my own still lacks confidence.
+- **IaC and automation remain a significant gap:** Although I have touched CloudFormation, most of my operations still lean toward Console and CLI. I need to dedicate more time to infrastructure as code for more professional workflows.
+- **Advanced networking and security knowledge is thin:** I can follow basic VPC concepts, but more challenging topics like hybrid networking, multi-layer network models, or complex security scenarios still require significant further learning.
+- **Limited experience building complete systems:** Up to this point, my work has mainly been individual labs or topic groups. I have not had much experience assembling everything into a complete system with clear operational, testing, and deployment requirements.
+- **Time management needs work during heavy weeks:** There were periods when university coursework and labs piled up simultaneously, and my response was still reactive. This is an area I need to improve to handle more intensive project phases later on.
 
-While I am proud of the progress I have made, I recognize several areas where I need to focus my continuous learning efforts:
+### Overall Assessment
 
-- **Transitioning from Implementation to Architecture Design:** While I can confidently build infrastructure based on provided diagrams and instructions, I need to develop my ability to design scalable, secure, and cost-effective architectures from scratch based on high-level business requirements.
-- **Deepening Knowledge in Automation and Infrastructure as Code (IaC):** Most of the provisioning during the internship was done manually via the Console or CLI. To align with modern DevOps practices, my next major goal is to master IaC tools like AWS CloudFormation or HashiCorp Terraform to automate these deployments.
-- **Advanced Networking Concepts:** While I have a solid grasp of foundational VPC components, I need to deepen my understanding of enterprise-level networking solutions such as AWS Transit Gateway, AWS Direct Connect, and advanced VPN configurations, which are critical for hybrid cloud environments.
-- **Time Management under Pressure:** Balancing the rigorous demands of the FCAJ internship with my university coursework occasionally proved challenging. I need to continue refining my time-management and prioritization skills, especially when tackling complex, multi-day labs alongside academic deadlines.
-- **Active Participation in Technical Discussions:** I intend to build better habits for communicating within technical teams. Often, I spent too long trying to solve a problem in isolation. I need to practice formulating technical questions more concisely and sharing my findings more actively during group discussions to foster a more collaborative learning environment.
+If I assess myself at this point, I believe I have progressed from "knowing concepts" to "being able to do it myself, verify it, and continue learning." That is the clearest progress I have made during this period.
+
+However, I do not yet consider myself ready for complex architecture or deployment challenges. I am still in the foundation-building phase, expanding hands-on experience and filling gaps in system design, IaC, CI/CD, and end-to-end deployment thinking. If I can maintain my current learning pace, I believe the remainder of the program will be the critical period for turning fragmented knowledge into more practical working capability.

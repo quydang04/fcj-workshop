@@ -287,20 +287,20 @@ Local App / CrewAI -> AgentCore -> Docker -> ECR -> Bedrock -> API Gateway
 
 Dưới đây là một số hình ảnh ghi lại khi tham gia sự kiện:
 
-![Hình ảnh tại Event 2 - 1](/4-eventparticipated/4.2-event2/img/20260523_092830.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 2](/4-eventparticipated/4.2-event2/img/20260523_093545.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 3](/4-eventparticipated/4.2-event2/img/20260523_093957.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 4](/4-eventparticipated/4.2-event2/img/20260523_102804.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 5](/4-eventparticipated/4.2-event2/img/20260523_103836.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 6](/4-eventparticipated/4.2-event2/img/20260523_111821.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 7](/4-eventparticipated/4.2-event2/img/20260523_113118.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 8](/4-eventparticipated/4.2-event2/img/20260523_113155.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 9](/4-eventparticipated/4.2-event2/img/20260523_113421.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 10](/4-eventparticipated/4.2-event2/img/20260523_121023.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 11](/4-eventparticipated/4.2-event2/img/20260523_121819.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 12](/4-eventparticipated/4.2-event2/img/20260523_121905.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 13](/4-eventparticipated/4.2-event2/img/20260523_122343.jpg?width=20pc&classes=shadow)
-![Hình ảnh tại Event 2 - 14](/4-eventparticipated/4.2-event2/img/Screenshot%202026-06-10%20114648.png?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 1](/images/4-Event/4.2-event2/20260523_092830.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 2](/images/4-Event/4.2-event2/20260523_093545.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 3](/images/4-Event/4.2-event2/20260523_093957.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 4](/images/4-Event/4.2-event2/20260523_102804.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 5](/images/4-Event/4.2-event2/20260523_103836.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 6](/images/4-Event/4.2-event2/20260523_111821.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 7](/images/4-Event/4.2-event2/20260523_113118.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 8](/images/4-Event/4.2-event2/20260523_113155.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 9](/images/4-Event/4.2-event2/20260523_113421.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 10](/images/4-Event/4.2-event2/20260523_121023.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 11](/images/4-Event/4.2-event2/20260523_121819.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 12](/images/4-Event/4.2-event2/20260523_121905.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 13](/images/4-Event/4.2-event2/20260523_122343.jpg?width=20pc&classes=shadow)
+![Hình ảnh tại Event 2 - 14](/images/4-Event/4.2-event2/Screenshot%202026-06-10%20114648.png?width=20pc&classes=shadow)
 
 ---
 

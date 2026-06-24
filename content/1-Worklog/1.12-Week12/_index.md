@@ -1,35 +1,35 @@
 ---
-title: "Week 12 Worklog - Final Project Wrap-up & Submission"
+title: "Week 12 Worklog - Money Manager Wrap-up & Submission"
 date: 2026-04-20
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-## Week 12 - Final Project Wrap-up & Submission
+## Week 12 - Money Manager Wrap-up & Submission
 
 ### Weekly Focus
-Final Project Wrap-up and Submission
+Wrapping up the Money Manager project — security hardening, cost optimization, recovery testing and final submission
 
 ### Objectives
-- Complete the final wrap-up activities for the project and internship learning track.
-- Submit the report, demo, and supporting materials with a stable project state.
+- Complete the final wrap-up: security, cost review, recovery testing.
+- Submit the report, present the project and hand over deliverables.
 
 ### Work Schedule
 
 | Date | Day | Work Items | Lab / Project |
 |------|-----|------------|---------------|
-| 06/07/2026 | Monday | Support post-deployment fixes and operational issues.<br>Collect feedback and write lesson learned notes.<br>Add an open-source license if needed. | [Final Project](https://github.com/vinhpham2808/J2EE) |
-| 07/07/2026 | Tuesday | Summarize knowledge gained and draft a technical blog post.<br>Improve security with HTTPS, encryption, and an IAM policy review.<br>Document issues encountered and the chosen solutions. | [Final Project](https://github.com/vinhpham2808/J2EE) |
-| 08/07/2026 | Wednesday | Review AWS cost usage and suggest optimization actions.<br>Add extra features if there is still time available.<br>Update the final report and documentation. | [Final Project](https://github.com/vinhpham2808/J2EE) |
-| 09/07/2026 | Thursday | Test recovery workflows and backup restore procedures.<br>Run a final verification and freeze the codebase.<br>Prepare the final submission package and printed materials if required. | [Final Project](https://github.com/vinhpham2808/J2EE) |
-| 10/07/2026 | Friday | Submit the report and present the project.<br>Summarize the AWS learning journey and the final project experience.<br>Perform a self-review and capture improvement points. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 06/07/2026 | Monday | Handle post-deployment issues and operational incidents.<br>Re-verify third-party integrations through NAT Gateway: PayOS, Brevo SMTP, Google Gemini API.<br>Add open-source license if needed. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 07/07/2026 | Tuesday | Compile lessons learned and draft a blog post about deploying Spring Boot on AWS.<br>Security hardening: HTTPS via Cloudflare, data encryption, review IAM policies and Security Groups.<br>Document the issues encountered and how they were resolved during deployment. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 08/07/2026 | Wednesday | Review AWS costs: Aurora MySQL, ElastiCache Redis, EC2 ASG, Lambda, S3, NAT Gateway.<br>Propose cost optimization strategies (Reserved Instances, Savings Plans).<br>Update the final report and architecture documentation. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 09/07/2026 | Thursday | Test recovery and backup restore for Aurora MySQL (multi-AZ failover).<br>Verify ElastiCache Redis failover across 2 Availability Zones.<br>Final verification, code freeze and prepare the submission package. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 10/07/2026 | Friday | Submit the report and present the Money Manager project — Personal Finance Management System on AWS.<br>Recap the AWS learning journey and the Money Manager project experience.<br>Self-assessment and lessons learned. | [Final Project](https://github.com/vinhpham2808/J2EE) |
 
 ### Expected Outcomes
-- Deliver the final project and supporting materials in a stable state.
-- Capture lessons learned across AWS, software delivery, and project execution.
-- Close the internship schedule with a clear summary of technical growth.
+- Security hardened, AWS costs reviewed with optimization plan in place.
+- Recovery/failover tests passing for Aurora MySQL and ElastiCache Redis.
+- Submission complete: report, slides, demo, repository.
 
 ### Week 12 References
-- [Final Project](https://github.com/vinhpham2808/J2EE)
-- Final focus areas: cost review, backup/recovery, final presentation, retrospective
+- [Final Project](https://github.com/vinhpham2808/J2EE) — Money Manager (Spring Boot + React 19 + React Native Expo)
+- Final focus: cost review, backup/recovery, security hardening, final presentation

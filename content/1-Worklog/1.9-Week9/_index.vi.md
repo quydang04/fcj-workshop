@@ -1,35 +1,35 @@
 ---
-title: "Nhật ký tuần 9 - Phát triển dự án cuối kỳ & Triển khai AWS"
+title: "Nhật ký tuần 9 - Phát triển Money Manager & Deploy lên AWS"
 date: 2026-04-20
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-## Tuần 9 - Phát triển dự án cuối kỳ & Triển khai AWS
+## Tuần 9 - Phát triển Money Manager & Deploy lên AWS
 
 ### Chủ đề tuần
-Phát triển dự án cuối kỳ - Triển khai và tích hợp trên AWS
+Phát triển các chức năng chính của Money Manager và triển khai lên AWS theo kiến trúc đã thiết kế
 
 ### Mục tiêu tuần
-- Tiếp tục phát triển dự án cuối kỳ dựa trên kiến trúc đã phân tích.
-- Tăng cường triển khai, tích hợp và kiểm thử ứng dụng trên AWS.
+- Phát triển các feature chính của Money Manager (backend + frontend).
+- Deploy lên AWS theo kiến trúc multi-AZ đã thiết kế ở tuần 8.
 
 ### Lịch công việc
 
 | Ngày | Thứ | Nội dung công việc | Lab / Dự án |
 |------|-----|--------------------|-------------|
-| 15/06/2026 | Thứ 2 | Xem lại cấu trúc dự án, các module và ưu tiên triển khai.<br>Đảm bảo môi trường phát triển ổn định cho giai đoạn làm tính năng.<br>Rà soát quy trình build và deploy trước khi cập nhật mã nguồn. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 16/06/2026 | Thứ 3 | Tiếp tục phân tích kiến trúc MVC và business layers trong lúc triển khai.<br>Kiểm tra lại entities, ORM mappings và luồng truy cập dữ liệu.<br>Xác thực quy trình triển khai local trong quá trình sửa code. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 17/06/2026 | Thứ 4 | Thực hiện các chức năng chính như xác thực và xử lý dữ liệu.<br>Rà soát cách ứng dụng giao tiếp với database và APIs.<br>Mở rộng phần tài liệu kỹ thuật và ghi chú triển khai. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 18/06/2026 | Thứ 5 | Triển khai các thay đổi mới của ứng dụng lên AWS EC2.<br>Cấu hình lại hoặc xác nhận kết nối RDS cho trạng thái hiện tại của ứng dụng.<br>Kiểm thử hành vi hệ thống và sửa lỗi liên quan đến triển khai. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 19/06/2026 | Thứ 6 | Tiếp tục tích hợp S3 và CloudFront cho tài sản tĩnh.<br>Bổ sung API Gateway và Lambda nếu kiến trúc giải pháp yêu cầu.<br>Kiểm thử hệ thống đã triển khai và tối ưu hiệu năng khi cần. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 15/06/2026 | Thứ 2 | Review lại source code và xác định thứ tự ưu tiên triển khai các module.<br>Đảm bảo môi trường dev ổn định (Spring Boot backend, React frontend).<br>Rà soát lại quy trình build & deploy trước khi bắt đầu code feature mới. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 16/06/2026 | Thứ 3 | Phát triển các API nghiệp vụ chính: quản lý thu chi, ngân sách, hũ tiết kiệm.<br>Kiểm tra lại entity mappings, quan hệ giữa các bảng và luồng truy cập dữ liệu.<br>Test local và đảm bảo các API hoạt động đúng với MySQL. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 17/06/2026 | Thứ 4 | Hoàn thiện chức năng authentication: JWT token + Google OAuth2.<br>Phát triển các API cho phân quyền theo gói đăng ký (Free/Premium).<br>Cập nhật tài liệu kỹ thuật và API documentation. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 18/06/2026 | Thứ 5 | Deploy backend Spring Boot lên EC2 trong Private Subnet.<br>Cấu hình ALB trong Public Subnet để route traffic đến EC2.<br>Setup Auto Scaling Group cho EC2 Web-API để tự động scale theo tải. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 19/06/2026 | Thứ 6 | Cấu hình Aurora MySQL thay thế RDS MySQL đơn lẻ, setup multi-AZ.<br>Thiết lập RDS Proxy để quản lý connection pool.<br>Cấu hình ElastiCache Redis cho cache và session, kiểm thử kết nối từ EC2. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
 
 ### Kết quả kỳ vọng
-- Có tiến độ triển khai cụ thể cho dự án cuối kỳ.
-- Cải thiện đường triển khai ứng dụng và các dịch vụ hỗ trợ trên AWS.
-- Kết nối chặt chẽ hơn giữa mã nguồn ứng dụng và kiến trúc cloud đã thiết kế.
+- Có các API nghiệp vụ chính hoạt động (quản lý thu chi, authentication, phân quyền).
+- Backend đã deploy trên EC2 với ALB + Auto Scaling Group.
+- Aurora MySQL và ElastiCache Redis đã cấu hình và kết nối thành công.
 
 ### Tham chiếu tuần 9
-- [Project cuối kỳ](https://github.com/vinhpham2808/J2EE)
-- Dịch vụ AWS liên quan: EC2, RDS, S3, CloudFront, API Gateway, Lambda
+- [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) — Money Manager (Spring Boot + React 19 + React Native Expo)
+- Dịch vụ AWS: EC2 ASG, ALB, Aurora MySQL, RDS Proxy, ElastiCache Redis

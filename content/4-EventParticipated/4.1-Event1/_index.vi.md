@@ -142,7 +142,7 @@ npx bmad-method install
 
 Dưới đây là hình ảnh ghi lại khi tham gia sự kiện:
 
-![Hình ảnh tại Event 1](/4-eventparticipated/4.1-event1/img/Screenshot%202026-06-10%20114703.png?width=40pc&classes=shadow)
+![Hình ảnh tại Event 1](/images/4-Event/4.1-event1/Screenshot%202026-06-10%20114703.png?width=40pc&classes=shadow)
 
 ---
 
