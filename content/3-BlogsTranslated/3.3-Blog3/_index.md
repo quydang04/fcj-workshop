@@ -30,7 +30,7 @@ The foundational change in NextGen is separating compute from storage. A new sha
 
 The architecture diagram below illustrates how NextGen serves an AI agent: the agent creates embeddings via Bedrock and writes to Indexing OCUs; vector queries go through Search OCUs. Both Indexing and Search OCUs (compute tier) scale independently and share a common Shared Storage Layer, enabling scale-to-zero when idle.
 
-![Amazon OpenSearch Serverless NextGen architecture](/images/3-Blog/3.3-Blog3/image1.png)
+![Amazon OpenSearch Serverless NextGen architecture](/images/3-Blog/3.3-Blog3/blog_3.png)
 
 ### Key Highlights & Core Benefits
 

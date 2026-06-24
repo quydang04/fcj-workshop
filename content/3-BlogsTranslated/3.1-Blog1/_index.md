@@ -8,7 +8,7 @@ pre: "<b>3.1. </b>"
 
 ## Building Memory-Intensive Apps Made Easy with AWS Lambda Managed Instances
 
-![AI-Powered Customer Analytics architecture with Lambda Managed Instances](/images/3-Blog/3.1-Blog1/image1.png)
+![AI-Powered Customer Analytics architecture with Lambda Managed Instances](/images/3-Blog/3.1-Blog1/blog_1.png)
 
 Modern applications increasingly require large amounts of memory to process big data, perform complex analytics, or run Machine Learning (ML) models. To solve this challenge, AWS introduced **AWS Lambda Managed Instances** – a solution that overcomes the memory limits of standard Lambda while preserving the full convenience of serverless architecture.
 

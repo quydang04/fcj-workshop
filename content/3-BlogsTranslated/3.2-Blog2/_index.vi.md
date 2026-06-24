@@ -33,7 +33,7 @@ Durable Functions giải quyết các vấn đề trên bằng hai primitive c�
 
 Sơ đồ kiến trúc dưới đây minh hoạ một AI workflow dùng Durable Functions: client gọi qua API Gateway tới hàm Lambda (đã bật durable execution); hàm dùng `step()` để gọi Bedrock (LLM) và lưu kết quả – mỗi step được checkpoint tự động; dùng `wait()`/callback để tạm dừng chờ phê duyệt rồi resume; trạng thái execution được phát ra EventBridge và CloudWatch để giám sát.
 
-![Kiến trúc AI workflow với AWS Lambda Durable Functions](/images/3-Blog/3.2-Blog2/image1.png)
+![Kiến trúc AI workflow với AWS Lambda Durable Functions](/images/3-Blog/3.2-Blog2/blog_2.png)
 
 ### Điểm nổi bật & lợi ích cốt lõi
 

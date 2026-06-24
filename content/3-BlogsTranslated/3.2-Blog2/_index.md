@@ -33,7 +33,7 @@ Durable Functions solve these problems with two core primitives in the open-sour
 
 The architecture diagram below illustrates an AI workflow using Durable Functions: a client calls through API Gateway to a Lambda function (with durable execution enabled); the function uses `step()` to call Bedrock (LLM) and save results – each step is automatically checkpointed; uses `wait()`/callback to pause for approval then resume; execution state is emitted to EventBridge and CloudWatch for monitoring.
 
-![AI workflow architecture with AWS Lambda Durable Functions](/images/3-Blog/3.2-Blog2/image1.png)
+![AI workflow architecture with AWS Lambda Durable Functions](/images/3-Blog/3.2-Blog2/blog_2.png)
 
 ### Key Highlights & Core Benefits
 
