@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>3. </b>"
 ---
 
-Dưới đây là các bài blog mà em đã dịch và đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
-
 ### [Blog 1 - Xây Dựng Ứng Dụng Yêu Cầu Nhiều Bộ Nhớ Với AWS Lambda Managed Instances](3.1-Blog1/)
 
 Blog giới thiệu AWS Lambda Managed Instances – tính năng cho phép chạy hàm Lambda trên các instance Amazon EC2 với RAM lên tới 32 GB, giúp xây dựng ứng dụng cần nhiều bộ nhớ như AI/ML inference hay in-memory analytics mà vẫn giữ được sự tiện lợi của kiến trúc serverless.
