@@ -14,3 +14,7 @@ This one had three main parts: how to write better prompts so LLMs give more use
 
 This was a bigger event with multiple speakers sharing real-world experience on AI and cloud. The talks that stood out to me the most were Build Second Brain (how to provide the right context to AI), CloudFront from edge to origin, and the multi-agent credit scoring system for startups. There were also sessions on the LotusHacks hackathon experience and LLM non-determinism, all pretty interesting.
 
+### [Event 3 - FCAJ Community Day June 2026](4.3-Event3/)
+
+This event focused on practical solutions for integrating AI into enterprise-scale system operations. Key topics included the Agentic platform for Cloud operations, building Voice AI Assistants for enterprise, DevOps AI Agent on AWS, automating HR processes with Amazon Q, and establishing Private Security models for Amazon Q and MCP Server.
+

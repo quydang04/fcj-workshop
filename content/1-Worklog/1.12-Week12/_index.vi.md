@@ -21,13 +21,13 @@ Tổng kết dự án Money Manager — hardening bảo mật, tối ưu chi ph�
 |------|-----|--------------------|-------------|
 | 06/07/2026 | Thứ 2 | Hỗ trợ xử lý các issue sau deploy và sự cố vận hành.<br>Kiểm tra lại tích hợp dịch vụ bên thứ ba qua NAT Gateway: PayOS, Brevo SMTP, Google Gemini API.<br>Bổ sung license open-source nếu cần. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
 | 07/07/2026 | Thứ 3 | Tổng hợp kiến thức đã học và phác thảo bài blog về triển khai Spring Boot trên AWS.<br>Hardening bảo mật: HTTPS qua Cloudflare, mã hóa dữ liệu, rà soát IAM policies và Security Groups.<br>Ghi lại các vấn đề gặp phải và cách giải quyết trong quá trình triển khai. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 08/07/2026 | Thứ 4 | Review chi phí AWS: Aurora MySQL, ElastiCache Redis, EC2 ASG, Lambda, S3, NAT Gateway.<br>Đề xuất phương án tối ưu chi phí (Reserved Instances, Savings Plans).<br>Cập nhật báo cáo cuối và tài liệu kiến trúc. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
-| 09/07/2026 | Thứ 5 | Test recovery và backup restore cho Aurora MySQL (multi-AZ failover).<br>Kiểm tra failover ElastiCache Redis trên 2 Availability Zone.<br>Tổng kiểm tra lần cuối, freeze code và chuẩn bị bộ hồ sơ nộp. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 08/07/2026 | Thứ 4 | Review chi phí AWS: RDS MySQL, ElastiCache Redis, EC2 ASG, Lambda, S3, NAT Gateway.<br>Đề xuất phương án tối ưu chi phí (Reserved Instances, Savings Plans).<br>Cập nhật báo cáo cuối và tài liệu kiến trúc. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
+| 09/07/2026 | Thứ 5 | Test recovery và backup restore cho RDS MySQL (multi-AZ failover).<br>Kiểm tra failover ElastiCache Redis trên 2 Availability Zone.<br>Tổng kiểm tra lần cuối, freeze code và chuẩn bị bộ hồ sơ nộp. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
 | 10/07/2026 | Thứ 6 | Nộp báo cáo và thuyết trình dự án Money Manager – Hệ thống Quản lý Tài chính Cá nhân trên AWS.<br>Tổng kết hành trình học AWS và kinh nghiệm triển khai dự án Money Manager.<br>Tự đánh giá bản thân và rút kinh nghiệm. | [Project cuối kỳ](https://github.com/vinhpham2808/J2EE) |
 
 ### Kết quả kỳ vọng
 - Bảo mật đã hardening, chi phí đã review và có phương án tối ưu.
-- Recovery/failover test pass cho Aurora MySQL và ElastiCache Redis.
+- Recovery/failover test pass cho RDS MySQL và ElastiCache Redis.
 - Nộp bài hoàn tất: báo cáo, slide, demo, repository.
 
 ### Tham chiếu tuần 12

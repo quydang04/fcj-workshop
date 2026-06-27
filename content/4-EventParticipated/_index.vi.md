@@ -14,3 +14,7 @@ Buổi này có ba phần chính: cách viết prompt sao cho LLM trả lời t�
 
 Đây là sự kiện lớn hơn, có nhiều diễn giả chia sẻ kinh nghiệm thực tế về AI và cloud. Em ấn tượng nhất là phần Build Second Brain (cách cung cấp context cho AI cho đúng), phần CloudFront từ edge đến origin, và bài về hệ thống multi-agent chấm điểm tín dụng cho startup. Ngoài ra còn có phần hackathon LotusHacks và vấn đề LLM không tất định nữa, cũng hay.
 
+### [Sự kiện 3 - FCAJ Community Day Tháng 6/2026](4.3-Event3/)
+
+Sự kiện tập trung vào các giải pháp thực tế đưa AI vào vận hành hệ thống ở quy mô doanh nghiệp. Các chủ đề nổi bật gồm nền tảng Agentic cho vận hành Cloud, xây dựng trợ lý thoại Voice AI cho doanh nghiệp, DevOps AI Agent trên AWS, tự động hóa quy trình nhân sự bằng Amazon Q, và thiết lập mô hình bảo mật Private Security cho Amazon Q và MCP Server.
+

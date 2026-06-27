@@ -23,13 +23,13 @@ Building core Money Manager features and deploying to AWS following the architec
 | 16/06/2026 | Tuesday | Develop the core business APIs: income/expense tracking, budgets, savings jars.<br>Verify entity mappings, table relationships and data access flows.<br>Test locally and make sure the APIs work correctly with MySQL. | [Final Project](https://github.com/vinhpham2808/J2EE) |
 | 17/06/2026 | Wednesday | Finish the authentication flow: JWT token + Google OAuth2.<br>Build the APIs for subscription-based access control (Free/Premium tiers).<br>Update the technical docs and API documentation. | [Final Project](https://github.com/vinhpham2808/J2EE) |
 | 18/06/2026 | Thursday | Deploy the Spring Boot backend to EC2 in the Private Subnet.<br>Set up the ALB in the Public Subnet to route traffic to EC2.<br>Configure the Auto Scaling Group for EC2 Web-API to scale automatically. | [Final Project](https://github.com/vinhpham2808/J2EE) |
-| 19/06/2026 | Friday | Switch from standalone RDS MySQL to Aurora MySQL with multi-AZ.<br>Set up RDS Proxy for connection pooling.<br>Configure ElastiCache Redis for caching and session storage, test connectivity from EC2. | [Final Project](https://github.com/vinhpham2808/J2EE) |
+| 19/06/2026 | Friday | Configure RDS MySQL with multi-AZ.<br>Configure ElastiCache Redis for caching and session storage, test connectivity from EC2. | [Final Project](https://github.com/vinhpham2808/J2EE) |
 
 ### Expected Outcomes
 - Core business APIs working (income/expense tracking, authentication, access control).
 - Backend deployed on EC2 with ALB + Auto Scaling Group.
-- Aurora MySQL and ElastiCache Redis configured and connected successfully.
+- RDS MySQL and ElastiCache Redis configured and connected successfully.
 
 ### Week 9 References
 - [Final Project](https://github.com/vinhpham2808/J2EE) — Money Manager (Spring Boot + React 19 + React Native Expo)
-- AWS services: EC2 ASG, ALB, Aurora MySQL, RDS Proxy, ElastiCache Redis
+- AWS services: EC2 ASG, ALB, RDS MySQL, ElastiCache Redis

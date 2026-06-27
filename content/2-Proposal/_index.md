@@ -32,7 +32,7 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
 
 **Tech stack:**
 
-- **Backend:** Spring Boot (Java 21), layered architecture — Controller → Service → Repository
+- **Backend:** Spring Boot (Java 21), layered architecture — Controller -> Service -> Repository
 - **Frontend Web:** React 19 + Vite
 - **Mobile:** React Native (Expo)
 - **AI:** Google Gemini (chat, agent, OCR, forecasting) and OpenRouter GPT-OSS (in-depth report analysis for Premium tier)
@@ -42,43 +42,43 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
 - **Application Load Balancer (ALB):** Sits in the Public Subnet, distributes traffic across EC2 instances, spans 2 AZs.
 - **Amazon EC2 + Auto Scaling Group:** Runs the Spring Boot backend in Private Subnets, auto-scales based on load.
 - **EC2 Worker:** Dedicated instance for processing background jobs (consumes from SQS).
-- **Amazon Aurora MySQL + RDS Proxy:** Primary relational database, deployed multi-AZ. RDS Proxy handles connection pooling efficiently.
+- **Amazon RDS MySQL:** Primary relational database, deployed multi-AZ.
 - **Amazon ElastiCache (Redis):** Used for caching, session storage and rate limiting. Deployed HA across 2 AZs.
 - **Amazon DynamoDB:** Stores Nova Money AI chat history with low latency reads.
 - **Amazon SQS + DLQ:** Message queue for heavy tasks (Excel report export, PDF invoice rendering, scheduled reports). Dead-Letter Queue handles failed jobs.
 - **AWS Lambda:** Serverless functions to generate report and invoice files.
 - **Amazon S3:** Stores report files, PDF invoices and invoice images.
 - **Amazon SNS:** Sends email alerts to admin when budgets are exceeded or subscriptions are expiring.
-- **Amazon CloudWatch:** Full monitoring — logs, metrics, alarms across ALB, EC2, Aurora, Lambda, SQS.
+- **Amazon CloudWatch:** Full monitoring — logs, metrics, alarms across ALB, EC2, RDS, Lambda, SQS.
 - **NAT Gateway:** Allows EC2 in Private Subnets to reach external services.
 - **IAM Roles:** Access control between AWS services.
 
 **Main processing flows:**
 
-- **User flow:** User accesses via Web/Mobile → Cloudflare (DNS, WAF, DDoS protection, Rate Limit, Turnstile bot detection) → ALB → EC2 Web-API.
-- **Business logic flow:** EC2 handles login (JWT + Google OAuth2), income/expense management, budgets, savings jars → writes to Aurora MySQL (via RDS Proxy), caches in ElastiCache Redis.
-- **AI chat flow:** User chats with Nova Money → conversation history saved to DynamoDB → recent messages pulled as context for the AI model.
-- **Async flow:** EC2 Web-API pushes job to SQS → EC2 Worker consumes → calls Lambda to generate files → stores result in S3.
-- **Notification flow:** Alert event triggers → SNS sends email to Admin.
-- **Outbound flow:** EC2 → NAT Gateway → PayOS (QR payment), Brevo SMTP (email OTP, reports), Google Gemini API.
+- **User flow:** User accesses via Web/Mobile -> Cloudflare (DNS, WAF, DDoS protection, Rate Limit, Turnstile bot detection) -> ALB -> EC2 Web-API.
+- **Business logic flow:** EC2 handles login (JWT + Google OAuth2), income/expense management, budgets, savings jars -> writes to RDS MySQL, caches in ElastiCache Redis.
+- **AI chat flow:** User chats with Nova Money -> conversation history saved to DynamoDB -> recent messages pulled as context for the AI model.
+- **Async flow:** EC2 Web-API pushes job to SQS -> EC2 Worker consumes -> calls Lambda to generate files -> stores result in S3.
+- **Notification flow:** Alert event triggers -> SNS sends email to Admin.
+- **Outbound flow:** EC2 -> NAT Gateway -> PayOS (QR payment), Brevo SMTP (email OTP, reports), Google Gemini API.
 
 ### 4. Technical Implementation
 
 **Implementation phases:**
 
 - **Research and design:** Requirements analysis, AWS architecture design following Well-Architected Framework, database schema and API endpoint design.
-- **Cost estimation:** Using AWS Pricing Calculator to estimate costs for Aurora, ElastiCache, EC2, Lambda, S3 and related services.
-- **Backend development:** Building the Spring Boot API (Java 21), integrating JWT/OAuth2, connecting Aurora MySQL via RDS Proxy, setting up ElastiCache Redis.
+- **Cost estimation:** Using AWS Pricing Calculator to estimate costs for RDS, ElastiCache, EC2, Lambda, S3 and related services.
+- **Backend development:** Building the Spring Boot API (Java 21), integrating JWT/OAuth2, connecting RDS MySQL, setting up ElastiCache Redis.
 - **Frontend development:** Building the Web UI with React 19 + Vite and Mobile app with React Native Expo.
 - **AI integration:** Connecting Google Gemini for chat/agent/OCR/forecasting, OpenRouter GPT-OSS for Premium report analysis.
-- **Deployment and testing:** Deploying to AWS (VPC, EC2 ASG, ALB, Aurora, ElastiCache), configuring Cloudflare, running end-to-end tests.
+- **Deployment and testing:** Deploying to AWS (VPC, EC2 ASG, ALB, RDS, ElastiCache), configuring Cloudflare, running end-to-end tests.
 
 **Technical requirements:**
 
 - **Backend:** Java 21, Spring Boot, Spring Security (JWT + OAuth2), Spring Data JPA, Hibernate.
 - **Frontend:** React 19, Vite, React Native (Expo), responsive design.
-- **Database:** Aurora MySQL (multi-AZ), DynamoDB (chat history), ElastiCache Redis (cache/session).
-- **Infrastructure:** VPC (2 AZ), ALB, EC2 ASG (Graviton), NAT Gateway, RDS Proxy, SQS + DLQ, Lambda, S3, SNS, CloudWatch, IAM Roles.
+- **Database:** RDS MySQL (multi-AZ), DynamoDB (chat history), ElastiCache Redis (cache/session).
+- **Infrastructure:** VPC (2 AZ), ALB, EC2 ASG (Graviton), NAT Gateway, SQS + DLQ, Lambda, S3, SNS, CloudWatch, IAM Roles.
 - **Security:** Cloudflare (WAF, DDoS protection, Rate Limit, Turnstile), HTTPS, IAM policies, Security Groups.
 
 ### 5. Timeline & Milestones
@@ -93,7 +93,7 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
   - Deploying to EC2 in Private Subnet, setting up ALB and Auto Scaling Group.
 - **Week 10 (22/06 – 26/06):**
   - Configuring IAM, security (JWT, OAuth2, Cloudflare WAF).
-  - Deploying Spring Boot backend to EC2 ASG, setting up ALB, Aurora MySQL, ElastiCache.
+  - Deploying Spring Boot backend to EC2 ASG, setting up ALB, RDS MySQL, ElastiCache.
   - Running unit tests, integration tests, load tests and optimizing performance.
 - **Week 11 (29/06 – 03/07):**
   - Polishing UI/UX for Web (React 19 + Vite) and Mobile (React Native Expo), running E2E tests.
@@ -101,7 +101,7 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
   - Code review, writing architecture report, backing up data.
 - **Week 12 (06/07 – 10/07):**
   - Post-deployment support, security hardening, AWS cost optimization.
-  - Testing recovery/failover (Aurora multi-AZ, ElastiCache HA).
+  - Testing recovery/failover (RDS multi-AZ, ElastiCache HA).
   - Submitting the report and final presentation.
 
 ### 6. Budget Estimation
@@ -110,7 +110,7 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
 
 - **Amazon EC2 (ASG – Graviton):** ~15.00 USD/month (t4g.small, 2 instances min).
 - **Application Load Balancer:** ~16.20 USD/month.
-- **Amazon Aurora MySQL:** ~29.00 USD/month (db.t4g.medium, multi-AZ).
+- **Amazon RDS MySQL:** ~29.00 USD/month (db.t4g.medium, multi-AZ).
 - **Amazon ElastiCache (Redis):** ~12.00 USD/month (cache.t4g.micro, 2 node HA).
 - **Amazon DynamoDB:** ~1.00 USD/month (on-demand, chat history).
 - **Amazon S3:** ~0.50 USD/month (reports, invoices, images).
@@ -127,22 +127,22 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
 
 **Key risks:**
 
-- Database connection issues: High impact, low probability → RDS Proxy manages the connection pool.
-- System overload: High impact, medium probability → Auto Scaling Group handles scaling automatically.
-- Data loss: High impact, low probability → Aurora multi-AZ with automated backups.
-- DDoS/Bot attacks: Medium impact, medium probability → Cloudflare WAF + Rate Limit + Turnstile.
-- AWS cost overrun: Medium impact, medium probability → CloudWatch billing alarm.
+- Database connection issues: high impact but low probability, since RDS multi-AZ ensures availability.
+- System overload: high impact, medium probability. Auto Scaling Group handles scaling automatically.
+- Data loss: high impact but low probability thanks to RDS multi-AZ with automated backups.
+- DDoS/Bot attacks: medium impact and medium probability, handled by Cloudflare WAF, Rate Limit and Turnstile.
+- AWS cost overrun: medium impact and medium probability, mitigated with CloudWatch billing alarms for early warning.
 
 **Mitigation:**
 
-- Database: Aurora multi-AZ failover, RDS Proxy connection pooling, ElastiCache HA.
+- Database: RDS multi-AZ failover, ElastiCache HA.
 - Performance: Auto Scaling Group, ElastiCache Redis for caching, SQS to offload heavy tasks from the main flow.
 - Security: Cloudflare WAF + Turnstile, JWT + OAuth2, IAM least privilege, Security Groups.
 - Cost: CloudWatch billing alarm, Reserved Instances, Lambda optimization.
 
 **Contingency plans:**
 
-- Auto failover between 2 AZs for both Aurora MySQL and ElastiCache Redis.
+- Auto failover between 2 AZs for both RDS MySQL and ElastiCache Redis.
 - Dead-Letter Queue on SQS for retrying or debugging failed jobs.
 - CloudWatch Alarms trigger automatically when performance degrades or error rates spike.
 
