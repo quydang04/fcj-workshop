@@ -8,6 +8,14 @@ pre: "<b>7. </b>"
 
 Below are my personal reflections on the experience of participating in the First Cloud AI Journey internship program. As the internship is still ongoing, this content represents a mid-term perspective rather than a final summary.
 
+### Satisfaction Level
+
+**Overall satisfaction: 8/10 – Satisfied**
+
+The program provided a structured, hands-on learning path that closely mirrors real cloud work environments. The mentorship approach and well-prepared resources were the standout strengths.
+
+---
+
 ### Overall Evaluation
 
 **1. Working Environment**

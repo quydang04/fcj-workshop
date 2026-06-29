@@ -8,6 +8,14 @@ pre: "<b>7. </b>"
 
 Phần này em chia sẻ những gì em cảm nhận được sau khi tham gia chương trình First Cloud AI Journey. Chương trình vẫn đang diễn ra nên đây chưa phải tổng kết cuối cùng, mà là góc nhìn ở thời điểm giữa kỳ thôi.
 
+### Mức độ hài lòng
+
+**Tổng thể: 8/10 – Hài lòng**
+
+Chương trình cung cấp lộ trình học tập thực hành có cấu trúc, gần sát với môi trường làm việc cloud thực tế. Điểm nổi bật nhất là cách tiếp cận của mentor và tài liệu lab được chuẩn bị kỹ lưỡng.
+
+---
+
 ### Đánh giá chung
 
 **1. Môi trường làm việc**

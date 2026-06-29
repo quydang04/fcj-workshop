@@ -8,6 +8,12 @@ pre: "<b>4.2. </b>"
 
 ## Event 2 - AWS Vietnam Community Day 2026
 
+| Info | Details |
+|------|---------|
+| Date | 23/05/2026 |
+| Location | Floor 26, Bitexco Financial Tower, Sài Gòn Ward, Ho Chi Minh City |
+| Role | Attendee |
+
 This page summarizes the sessions from **AWS Vietnam Community Day 2026**, covering
 AI context design, edge infrastructure, hackathon experience, LLM reliability,
 and enterprise-grade multi-agent systems.

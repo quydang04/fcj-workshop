@@ -8,6 +8,12 @@ pre: "<b>4.1. </b>"
 
 ## Sự kiện 1 - Prompt Engineering, Sơ đồ tư duy AI & Phương pháp BMAD
 
+| Thông tin | Chi tiết |
+|-----------|---------|
+| Ngày | 09/05/2026 |
+| Địa điểm | Tầng 26, Tòa nhà Bitexco Financial Tower, Phường Sài Gòn, TP.Hồ Chí Minh |
+| Vai trò | Người tham dự |
+
 Trang này tổng hợp nội dung từ sự kiện gồm ba chủ đề chính:
 Automated Prompt Engineering, sơ đồ tư duy về tương tác AI hiệu quả, và phương pháp phát triển BMAD.
 

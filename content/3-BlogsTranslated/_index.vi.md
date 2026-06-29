@@ -1,10 +1,12 @@
 ---
-title: "Blog đã dịch"
+title: "Bài đăng Blog"
 date: 2026-04-20
 weight: 3
 chapter: false
 pre: "<b>3. </b>"
 ---
+
+Dưới đây là các bài blog em đã nghiên cứu và viết, chia sẻ đến cộng đồng [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
 
 ### [Blog 1 - Xây Dựng Ứng Dụng Yêu Cầu Nhiều Bộ Nhớ Với AWS Lambda Managed Instances](3.1-Blog1/)
 

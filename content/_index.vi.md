@@ -19,8 +19,6 @@ chapter: false
 
 &emsp; **Ngành:** Công nghệ thông tin
 
-&emsp; **Lớp:** AWS042026
-
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
 &emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
@@ -35,7 +33,7 @@ chapter: false
 
 1. [Nhật ký thực tập](1-Worklog/)
 2. [Đề xuất dự án](2-Proposal/)
-3. [Blog đã dịch](3-BlogsTranslated/)
+3. [Bài đăng Blog](3-BlogsTranslated/)
 4. [Sự kiện đã tham gia](4-EventParticipated/)
 5. [Bài thực hành](5-Workshop/)
 6. [Tự đánh giá](6-Self-evaluation/)

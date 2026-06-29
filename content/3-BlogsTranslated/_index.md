@@ -1,12 +1,12 @@
 ---
-title: "Translated Blogs"
+title: "Blog Posts"
 date: 2026-04-20
 weight: 3
 chapter: false
 pre: "<b>3. </b>"
 ---
 
-Below are the blogs I have translated and published on [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
+Below are the blog posts I have researched and written, shared with the [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) community.
 
 ### [Blog 1 - Building Memory-Intensive Apps with AWS Lambda Managed Instances](3.1-Blog1/)
 

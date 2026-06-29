@@ -10,6 +10,21 @@ After spending time in the First Cloud AI Journey program, I have completed the 
 
 During this period, most of my work revolved around completing AWS labs, reading official documentation, writing weekly worklogs, and translating technical content. Compared to when I first started, I have become less dependent on step-by-step instructions. However, I also recognize clearly that my strength currently lies in the fundamentals, and there are still many areas that require further learning if I want to work more independently in the future.
 
+### Self-Assessment Summary
+
+| Criteria | Rating | Comment |
+|----------|--------|---------|
+| Knowledge | Good | Solid understanding of core AWS services (IAM, VPC, EC2, RDS, S3, Lambda, etc.); gaps remain in advanced networking and IaC |
+| Learning Ability | Excellent | Consistently keeps up with the weekly roadmap and improves independently each week |
+| Proactiveness | Good | Proactively reads ahead and explores beyond lab requirements; still reactive during busy periods |
+| Discipline | Excellent | Follows the 12-week schedule, cleans up resources after every lab, and monitors billing regularly |
+| Communication | Good | Writes clear worklogs and documentation; room to grow in conciseness |
+| Teamwork | Good | Actively participates in group discussions and events; collaborates well when working with others |
+| Problem Solving | Good | Shifted from restarting on errors to checking Security Groups, IAM Policies, and CloudWatch logs first |
+| Project Contribution | Good | Completed all weekly deliverables — worklogs, blog posts, events, and project proposal |
+
+---
+
 ### What I Have Achieved
 
 - **Practical understanding of core AWS services:** I had the opportunity to work with and develop a deeper understanding of IAM, VPC, EC2, RDS, S3, CloudWatch, Auto Scaling, Route 53, CloudFront, DynamoDB, Lambda, API Gateway, and CloudFormation. At my current level, I can redo the labs, understand the purpose of each component, and adjust basic configurations when needed.

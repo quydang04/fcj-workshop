@@ -10,6 +10,21 @@ Tới thời điểm này thì em đã qua phần nền tảng và bắt đầu 
 
 Nói thật thì hồi mới vào em khá bỡ ngỡ. Công việc hàng tuần chủ yếu là làm lab trên AWS, đọc tài liệu, viết worklog rồi dịch blog. Nghe thì đơn giản nhưng tuần nào cũng có cái mới nên cũng phải cố gắng theo kịp. Được cái là càng làm thì em càng bớt phải nhìn hướng dẫn từng bước, tự xử lý được nhiều hơn. Nhưng em cũng tự biết là hiện tại em chỉ mới vững phần cơ bản thôi, còn nhiều thứ phải học nữa.
 
+### Bảng tự đánh giá
+
+| Tiêu chí | Đánh giá | Nhận xét |
+|----------|----------|----------|
+| Kiến thức | Khá | Nắm vững các dịch vụ AWS cốt lõi (IAM, VPC, EC2, RDS, S3, Lambda,...); còn thiếu sót ở mảng networking nâng cao và IaC |
+| Khả năng học hỏi | Tốt | Theo kịp lộ trình hàng tuần, liên tục tự cải thiện và tự học thêm ngoài yêu cầu |
+| Tính chủ động | Khá | Hay đọc trước và tự khám phá ngoài lab; đôi khi vẫn bị động khi nhiều việc dồn lại cùng lúc |
+| Kỷ luật | Tốt | Tuân thủ lộ trình 12 tuần, xóa tài nguyên sau mỗi lab, thường xuyên kiểm tra billing |
+| Giao tiếp | Khá | Worklog và tài liệu rõ ràng; còn cần cải thiện thêm về sự súc tích |
+| Teamwork | Khá | Tích cực tham gia thảo luận nhóm và các sự kiện; phối hợp tốt khi có cơ hội làm việc cùng người khác |
+| Giải quyết vấn đề | Khá | Đã biết kiểm tra Security Group, IAM Policy, CloudWatch log thay vì làm lại từ đầu khi gặp lỗi |
+| Đóng góp cho dự án | Khá | Hoàn thành đầy đủ các đầu việc — worklog, blog, sự kiện và bản đề xuất dự án |
+
+---
+
 ### Những gì em thấy em tiến bộ
 
 - **Quen tay hơn với các dịch vụ AWS:** Hồi đầu em chỉ biết tên, giờ thì đã thực sự động vào IAM, VPC, EC2, RDS, S3, CloudWatch, Auto Scaling, Route 53, CloudFront, DynamoDB, Lambda, API Gateway, CloudFormation. Không phải là giỏi gì, nhưng ít nhất em có thể tự làm lại lab, hiểu tại sao phải cấu hình như vậy và tự sửa được một số lỗi cơ bản.
