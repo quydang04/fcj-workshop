@@ -28,7 +28,7 @@ Về mặt kỹ thuật, hệ thống được xây dựng theo kiến trúc nhi
 
 Toàn bộ hệ thống deploy trên **AWS Cloud tại Region Singapore (ap-southeast-1)**, nằm trong một VPC trải trên **2 Availability Zone** để đảm bảo High Availability.
 
-![Money Manager Platform Architecture](/images/2-Proposal/platform_architecture.png)
+![Money Manager Platform Architecture](/images/2-Proposal/platform_architecture.jpg)
 
 **Công nghệ sử dụng:**
 
