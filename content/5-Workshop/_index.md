@@ -6,4 +6,10 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-Sẽ cập nhật sau
+Hands-on workshop: deploying infrastructure and a secure connection to Amazon S3 for the **Money Manager** project.
+
+1. [Introduction](5.1-Workshop-overview/)
+2. [Prerequiste](5.2-Prerequiste/)
+3. [Implementation Steps](5.3-Implementation-Steps/)
+4. [Validation & Analysis](5.4-Validation/)
+5. [Cleanup](5.5-Cleanup/)
