@@ -11,7 +11,7 @@ pre: "<b>4.1. </b>"
 | Info | Details |
 |------|---------|
 | Date | 09/05/2026 |
-| Location | Floor 26, Bitexco Financial Tower, Sài Gòn Ward, Ho Chi Minh City |
+| Location | 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City |
 | Role | Attendee |
 
 This page summarizes the content from the event covering three main topics:

@@ -11,7 +11,7 @@ pre: "<b>4.1. </b>"
 | Thông tin | Chi tiết |
 |-----------|---------|
 | Ngày | 09/05/2026 |
-| Địa điểm | Tầng 26, Tòa nhà Bitexco Financial Tower, Phường Sài Gòn, TP.Hồ Chí Minh |
+| Địa điểm | Tầng 26, Tòa nhà Bitexco, 02 Hải Triều, Phường Sài Gòn, TP. Hồ Chí Minh |
 | Vai trò | Người tham dự |
 
 Trang này tổng hợp nội dung từ sự kiện gồm ba chủ đề chính:
