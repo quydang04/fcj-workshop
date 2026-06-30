@@ -11,7 +11,7 @@ pre: "<b>4.3. </b>"
 | Thông tin | Chi tiết |
 |-----------|---------|
 | Ngày | 27/06/2026 |
-| Địa điểm | Tầng 36, Tòa nhà Bitexco Financial Tower, Phường Sài Gòn, TP.Hồ Chí Minh |
+| Địa điểm | Tầng 36, Tòa nhà Bitexco, 02 Hải Triều, Phường Sài Gòn, TP. Hồ Chí Minh |
 | Vai trò | Người tham dự |
 
 Trang này tổng hợp nội dung từ sự kiện **FCAJ Community Day tháng 6/2026**, tập trung vào các giải pháp thực tế: đưa AI vào quy trình vận hành hệ thống, tối ưu hóa hạ tầng và bảo mật dữ liệu ở quy mô doanh nghiệp lớn.

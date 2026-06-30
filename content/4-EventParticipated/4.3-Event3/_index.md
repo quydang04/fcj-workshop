@@ -11,7 +11,7 @@ pre: "<b>4.3. </b>"
 | Info | Details |
 |------|---------|
 | Date | 27/06/2026 |
-| Location | Floor 36, Bitexco Financial Tower, Sài Gòn Ward, Ho Chi Minh City |
+| Location | 36th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City |
 | Role | Attendee |
 
 This page summarizes the content from the **FCAJ Community Day in June 2026**, focusing on practical solutions: integrating AI into system operations, optimizing infrastructure, and securing data at enterprise scale.
