@@ -9,23 +9,23 @@ chapter: false
 
 ### Thông tin sinh viên
 
-&emsp; **Họ và tên:** Võ Đặng Phú Quý
+&emsp; **Họ và tên:** [Họ và tên của bạn]
 
-&emsp; **Số điện thoại:** 0776602275
+&emsp; **Số điện thoại:** [Số điện thoại của bạn]
 
-&emsp; **Email:** namhoang203021@gmail.com
+&emsp; **Email:** [Email của bạn]
 
-&emsp; **Trường:** Đại học Công Nghệ TP.HCM
+&emsp; **Trường:** [Tên trường đại học]
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Ngành:** [Ngành học]
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+&emsp; **Công ty thực tập:** [Tên công ty thực tập]
 
-&emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
+&emsp; **Vị trí thực tập:** [Vị trí / Chương trình thực tập]
 
-&emsp; **Thời gian thực tập:** Từ ngày 17/04/2026 đến ngày 10/07/2026
+&emsp; **Thời gian thực tập:** Từ ngày [ngày bắt đầu] đến ngày [ngày kết thúc]
 
-![Ảnh đại diện](/images/avatar.png)
+*[Chèn ảnh đại diện của bạn vào đây]*
 
 ---
 

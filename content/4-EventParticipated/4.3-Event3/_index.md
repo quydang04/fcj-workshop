@@ -34,7 +34,7 @@ This page summarizes the content from the **FCAJ Community Day in June 2026**, f
 
 As enterprises shift to Microservices architecture, systems grow larger and more complex. The speaker pointed out that current operations teams are overloaded by fragmented Observability tools, compounded by accumulated technical debt from legacy systems. An intelligent platform was introduced to help Senior engineers resolve incidents faster, minimizing system downtime.
 
-![Steve Tran (Cloud Thinker) presenting AgenticOps for your Cloud – FCAJ Community Day, June 2026](/images/4-Event/4.3-event3/fcaj-community-day-june-2026.jpeg?width=30pc&classes=shadow)
+*[Insert your event photo here]*
 
 **The Agentic Platform addresses 4 core problems:**
 

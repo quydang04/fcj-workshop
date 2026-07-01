@@ -34,7 +34,7 @@ Trang này tổng hợp nội dung từ sự kiện **FCAJ Community Day tháng 
 
 Khi doanh nghiệp chuyển dịch sang kiến trúc Microservices, hệ thống ngày càng phình to và trở nên phức tạp hơn. Diễn giả chỉ ra rằng các đội nhóm vận hành hiện tại đang bị quá tải bởi các công cụ giám sát (Observability tools) tách biệt, kèm theo đó là những phần "nợ công nghệ" tích tụ từ các hệ thống cũ. Nền tảng thông minh được đưa vào với vai trò hỗ trợ các kỹ sư Senior xử lý nhanh sự cố, giảm thiểu tối đa thời gian hệ thống bị gián đoạn (down-time).
 
-![Anh Steve Trần (Cloud Thinker) trình bày về AgenticOps for your Cloud – FCAJ Community Day, tháng 6/2026](/images/4-Event/4.3-event3/fcaj-community-day-june-2026.jpeg?width=30pc&classes=shadow)
+*[Chèn ảnh minh chứng tham gia sự kiện vào đây]*
 
 **Nền tảng Agentic giải quyết 4 bài toán cốt lõi:**
 

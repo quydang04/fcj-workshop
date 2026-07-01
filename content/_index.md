@@ -9,23 +9,23 @@ chapter: false
 
 ### Student Information
 
-&emsp; **Full Name:** Võ Đặng Phú Quý
+&emsp; **Full Name:** [Your Full Name]
 
-&emsp; **Phone Number:** 0776602275
+&emsp; **Phone Number:** [Your Phone Number]
 
-&emsp; **Email:** namhoang203021@gmail.com
+&emsp; **Email:** [Your Email]
 
-&emsp; **University:** Ho Chi Minh City University of Technology (HUTECH)
+&emsp; **University:** [Your University Name]
 
-&emsp; **Major:** Information Technology
+&emsp; **Major:** [Your Major]
 
-&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+&emsp; **Internship Company:** [Internship Company Name]
 
-&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+&emsp; **Internship Position:** [Internship Position / Program Name]
 
-&emsp; **Internship Duration:** From 17/04/2026 to 10/07/2026
+&emsp; **Internship Duration:** From [Start Date] to [End Date]
 
-![Profile picture](/images/avatar.png)
+*[Insert your profile picture here]*
 
 ---
 
