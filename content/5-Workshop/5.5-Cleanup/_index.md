@@ -13,3 +13,4 @@ After completing the technical workshop session, clean up the testing infrastruc
 - Detach the **S3 Gateway VPC Endpoint** from the Private Subnet Route Tables to revert the routing configuration of the VPC.
 - Remove testing Inbound/Outbound DNS Resolver Rules and associated Security Group rules from the configurations.
 - Execute the Docker system prune command (`docker system prune -af`) on the EC2 instance to reclaim unused EBS disk storage space.
+- Delete the CloudWatch Log Groups `/aws/ec2/moneymanager-app` and `/aws/rds/moneymanager-db`, along with the `EC2ErrorAlarm` alarm, to avoid recurring log storage and alarm evaluation charges.

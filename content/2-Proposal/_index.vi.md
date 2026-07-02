@@ -16,7 +16,18 @@ Money Manager là một ứng dụng quản lý tài chính cá nhân chạy tr�
 
 Về mặt kỹ thuật, hệ thống được xây dựng theo kiến trúc nhiều tầng — phía người dùng là ứng dụng Web/Mobile, phía server là các dịch vụ của AWS.
 
-### 2. Vấn đề cần giải quyết
+### 2. Mục tiêu
+
+Với Money Manager, em muốn làm ra nhiều hơn một cái app ghi chép thu chi thông thường. Cụ thể, em hướng tới:
+
+- Một dashboard quản lý tài chính theo thời gian thực trên cả Web lẫn Mobile, giúp người dùng nắm được thu chi, ngân sách và các hũ tiết kiệm của mình ngay tức thì, không phải chờ đợi hay tự tổng hợp thủ công.
+- Trợ lý AI Nova Money đóng vai trò như một người bạn đồng hành tài chính — không chỉ trả lời câu hỏi mà còn chủ động gợi ý và dự báo xu hướng chi tiêu sắp tới.
+- Giảm bớt các thao tác nhập liệu lặp đi lặp lại bằng cách tự động hóa qua OCR quét hóa đơn và xuất báo cáo Excel/Email định kỳ.
+- Xây dựng hạ tầng đủ ổn định (High Availability, multi-AZ trên AWS) để hệ thống vận hành trơn tru, không gián đoạn giữa chừng.
+
+Để biết mình có đang đi đúng hướng hay không, em tự đặt ra vài tiêu chí đơn giản: hệ thống phải deploy thành công lên AWS và trụ vững qua các bài kiểm thử load/failover; người dùng phải thực hiện trọn vẹn được các luồng nghiệp vụ chính (đăng ký/đăng nhập, ghi nhận giao dịch, xem báo cáo, trò chuyện với AI) mà không bị vướng; và chi phí vận hành thực tế phải nằm trong ngân sách đã ước tính ở phần 6.
+
+### 3. Vấn đề cần giải quyết
 
 **Thực trạng:** Hiện tại, việc quản lý tài chính cá nhân thường được làm thủ công hoặc dùng các app đơn giản, thiếu khả năng phân tích sâu, dự báo xu hướng chi tiêu, và không có AI hỗ trợ đưa ra quyết định tài chính.
 
@@ -24,11 +35,17 @@ Về mặt kỹ thuật, hệ thống được xây dựng theo kiến trúc nhi
 
 **Lợi ích:** Giúp người dùng tiết kiệm thời gian quản lý tài chính, chi tiêu thông minh hơn nhờ dự báo từ AI, đồng thời tạo nền tảng để phát triển thêm các tính năng Premium sau này.
 
-### 3. Kiến trúc hệ thống
+### 4. Kiến trúc hệ thống
 
 Toàn bộ hệ thống deploy trên **AWS Cloud tại Region Singapore (ap-southeast-1)**, nằm trong một VPC trải trên **2 Availability Zone** để đảm bảo High Availability.
 
+<div align="center">
+
 ![Money Manager Platform Architecture](/images/2-Proposal/platform_architecture.jpg)
+
+***Hình 1. Sơ đồ kiến trúc nền tảng Money Manager trên AWS***
+
+</div>
 
 **Công nghệ sử dụng:**
 
@@ -62,7 +79,7 @@ Toàn bộ hệ thống deploy trên **AWS Cloud tại Region Singapore (ap-sout
 - **Luồng thông báo:** Khi có event cảnh báo -> SNS gửi email cho Admin.
 - **Luồng outbound:** EC2 -> NAT Gateway -> PayOS (thanh toán QR), Brevo SMTP (gửi email OTP, báo cáo), Google Gemini API.
 
-### 4. Triển khai kỹ thuật
+### 5. Triển khai kỹ thuật
 
 **Các giai đoạn thực hiện:**
 
@@ -81,7 +98,7 @@ Toàn bộ hệ thống deploy trên **AWS Cloud tại Region Singapore (ap-sout
 - **Infrastructure:** VPC (2 AZ), ALB, EC2 ASG (Graviton), NAT Gateway, SQS + DLQ, Lambda, S3, SNS, CloudWatch, IAM Roles.
 - **Security:** Cloudflare (WAF, DDoS protection, Rate Limit, Turnstile), HTTPS, IAM policies, Security Groups.
 
-### 5. Lộ trình triển khai
+### 6. Lộ trình triển khai
 
 - **Tuần 1–6 (20/04 – 29/05):** Học các dịch vụ AWS nền tảng (IAM, VPC, EC2, RDS, S3, Lambda, API Gateway, CloudFormation, DynamoDB) qua lab trên CloudJourney.
 - **Tuần 7–8 (01/06 – 12/06):**
@@ -104,26 +121,30 @@ Toàn bộ hệ thống deploy trên **AWS Cloud tại Region Singapore (ap-sout
   - Test recovery/failover (RDS multi-AZ, ElastiCache HA).
   - Nộp báo cáo và thuyết trình.
 
-### 6. Ước tính chi phí
+### 7. Ước tính chi phí
 
 **Chi phí hạ tầng hàng tháng (ước tính):**
 
-- **Amazon EC2 (ASG – Graviton):** ~15,00 USD/tháng (t4g.small, tối thiểu 2 instance).
-- **Application Load Balancer:** ~16,20 USD/tháng.
-- **Amazon RDS MySQL:** ~29,00 USD/tháng (db.t4g.medium, multi-AZ).
-- **Amazon ElastiCache (Redis):** ~12,00 USD/tháng (cache.t4g.micro, 2 node HA).
-- **Amazon DynamoDB:** ~1,00 USD/tháng (on-demand, lưu chat history).
-- **Amazon S3:** ~0,50 USD/tháng (lưu báo cáo, hóa đơn, ảnh).
-- **AWS Lambda:** ~0,00 USD/tháng (free tier).
-- **Amazon SQS:** ~0,00 USD/tháng (free tier).
-- **Amazon SNS:** ~0,00 USD/tháng (free tier).
-- **NAT Gateway:** ~32,00 USD/tháng (outbound traffic).
-- **Amazon CloudWatch:** ~3,00 USD/tháng (logs, metrics, alarms).
+> Đơn giá tra cứu trực tiếp trên trang giá chính thức của AWS cho region Singapore (ap-southeast-1), tính theo 730 giờ/tháng.
+
+- **Amazon EC2:** ~19,27 USD/tháng (t3.micro, tối thiểu 2 instance, 0,0132 USD/giờ/instance).
+- **Application Load Balancer:** ~18,40 USD/tháng (phí giờ chạy cơ bản, 0,0252 USD/giờ) + phụ phí theo LCU thực tế (0,008 USD/LCU-giờ).
+- **Amazon RDS MySQL:** ~37,96 USD/tháng (db.t3.micro, Multi-AZ một standby, 0,052 USD/giờ).
+- **Amazon ElastiCache (Redis):** ~36,50 USD/tháng (cache.t3.micro, cụm replication 2 node HA, 0,025 USD/giờ/node — giá cụm Redis OSS có replication cao hơn giá node đơn lẻ 0,02 USD/giờ).
+- **Amazon DynamoDB:** ~1,00 USD/tháng (on-demand, lưu chat history; 0,71 USD/triệu WRU, 0,1425 USD/triệu RRU).
+- **Amazon S3:** ~0,50 USD/tháng (lưu báo cáo, hóa đơn, ảnh; 0,025 USD/GB, S3 Standard).
+- **AWS Lambda:** ~0,00 USD/tháng (nằm trong free tier vĩnh viễn 1 triệu request + 400.000 GB-giây/tháng).
+- **Amazon SQS:** ~0,00 USD/tháng (nằm trong free tier vĩnh viễn 1 triệu request/tháng).
+- **Amazon SNS:** ~0,00 USD/tháng (nằm trong free tier vĩnh viễn 1 triệu publish/tháng).
+- **NAT Gateway:** ~43,07 USD/tháng (phí giờ chạy, 0,059 USD/giờ) + phụ phí xử lý dữ liệu theo lưu lượng thực tế (0,059 USD/GB).
+- **Amazon CloudWatch:** ~3,00 USD/tháng (ước tính cho phần vượt free tier 10 metrics/5GB logs; chi phí thực tế phụ thuộc khối lượng log và alarm).
 - **Cloudflare (Free plan):** 0,00 USD/tháng.
 
-**Tổng:** ~108,70 USD/tháng (~1.304,40 USD/năm)
+**Tổng (phần cố định):** ~159,70 USD/tháng (~1.916,40 USD/năm), chưa gồm phụ phí biến đổi theo lưu lượng thực tế của ALB (LCU) và NAT Gateway (GB dữ liệu xử lý).
 
-### 7. Đánh giá rủi ro
+> **Đối chiếu:** Toàn bộ đơn giá trên đã được kiểm chứng chéo bằng [AWS Pricing Calculator](https://calculator.aws/) (công cụ ước tính chi phí chính thức của AWS) cho region Asia Pacific (Singapore), khớp chính xác với số liệu tra cứu thủ công trên các trang giá dịch vụ, ngoại trừ ElastiCache (giá cụm replication 2-node HA trên Calculator là 0,025 USD/giờ/node, cao hơn giá node đơn lẻ 0,02 USD/giờ ghi trên bảng giá tổng quát).
+
+### 8. Đánh giá rủi ro
 
 **Các rủi ro chính:**
 
@@ -146,8 +167,8 @@ Toàn bộ hệ thống deploy trên **AWS Cloud tại Region Singapore (ap-sout
 - Dead-Letter Queue cho SQS để retry hoặc debug các job bị lỗi.
 - CloudWatch Alarm tự động báo khi có vấn đề về performance hoặc error rate tăng.
 
-### 8. Kết quả mong đợi
+### 9. Kết quả mong đợi
 
 **Về kỹ thuật:** Xây dựng được hệ thống quản lý tài chính cá nhân chạy ổn định trên AWS với High Availability, hỗ trợ cả Web và Mobile. Tích hợp AI (Google Gemini, OpenRouter) cho dự báo tài chính, OCR hóa đơn và trợ lý Nova Money. Xử lý async hiệu quả với SQS + Lambda cho việc export báo cáo và render hóa đơn.
 
-**Về lâu dài:** Hệ thống có thể scale linh hoạt nhờ Auto Scaling Group và kiến trúc multi-AZ. Có tiềm năng phát triển thêm tính năng Premium (phân tích chuyên sâu qua OpenRouter GPT-OSS), tích hợp thêm payment gateway và mở rộng ra thị trường quốc tế.
+**Về lâu dài:** Hệ thống có thể scale linh hoạt nhờ Auto Scaling Group và kiến trúc multi-AZ. Có tiềm năng phát triển thêm tính năng Premium (phân tích chuyên sâu qua OpenRouter GPT-OSS) và tích hợp thêm payment gateway.

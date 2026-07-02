@@ -69,6 +69,25 @@ Establish the unstructured NoSQL storage layer and the event-driven message queu
 ![Dead Letter Queue moneymanager-async-jobs-dlq detail page](/images/5-Workshop/5.3-Implementation-Steps/sqs-dlq-detail.png?width=60pc&classes=shadow)
 
 - In the application backend, when a major financial transaction is recorded, the API container serializes the event data to a JSON string and uses `SqsTemplate` to publish it to SQS. The Worker container uses the `@SqsListener` annotation to pull from SQS and execute heavy processing asynchronously (e.g., dispatching email receipts and budget re-allocation) without slowing down the user's API response time.
+- The IAM Role attached to the EC2 instances is scoped to the minimum set of SQS actions required, following the least-privilege principle:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "sqs:SendMessage",
+        "sqs:ReceiveMessage",
+        "sqs:DeleteMessage",
+        "sqs:GetQueueAttributes"
+      ],
+      "Resource": "arn:aws:sqs:ap-southeast-1:123456789012:moneymanager-async-jobs"
+    }
+  ]
+}
+```
 
 ### Step 4: Configure S3 Security & VPC Endpoints
 
@@ -82,7 +101,15 @@ Establish private network connections to optimize latency and minimize costs whe
 
 ![Objects stored in the botdevgroup.me static website bucket](/images/5-Workshop/5.3-Implementation-Steps/s3-website-bucket-objects.png?width=60pc&classes=shadow)
 
-- Create a **Gateway VPC Endpoint** for S3 and attach it to the Route Tables of the Private Subnets. The automatically generated routing rule directs S3 traffic from EC2 over the internal AWS backbone network rather than through the NAT Gateway, eliminating 100% of NAT Gateway data processing fees for S3 traffic and improving file transfer speeds.
+- Create a **Gateway VPC Endpoint** for S3 and attach it to the Route Tables of the Private Subnets. The automatically generated routing rule directs S3 traffic from EC2 over the internal AWS backbone network rather than through the NAT Gateway, eliminating 100% of NAT Gateway data processing fees for S3 traffic and improving file transfer speeds. The endpoint was provisioned via the AWS CLI and attached directly to the Private Subnet route tables:
+
+```bash
+aws ec2 create-vpc-endpoint \
+  --vpc-id vpc-0123456789abcdef0 \
+  --vpc-endpoint-type Gateway \
+  --service-name com.amazonaws.ap-southeast-1.s3 \
+  --route-table-ids rtb-0123456789abcdef0
+```
 - Create an **Interface VPC Endpoint (AWS PrivateLink)** within the Private Subnets across two different Availability Zones to guarantee high availability. This endpoint allocates private IP addresses directly from the VPC CIDR.
 
 ![VPC dashboard listing the VPCs used to configure the PrivateLink endpoint](/images/5-Workshop/5.3-Implementation-Steps/vpc-dashboard-list.png?width=60pc&classes=shadow)
@@ -91,5 +118,39 @@ Establish private network connections to optimize latency and minimize costs whe
 
 - Configure a **Route 53 Inbound Resolver** in the VPC to listen for DNS requests from on-premises office networks connecting via VPN. The resolver maps S3 public domains to the Interface Endpoint ENIs' private IPs, enabling secure file uploads and report downloads from office workstations over VPN.
 - Configure **Endpoint Policies** on both VPC Endpoints to restrict access exclusively to the project's S3 bucket, preventing data leaks. Simultaneously, apply an **S3 Bucket Policy** to explicitly deny all S3 bucket access requests from any source unless they originate from the authorized VPC Endpoints.
+
+### Step 5: Configure CloudWatch Monitoring & Alerting
+
+Deploy centralized observability for the EC2 API/Worker fleet and its dependent services:
+
+- Configure a **Log Appender** in the Spring Boot application (using the AWS Logback Appender library) to automatically stream application logs from the API and Worker containers to the CloudWatch Log Group `/aws/ec2/moneymanager-app`. The RDS MySQL error log (`/aws/rds/moneymanager-db`) and VPC network traffic (`/aws/vpc/flow-logs`) are streamed into their own dedicated Log Groups as well, giving a single place to inspect activity across the stack.
+
+![CloudWatch Log Groups list showing /aws/ec2/moneymanager-app, /aws/rds/moneymanager-db and /aws/vpc/flow-logs actively receiving log streams](/images/5-Workshop/5.3-Implementation-Steps/cloudwatch-log-groups-list.png?width=60pc&classes=shadow)
+
+- Set up a **Metric Filter** named `EC2ErrorFilter` on the `/aws/ec2/moneymanager-app` Log Group to scan incoming log streams and count the frequency of critical errors (matching patterns such as `ERROR` or `Exception`), emitting the result as the custom metric `EC2ErrorCount`. A matching `RDSLogErrorFilter` was also configured on `/aws/rds/moneymanager-db` to track database-level error frequency.
+
+![EC2ErrorFilter metric filter detail on the /aws/ec2/moneymanager-app log group, linked to the EC2ErrorAlarm alarm](/images/5-Workshop/5.3-Implementation-Steps/cloudwatch-ec2-metric-filter-detail.png?width=60pc&classes=shadow)
+
+![RDSLogErrorFilter metric filter detail on the /aws/rds/moneymanager-db log group](/images/5-Workshop/5.3-Implementation-Steps/cloudwatch-rds-metric-filter-detail.png?width=60pc&classes=shadow)
+
+- Provision a **CloudWatch Alarm** named `EC2ErrorAlarm` on the `EC2ErrorCount` metric, configured to enter the `ALARM` state once the count reaches 1 within a 5-minute evaluation period, automatically dispatching a notification via SNS.
+
+```xml
+<!-- logback-spring.xml -->
+<configuration>
+    <appender name="CLOUDWATCH" class="ca.pjer.logback.AwsLogsAppender">
+        <groupName>/aws/ec2/moneymanager-app</groupName>
+        <streamName>backend-logs</streamName>
+        <regionName>ap-southeast-1</regionName>
+        <layout>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </layout>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CLOUDWATCH" />
+    </root>
+</configuration>
+```
 
 > See the overall architecture diagram in section **5.1. Introduction** for how these components fit together.

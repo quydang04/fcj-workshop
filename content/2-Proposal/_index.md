@@ -16,7 +16,18 @@ Money Manager is a personal finance app built for both **Web and Mobile**. It le
 
 On the technical side, the system follows a multi-tier architecture — Web/Mobile apps on the client side, and AWS services powering the backend infrastructure.
 
-### 2. Problem Statement
+### 2. Objectives
+
+With Money Manager, I wanted to build more than just another expense-tracking app. Specifically, I'm aiming for:
+
+- A real-time finance dashboard on both Web and Mobile, so users can see their income, expenses, budgets, and savings jars instantly instead of manually piecing everything together.
+- An AI assistant, Nova Money, that acts less like a chatbot and more like a financial companion — answering questions, but also proactively forecasting upcoming spending trends.
+- Fewer repetitive manual entries, thanks to OCR invoice scanning and scheduled Excel/Email report exports.
+- Infrastructure solid enough (High Availability, multi-AZ on AWS) to keep the system running smoothly without unexpected downtime.
+
+To know whether I'm on the right track, I've set a few simple checkpoints for myself: the system needs to deploy successfully to AWS and hold up under load/failover testing; users need to be able to complete the core workflows end to end — sign up/login, log a transaction, view reports, chat with the AI — without hitting friction; and actual running costs need to stay within the budget estimated in Section 6.
+
+### 3. Problem Statement
 
 **The problem:** Most people manage their finances manually or with basic apps that lack deep analytics, spending forecasts, and AI-powered financial advice.
 
@@ -24,7 +35,7 @@ On the technical side, the system follows a multi-tier architecture — Web/Mobi
 
 **Value proposition:** Saves users time on financial management, enables smarter spending decisions through AI forecasting, and provides a solid foundation for Premium features down the road.
 
-### 3. Solution Architecture
+### 4. Solution Architecture
 
 The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southeast-1)**, inside a VPC spanning **2 Availability Zones** for High Availability.
 
@@ -62,7 +73,7 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
 - **Notification flow:** Alert event triggers -> SNS sends email to Admin.
 - **Outbound flow:** EC2 -> NAT Gateway -> PayOS (QR payment), Brevo SMTP (email OTP, reports), Google Gemini API.
 
-### 4. Technical Implementation
+### 5. Technical Implementation
 
 **Implementation phases:**
 
@@ -81,7 +92,7 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
 - **Infrastructure:** VPC (2 AZ), ALB, EC2 ASG (Graviton), NAT Gateway, SQS + DLQ, Lambda, S3, SNS, CloudWatch, IAM Roles.
 - **Security:** Cloudflare (WAF, DDoS protection, Rate Limit, Turnstile), HTTPS, IAM policies, Security Groups.
 
-### 5. Timeline & Milestones
+### 6. Timeline & Milestones
 
 - **Weeks 1–6 (20/04 – 29/05):** Learning core AWS services (IAM, VPC, EC2, RDS, S3, Lambda, API Gateway, CloudFormation, DynamoDB) through CloudJourney labs.
 - **Weeks 7–8 (01/06 – 12/06):**
@@ -104,26 +115,31 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
   - Testing recovery/failover (RDS multi-AZ, ElastiCache HA).
   - Submitting the report and final presentation.
 
-### 6. Budget Estimation
+### 7. Budget Estimation
 
 **Monthly infrastructure costs (estimated):**
 
-- **Amazon EC2 (ASG – Graviton):** ~15.00 USD/month (t4g.small, 2 instances min).
-- **Application Load Balancer:** ~16.20 USD/month.
-- **Amazon RDS MySQL:** ~29.00 USD/month (db.t4g.medium, multi-AZ).
-- **Amazon ElastiCache (Redis):** ~12.00 USD/month (cache.t4g.micro, 2 node HA).
-- **Amazon DynamoDB:** ~1.00 USD/month (on-demand, chat history).
-- **Amazon S3:** ~0.50 USD/month (reports, invoices, images).
-- **AWS Lambda:** ~0.00 USD/month (free tier).
-- **Amazon SQS:** ~0.00 USD/month (free tier).
-- **Amazon SNS:** ~0.00 USD/month (free tier).
-- **NAT Gateway:** ~32.00 USD/month (outbound traffic).
-- **Amazon CloudWatch:** ~3.00 USD/month (logs, metrics, alarms).
+> Rates looked up directly from AWS's official pricing pages for the Singapore region (ap-southeast-1), calculated at 730 hours/month.
+
+- **Amazon EC2:** ~19.27 USD/month (t3.micro, 2 instances min, $0.0132/hour/instance).
+- **Application Load Balancer:** ~18.40 USD/month (base hourly charge, $0.0252/hour) + usage-based LCU charge ($0.008/LCU-hour).
+- **Amazon RDS MySQL:** ~37.96 USD/month (db.t3.micro, Multi-AZ one standby, $0.052/hour).
+- **Amazon ElastiCache (Redis):** ~36.50 USD/month (cache.t3.micro, 2-node HA replication group, $0.025/hour/node — Redis OSS replication group pricing is higher than the single-node rate of $0.02/hour).
+- **Amazon DynamoDB:** ~1.00 USD/month (on-demand, chat history; $0.71/million WRU, $0.1425/million RRU).
+- **Amazon S3:** ~0.50 USD/month (reports, invoices, images; $0.025/GB, S3 Standard).
+- **AWS Lambda:** ~0.00 USD/month (covered by the perpetual free tier of 1M requests + 400,000 GB-seconds/month).
+- **Amazon SQS:** ~0.00 USD/month (covered by the perpetual free tier of 1M requests/month).
+- **Amazon SNS:** ~0.00 USD/month (covered by the perpetual free tier of 1M publishes/month).
+- **NAT Gateway:** ~43.07 USD/month (hourly charge, $0.059/hour) + usage-based data processing charge ($0.059/GB).
+- **Amazon CloudWatch:** ~3.00 USD/month (estimate for usage beyond the free tier of 10 metrics/5GB logs; actual cost depends on log and alarm volume).
 - **Cloudflare (Free plan):** 0.00 USD/month.
 
-**Total:** ~108.70 USD/month (~1,304.40 USD/year)
+**Total (fixed portion):** ~159.70 USD/month (~1,916.40 USD/year), excluding usage-based charges for ALB (LCU) and NAT Gateway (GB processed).
 
-### 7. Risk Assessment
+> **Cross-check:** All rates above were cross-verified using the [AWS Pricing Calculator](https://calculator.aws/) (AWS's official cost-estimation tool) for the Asia Pacific (Singapore) region, and matched the figures looked up manually on each service's pricing page exactly, except for ElastiCache (the Calculator's 2-node HA replication group rate is $0.025/hour/node, higher than the single-node rate of $0.02/hour shown on the general pricing table).
+
+
+### 8. Risk Assessment
 
 **Key risks:**
 
@@ -146,8 +162,8 @@ The entire system is deployed on **AWS Cloud in the Singapore Region (ap-southea
 - Dead-Letter Queue on SQS for retrying or debugging failed jobs.
 - CloudWatch Alarms trigger automatically when performance degrades or error rates spike.
 
-### 8. Expected Outcomes
+### 9. Expected Outcomes
 
 **Technical outcomes:** A stable, production-ready personal finance system running on AWS with High Availability, supporting both Web and Mobile. AI integration (Google Gemini, OpenRouter) for financial forecasting, invoice OCR and the Nova Money assistant. Efficient async processing with SQS + Lambda for report generation and invoice rendering.
 
-**Long-term value:** The platform scales flexibly thanks to Auto Scaling Group and multi-AZ architecture. There's room to grow with Premium features (deep report analysis via OpenRouter GPT-OSS), additional payment gateways, and international expansion.
+**Long-term value:** The platform scales flexibly thanks to Auto Scaling Group and multi-AZ architecture. There's room to grow with Premium features (deep report analysis via OpenRouter GPT-OSS) and additional payment gateways.

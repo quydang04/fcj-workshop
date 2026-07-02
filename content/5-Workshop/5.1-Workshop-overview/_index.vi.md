@@ -8,9 +8,13 @@ pre : " <b> 5.1. </b> "
 
 ### Triển khai hạ tầng và kết nối bảo mật đến Amazon S3
 
+<div align="center">
+
 ![Sơ đồ kiến trúc tổng thể hạ tầng mạng và tích hợp dịch vụ AWS](/images/5-Workshop/5.1-Workshop-overview/architecture-diagram.png?width=70pc&classes=shadow)
 
-*Hình 1. Sơ đồ kiến trúc tổng thể hạ tầng mạng và tích hợp dịch vụ AWS*
+***Hình 1. Sơ đồ kiến trúc tổng thể hạ tầng mạng và tích hợp dịch vụ AWS***
+
+</div>
 
 ### Giới thiệu tổng quan
 

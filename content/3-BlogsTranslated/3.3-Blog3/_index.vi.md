@@ -30,7 +30,13 @@ Thay đổi nền tảng của NextGen là tách rời compute khỏi storage. M
 
 Sơ đồ kiến trúc dưới đây minh hoạ cách NextGen phục vụ một AI agent: agent tạo embedding qua Bedrock rồi ghi vào Indexing OCU; truy vấn vector đi qua Search OCU. Cả Indexing OCU và Search OCU (tầng compute) co giãn độc lập và chia sẻ chung một Shared Storage Layer, cho phép scale-to-zero khi rảnh.
 
+<div align="center">
+
 ![Kiến trúc Amazon OpenSearch Serverless NextGen](/images/3-Blog/3.3-Blog3/blog_3.png)
+
+***Hình 1. Kiến trúc Amazon OpenSearch Serverless NextGen***
+
+</div>
 
 ### Điểm nổi bật & lợi ích cốt lõi
 

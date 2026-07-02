@@ -8,7 +8,13 @@ pre: "<b>3.1. </b>"
 
 ## Xây Dựng Ứng Dụng Yêu Cầu Nhiều Bộ Nhớ Dễ Dàng Hơn Với AWS Lambda Managed Instances
 
+<div align="center">
+
 ![Kiến trúc AI-Powered Customer Analytics với Lambda Managed Instances](/images/3-Blog/3.1-Blog1/blog_1.png)
+
+***Hình 1. Kiến trúc AI-Powered Customer Analytics với Lambda Managed Instances***
+
+</div>
 
 Các ứng dụng hiện đại ngày càng cần nhiều dung lượng bộ nhớ để xử lý dữ liệu lớn, phân tích phức tạp hoặc chạy các mô hình Machine Learning (ML). Để giải quyết bài toán này, AWS đã giới thiệu **AWS Lambda Managed Instances** – một giải pháp giúp vượt qua giới hạn bộ nhớ của Lambda tiêu chuẩn nhưng vẫn giữ trọn vẹn sự tiện lợi của kiến trúc serverless.
 
