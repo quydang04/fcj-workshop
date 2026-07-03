@@ -13,3 +13,4 @@ Hands-on workshop: deploying infrastructure and a secure connection to Amazon S3
 3. [Implementation Steps](5.3-Implementation-Steps/)
 4. [Validation & Analysis](5.4-Validation/)
 5. [Cleanup](5.5-Cleanup/)
+6. [Challenges & Future Direction](5.6-Reflection/)

@@ -13,3 +13,4 @@ Bài thực hành: triển khai hạ tầng và kết nối bảo mật đến A
 3. [Các bước thực hiện chi tiết](5.3-Implementation-Steps/)
 4. [Kiểm tra kết quả & thực nghiệm](5.4-Validation/)
 5. [Dọn dẹp tài nguyên](5.5-Cleanup/)
+6. [Khó khăn & hướng phát triển](5.6-Reflection/)

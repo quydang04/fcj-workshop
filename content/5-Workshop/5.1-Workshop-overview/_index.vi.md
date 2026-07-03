@@ -28,4 +28,4 @@ Nội dung workshop tập trung vào:
 - Cấu hình hàng đợi bất đồng bộ **SQS**.
 - Tối ưu hóa đường truyền mạng bằng **VPC Endpoints** đến Amazon S3 để bảo vệ ảnh hóa đơn OCR khỏi các rủi ro rò rỉ thông tin qua Internet công cộng và cắt giảm chi phí NAT Gateway.
 
-Thông qua quá trình thực hành thực tế này, chúng tôi đã tiếp cận được phương pháp thiết kế hệ thống theo tiêu chuẩn **AWS Well-Architected Framework**, đặc biệt nhấn mạnh vào hai trụ cột: **Bảo mật (Security)** và **Tối ưu hóa chi phí (Cost Optimization)**.
+Thông qua quá trình thực hành thực tế này, em đã tiếp cận được phương pháp thiết kế hệ thống theo tiêu chuẩn **AWS Well-Architected Framework**, đặc biệt nhấn mạnh vào hai trụ cột: **Bảo mật (Security)** và **Tối ưu hóa chi phí (Cost Optimization)**.

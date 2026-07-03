@@ -6,11 +6,11 @@ chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-Để tiến hành triển khai các nội dung thực hành của workshop, chúng tôi cần hoàn thành các bước chuẩn bị tài nguyên cơ bản sau:
+Để tiến hành triển khai các nội dung thực hành của workshop, em cần hoàn thành các bước chuẩn bị tài nguyên cơ bản sau:
 
 ### Tài khoản và Quyền truy cập
 
-Một tài khoản AWS hoạt động với quyền quản trị viên IAM. Để có khóa bảo mật kết nối từ máy trạm, chúng tôi thực hiện các bước sau:
+Một tài khoản AWS hoạt động với quyền quản trị viên IAM. Để có khóa bảo mật kết nối từ máy trạm, em thực hiện các bước sau:
 
 - **Bước 1 (Trên AWS Console):** Đăng nhập vào AWS Management Console, truy cập dịch vụ **IAM** (Identity and Access Management) -> **Users**, chọn tên người dùng của mình, chuyển sang tab **Security credentials** và tìm đến mục **Access keys**. Nhấp vào nút **Create access key**, chọn mục đích sử dụng là **Command Line Interface (CLI)**, đồng ý các điều khoản và bấm xác nhận tạo để hệ thống sinh ra cặp khóa bao gồm **Access Key ID** và **Secret Access Key**. Tải xuống tệp tin dạng `.csv` để lưu trữ khóa bảo mật này.
 - **Bước 2 (Tại máy trạm):** Mở Terminal/Powershell trên máy tính cá nhân và chạy lệnh cấu hình `aws configure`. Nhập thông tin Access Key ID và Secret Access Key đã khởi tạo ở Bước 1, nhập **Default region name** là `ap-southeast-1` (Singapore) và **Default output format** là `json`. Cấu hình này sẽ được lưu tự động tại thư mục cá nhân của người dùng (tệp tin `credentials` và `config` tại đường dẫn `%USERPROFILE%\.aws\` trên Windows hoặc `~/.aws/` trên Linux/macOS).
