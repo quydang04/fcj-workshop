@@ -20,6 +20,8 @@ Video dưới đây trình bày toàn bộ luồng hoạt động của ứng d�
 
 Truy cập tên miền `botdevgroup.me` để xác nhận bản ghi DNS trỏ đúng và trang chủ Money Manager tải thành công qua hạ tầng ALB/EC2 đã triển khai.
 
+> **Web:** [Trải nghiệm tại đây](https://botdevgroup.me)
+
 <div align="center">
 
 ![Trang chủ Money Manager tải thành công qua tên miền botdevgroup.me](/images/5-Workshop/5.4-Validation/dns-routing-site-loaded.png?width=60pc&classes=shadow)
@@ -93,6 +95,9 @@ Xem chi tiết biểu đồ metric `EC2ErrorCount` của alarm trong khoảng 3 
 ### Kiểm thử ứng dụng Mobile
 
 Cùng bộ dữ liệu và backend đã kiểm thử ở trên, ứng dụng **Mobile** (React Native Expo) được kiểm thử trực tiếp trên thiết bị để xác nhận các luồng nghiệp vụ chính hoạt động đồng nhất với bản Web.
+
+> **Mobile:** [Trải nghiệm tại đây](https://mobile.botdevgroup.me)<br>
+> **Link dự phòng:** [Trải nghiệm tại đây](https://notvnt.github.io/BotDEV/)
 
 {{< youtube riegCGswCls >}}
 

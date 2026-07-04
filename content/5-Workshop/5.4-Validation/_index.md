@@ -20,6 +20,8 @@ The recording below walks through the full **Web** application flow running on t
 
 Visiting the domain `botdevgroup.me` confirms the DNS record resolves correctly and the Money Manager homepage loads successfully through the deployed ALB/EC2 infrastructure.
 
+> **Web:** [Trải nghiệm tại đây](https://botdevgroup.me)
+
 <div align="center">
 
 ![Money Manager homepage loading successfully through the botdevgroup.me domain](/images/5-Workshop/5.4-Validation/dns-routing-site-loaded.png?width=60pc&classes=shadow)
@@ -93,6 +95,9 @@ Viewing the detailed `EC2ErrorCount` metric graph for the alarm over the last 3 
 ### Mobile app testing
 
 Using the same dataset and backend tested above, the **Mobile** app (React Native Expo) was tested directly on-device to confirm the core business flows behave consistently with the Web version.
+
+> **Mobile:** [Trải nghiệm tại đây](https://mobile.botdevgroup.me)<br>
+> **Link dự phòng:** [Trải nghiệm tại đây](https://notvnt.github.io/BotDEV/)
 
 {{< youtube riegCGswCls >}}
 
