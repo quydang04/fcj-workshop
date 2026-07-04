@@ -94,7 +94,7 @@ Viewing the detailed `EC2ErrorCount` metric graph for the alarm over the last 3 
 
 Using the same dataset and backend tested above, the **Mobile** app (React Native Expo) was tested directly on-device to confirm the core business flows behave consistently with the Web version.
 
-> **TODO:** paste the Mobile demo YouTube video ID here, then delete this note. Syntax: `{{</* youtube VIDEO_ID_HERE */>}}` (drop the `/*` `*/` when using it for real).
+{{< youtube riegCGswCls >}}
 
 <div align="center">
 
@@ -173,6 +173,26 @@ Using the same dataset and backend tested above, the **Mobile** app (React Nativ
 ![Mobile Settings screen with notification options and sign-out](/images/5-Workshop/5.4-Validation/Mobile/mobile-settings-notifications.jpg?width=22pc&classes=shadow)
 
 ***Figure 41. Mobile Settings screen with notification options and sign-out***
+
+</div>
+
+Testing the Excel report export feature on Mobile: on the Income History screen, selecting the "All" time range and exporting the file `income_report_all_months.xlsx` correctly triggers the native share/open sheet.
+
+<div align="center">
+
+![Mobile income report export screen with the income_report_all_months.xlsx file](/images/5-Workshop/5.4-Validation/Mobile/mobile-export-income-report.png?width=22pc&classes=shadow)
+
+***Figure 42. Mobile income report export screen with the income_report_all_months.xlsx file***
+
+</div>
+
+Similarly, on the Expense History screen, selecting the "This month" time range and exporting the file `expense_report_7_2026.xlsx` confirms the expense report export flow works correctly on Mobile.
+
+<div align="center">
+
+![Mobile expense report export screen with the expense_report_7_2026.xlsx file](/images/5-Workshop/5.4-Validation/Mobile/mobile-export-expense-report.png?width=22pc&classes=shadow)
+
+***Figure 43. Mobile expense report export screen with the expense_report_7_2026.xlsx file***
 
 </div>
 

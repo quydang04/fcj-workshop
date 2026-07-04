@@ -94,7 +94,7 @@ Xem chi tiết biểu đồ metric `EC2ErrorCount` của alarm trong khoảng 3 
 
 Cùng bộ dữ liệu và backend đã kiểm thử ở trên, ứng dụng **Mobile** (React Native Expo) được kiểm thử trực tiếp trên thiết bị để xác nhận các luồng nghiệp vụ chính hoạt động đồng nhất với bản Web.
 
-> **TODO:** dán ID video YouTube demo Mobile vào đây, xóa dòng ghi chú này. Cú pháp: `{{</* youtube VIDEO_ID_HERE */>}}` (bỏ dấu `/*` `*/` khi dùng thật).
+{{< youtube riegCGswCls >}}
 
 <div align="center">
 
@@ -173,6 +173,26 @@ Cùng bộ dữ liệu và backend đã kiểm thử ở trên, ứng dụng **M
 ![Màn hình Cài đặt trên Mobile với các tùy chọn thông báo và đăng xuất](/images/5-Workshop/5.4-Validation/Mobile/mobile-settings-notifications.jpg?width=22pc&classes=shadow)
 
 ***Hình 41. Màn hình Cài đặt trên Mobile với các tùy chọn thông báo và đăng xuất***
+
+</div>
+
+Kiểm thử tính năng xuất báo cáo Excel trên Mobile: tại màn hình Lịch sử thu nhập, chọn khung thời gian "Tất cả" và xuất file `income_report_all_months.xlsx`, hệ thống hiển thị đúng bảng lựa chọn ứng dụng để mở/chia sẻ tệp.
+
+<div align="center">
+
+![Màn hình xuất báo cáo thu nhập trên Mobile với tệp income_report_all_months.xlsx](/images/5-Workshop/5.4-Validation/Mobile/mobile-export-income-report.png?width=22pc&classes=shadow)
+
+***Hình 42. Màn hình xuất báo cáo thu nhập trên Mobile với tệp income_report_all_months.xlsx***
+
+</div>
+
+Tương tự, tại màn hình Lịch sử chi tiêu, chọn khung thời gian "Tháng này" và xuất file `expense_report_7_2026.xlsx`, xác nhận luồng xuất báo cáo chi tiêu trên Mobile hoạt động đúng.
+
+<div align="center">
+
+![Màn hình xuất báo cáo chi tiêu trên Mobile với tệp expense_report_7_2026.xlsx](/images/5-Workshop/5.4-Validation/Mobile/mobile-export-expense-report.png?width=22pc&classes=shadow)
+
+***Hình 43. Màn hình xuất báo cáo chi tiêu trên Mobile với tệp expense_report_7_2026.xlsx***
 
 </div>
 
